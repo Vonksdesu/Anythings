@@ -4,7 +4,9 @@ This is a project to update and fix the character mod hash IDs from the game Zen
 
 ## Diclaimer
 
-This project wasn’t entirely my own creation from the start. I simply continued working on it of my own volition, without being told to or pressured by anyone else. 
+This project wasn’t entirely my own creation from the start. I simply continued working on it of my own volition, without being told to or pressured by anyone else. I also apologize if this program still can’t fix the issue with the mod that remains broken. Since this is my first time working on this project, and I’m doing it all by myself, there may be some mistakes I’ve made. Thank you for your understanding.
+
+**PLEASE NOTE THAT THIS PROGRAM IS EXCLUSIVELY DESIGNED TO FIX AND UPDATE CHARACTER SKIN MODS ONLY; IT IS NOT INTENDED FOR OTHER MODS.**
 
 ### Owner & Contributors
 
