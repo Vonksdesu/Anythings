@@ -1,0 +1,387 @@
+[
+  {
+    "component_name": "Hair-头发",
+    "draw_vb": "9f1dfc45",
+    "position_vb": "83c4fcaf",
+    "texcoord_vb": "c721249c",
+    "blend_vb": "bb2a1769",
+    "ib": "6988bfcd",
+    "object_indexes": [
+      0,
+      34074
+    ],
+    "object_classifications": [
+      "A",
+      "B"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "ce52779f"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "77abe83b"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "94ed2491"
+        ]
+      ],
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "ce52779f"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "77abe83b"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "94ed2491"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "Hair Shadow-头发阴影",
+    "draw_vb": "79702a46",
+    "position_vb": "d635bad0",
+    "texcoord_vb": "d8779413",
+    "blend_vb": "48a78cdc",
+    "ib": "d98415dc",
+    "object_indexes": [
+      0
+    ],
+    "object_classifications": [
+      "A"
+    ],
+    "texture_hashes": [
+      []
+    ]
+  },
+  {
+    "component_name": "Body-身体",
+    "draw_vb": "d4b12374",
+    "position_vb": "e0269fbf",
+    "texcoord_vb": "d31ae32f",
+    "blend_vb": "b823fb44",
+    "ib": "a5eac582",
+    "object_indexes": [
+      0
+    ],
+    "object_classifications": [
+      "A"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "c9bea5d7"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "9a0406fe"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "1daf926d"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "Leg-腿部",
+    "draw_vb": "f7b4360a",
+    "position_vb": "b4e15dc4",
+    "texcoord_vb": "f74b4cea",
+    "blend_vb": "5ca9ed4e",
+    "ib": "80017921",
+    "object_indexes": [
+      0
+    ],
+    "object_classifications": [
+      "A"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "dd4120db"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "a9ae84df"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "867ceb5b"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "Face-脸部",
+    "draw_vb": "1542fac0",
+    "position_vb": "2f506987",
+    "texcoord_vb": "48191f72",
+    "blend_vb": "3cde4ca0",
+    "ib": "ed85f33b",
+    "object_indexes": [
+      0,
+      7248,
+      9582
+    ],
+    "object_classifications": [
+      "A",
+      "B",
+      "C"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "0df52ae7"
+        ]
+      ],
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "0df52ae7"
+        ]
+      ],
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "0df52ae7"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "dagger-匕首",
+    "draw_vb": "6c9a0fb8",
+    "position_vb": "586b83df",
+    "texcoord_vb": "6b263148",
+    "blend_vb": "7c7fd13b",
+    "ib": "aa1404dd",
+    "object_indexes": [
+      0
+    ],
+    "object_classifications": [
+      "A"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "dd80fa1d"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "92c6b20b"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "cb65982e"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "Magus·tail-鬼火·尾巴",
+    "draw_vb": "fea2bd55",
+    "position_vb": "f4a39978",
+    "texcoord_vb": "f33946ec",
+    "blend_vb": "203664d5",
+    "ib": "3766fa59",
+    "object_indexes": [
+      0
+    ],
+    "object_classifications": [
+      "A"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "dd80fa1d"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "92c6b20b"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "cb65982e"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "Magus·head-鬼火·头部",
+    "draw_vb": "49393f27",
+    "position_vb": "160ccb43",
+    "texcoord_vb": "43b63f81",
+    "blend_vb": "17077e99",
+    "ib": "2935f885",
+    "object_indexes": [
+      0
+    ],
+    "object_classifications": [
+      "A"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "dd80fa1d"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "92c6b20b"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "cb65982e"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "Magus·mouth-鬼火·嘴巴",
+    "draw_vb": "27b14e70",
+    "position_vb": "aeeebb95",
+    "texcoord_vb": "5662dd65",
+    "blend_vb": "6fba1f7b",
+    "ib": "389256d8",
+    "object_indexes": [
+      0,
+      4665
+    ],
+    "object_classifications": [
+      "A",
+      "B"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "dd80fa1d"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "92c6b20b"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "cb65982e"
+        ]
+      ],
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "dd80fa1d"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "92c6b20b"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "cb65982e"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "Magus·eye-鬼火·眼睛",
+    "ib": "e63d22c3",
+    "object_indexes": [
+      0
+    ],
+    "object_classifications": [
+      "A"
+    ],
+    "texture_hashes": [
+      []
+    ]
+  }
+]

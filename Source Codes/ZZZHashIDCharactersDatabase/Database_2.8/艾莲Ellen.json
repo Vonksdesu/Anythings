@@ -1,0 +1,189 @@
+[
+  {
+    "component_name": "Hair-头发",
+    "draw_vb": "77ac5f85",
+    "position_vb": "ba0fe600",
+    "texcoord_vb": "a27a8e1a",
+    "blend_vb": "e91c93e0",
+    "ib": "d44a8015",
+    "object_indexes": [
+      0
+    ],
+    "object_classifications": [
+      "A"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "81ccd2e2"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "dc9d8b6e"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "01bb8189"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "Hair Shadow-头发阴影",
+    "draw_vb": "3d83f929",
+    "position_vb": "58dacb05",
+    "texcoord_vb": "fcfafc18",
+    "blend_vb": "01033838",
+    "ib": "7b54b96f",
+    "object_indexes": [
+      0
+    ],
+    "object_classifications": [
+      "A"
+    ],
+    "texture_hashes": [
+      []
+    ]
+  },
+  {
+    "component_name": "Body-身体",
+    "draw_vb": "cdce1fc2",
+    "position_vb": "b78f3616",
+    "texcoord_vb": "5ac6d5ee",
+    "blend_vb": "ed9cb852",
+    "ib": "e30fae03",
+    "object_indexes": [
+      0
+    ],
+    "object_classifications": [
+      "A"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "163e2559"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "ff26fb83"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "f4487235"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "Face脸",
+    "VertexLimit": "96baf0ee",
+    "Position": "aca863a9",
+    "Texcoord": "158fa3f3",
+    "Blend": "e015297d",
+    "ib": "f6ef8f3a",
+    "MatchFirstIndex": [
+      "0",
+      "9336"
+    ],
+    "PartNameList": [
+      "1",
+      "2"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "465a66eb"
+        ],
+        [
+          "Diffuse",
+          ".dds",
+          "465a66eb"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "weapon武器-镰刀",
+    "VertexLimit": "14ee18a1",
+    "Position": "0e6ed776",
+    "Texcoord": "ad548430",
+    "Blend": "6500eb53",
+    "ib": "569f47ac",
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "e9e610cd"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "1721ed1a"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "9aaa6b4b"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "weapon武器-镰刀-弹簧",
+    "VertexLimit": "a063d963",
+    "Position": "4b5ecba8",
+    "Texcoord": "c75b2bfe",
+    "Blend": "4afdcca5",
+    "ib": "2747bdd1",
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "e9e610cd"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "1721ed1a"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "9aaa6b4b"
+        ]
+      ]
+    ]
+  }
+]

@@ -1,0 +1,10 @@
+席德seed, IB: 75e1ae0a
+  position_vb: b095c5cf -> 567f9bcd
+  texcoord_vb: 56979e94 -> 030e0aca
+          IB: 75e1ae0a
+  NormalMap: fc59be11 -> b35534a9
+
+扳机Trigger, IB: 40cd4182
+  Texcoord: b9f0d595 -> d4a12ab7
+
+

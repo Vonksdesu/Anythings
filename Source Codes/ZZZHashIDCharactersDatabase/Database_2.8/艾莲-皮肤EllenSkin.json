@@ -1,0 +1,227 @@
+[
+  {
+    "component_name": "Hair-头发",
+    "draw_vb": "a93fc9a1",
+    "position_vb": "9e8e3811",
+    "texcoord_vb": "887a6214",
+    "blend_vb": "e246fbec",
+    "ib": "f601f643",
+    "object_indexes": [
+      0
+    ],
+    "object_classifications": [
+      "A"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "6e15911b"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "48fd827b"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "8740602f"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "Hair Shadow-头发阴影",
+    "draw_vb": "3d83f929",
+    "position_vb": "9702c71e",
+    "texcoord_vb": "fc566cba",
+    "blend_vb": "42b50496",
+    "ib": "7b54b96f",
+    "object_indexes": [
+      0
+    ],
+    "object_classifications": [
+      "A"
+    ],
+    "texture_hashes": [
+      []
+    ]
+  },
+  {
+    "component_name": "Body-身体",
+    "draw_vb": "a31d576e",
+    "position_vb": "a1566c40",
+    "texcoord_vb": "fc0d07a3",
+    "blend_vb": "f6f9cc24",
+    "ib": "4a938c0a",
+    "object_indexes": [
+      0
+    ],
+    "object_classifications": [
+      "A"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "76f42184"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "e6c9a6e1"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "1d7b458d"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "Tail-尾巴",
+    "draw_vb": "bfa3b361",
+    "position_vb": "e053cbbd",
+    "texcoord_vb": "54db15a2",
+    "blend_vb": "f2c0c20f",
+    "ib": "fafcfe36",
+    "object_indexes": [
+      0
+    ],
+    "object_classifications": [
+      "A"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "0e474202"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "8f2cb44d"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "51cc39d5"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "Face-脸",
+    "VertexLimit": "96baf0ee",
+    "Position": "aca863a9",
+    "Texcoord": "f87ddcae",
+    "Blend": "9cc30b79",
+    "ib": "f6ef8f3a",
+    "MatchFirstIndex": [
+      "0",
+      "9336"
+    ],
+    "PartNameList": [
+      "A",
+      "B"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "465a66eb"
+        ],
+        [
+          "Diffuse",
+          ".dds",
+          "465a66eb"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "weapon武器-镰刀",
+    "VertexLimit": "14ee18a1",
+    "Position": "4140d1e3",
+    "Texcoord": "64df6d71",
+    "Blend": "12c97a8a",
+    "ib": "4ce3a865",
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "e9e610cd"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "1721ed1a"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "9aaa6b4b"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "weapon武器-镰刀-弹簧",
+    "VertexLimit": "a063d963",
+    "Position": "4b5ecba8",
+    "Texcoord": "21b31add",
+    "Blend": "4afdcca5",
+    "ib": "2747bdd1",
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "e9e610cd"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "1721ed1a"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "9aaa6b4b"
+        ]
+      ]
+    ]
+  }
+]

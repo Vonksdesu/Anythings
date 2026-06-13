@@ -1,0 +1,578 @@
+[
+  {
+    "component_name": "Hair-头发",
+    "draw_vb": "992d149f",
+    "position_vb": "71d2bf80",
+    "texcoord_vb": "a5e62ece",
+    "blend_vb": "39ac6700",
+    "ib": "aa9ffb85",
+    "object_indexes": [
+      0
+    ],
+    "object_classifications": [
+      "A"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "1ce58567"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "7d562f53"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "34bdb036"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "Hair Shadow-头发阴影",
+    "ib": "403eace9",
+    "object_indexes": [
+      0
+    ],
+    "object_classifications": [
+      "A"
+    ],
+    "texture_hashes": [
+      []
+    ]
+  },
+  {
+    "component_name": "Headwear-头饰",
+    "draw_vb": "2f828e6a",
+    "position_vb": "4dec8913",
+    "texcoord_vb": "cdd7fc8a",
+    "blend_vb": "db7add33",
+    "ib": "20d3a340",
+    "object_indexes": [
+      0
+    ],
+    "object_classifications": [
+      "A"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "1ce58567"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "7d562f53"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "34bdb036"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "Neck-脖子",
+    "draw_vb": "4c215c73",
+    "position_vb": "be75a4be",
+    "texcoord_vb": "dd2b89aa",
+    "blend_vb": "3bd79a0b",
+    "ib": "62ed56cc",
+    "object_indexes": [
+      0
+    ],
+    "object_classifications": [
+      "A"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "da2bfe2f"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "74f2fae3"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "657402d0"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "Torso-上半身",
+    "draw_vb": "19e5f486",
+    "position_vb": "8a4e97cd",
+    "texcoord_vb": "d761e076",
+    "blend_vb": "f3dedb50",
+    "ib": "d509bdd4",
+    "object_indexes": [
+      0
+    ],
+    "object_classifications": [
+      "A"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "da2bfe2f"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "74f2fae3"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "657402d0"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "Leg-腿",
+    "draw_vb": "720d6a16",
+    "position_vb": "42b88f48",
+    "texcoord_vb": "82d0aadd",
+    "blend_vb": "f53b2eba",
+    "ib": "bcc9e4e1",
+    "object_indexes": [
+      0
+    ],
+    "object_classifications": [
+      "A"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "da2bfe2f"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "74f2fae3"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "657402d0"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "Red Knot Rope-红色结绳",
+    "draw_vb": "364415bf",
+    "position_vb": "903e5a55",
+    "texcoord_vb": "751107c4",
+    "blend_vb": "83967fb0",
+    "ib": "c2189ddf",
+    "object_indexes": [
+      0
+    ],
+    "object_classifications": [
+      "A"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "da2bfe2f"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "74f2fae3"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "657402d0"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "Orange green ribbon-橙绿色飘带",
+    "draw_vb": "4fc2c5d3",
+    "position_vb": "bdfbdec4",
+    "texcoord_vb": "01118441",
+    "blend_vb": "4e5447eb",
+    "ib": "2ac09c8f",
+    "object_indexes": [
+      0
+    ],
+    "object_classifications": [
+      "A"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "96ad58d4"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "8839d1fc"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "cd075caa"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "Earrings1-耳钉",
+    "draw_vb": "c0eb7af5",
+    "position_vb": "fc4bea64",
+    "texcoord_vb": "dde5eb66",
+    "blend_vb": "c2a072c2",
+    "ib": "c0fcc53d",
+    "object_indexes": [
+      0
+    ],
+    "object_classifications": [
+      "A"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "da2bfe2f"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "74f2fae3"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "657402d0"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "Earrings2-耳坠",
+    "draw_vb": "8a73bd43",
+    "position_vb": "c64ed62f",
+    "texcoord_vb": "cd336cdb",
+    "blend_vb": "3d24a922",
+    "ib": "e6e890a7",
+    "object_indexes": [
+      0
+    ],
+    "object_classifications": [
+      "A"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "ed1a5b7f"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "f5dc4198"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "5346205a"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "Panda headgear-熊猫头套",
+    "draw_vb": "e7d550d0",
+    "position_vb": "910612d6",
+    "texcoord_vb": "dc08776f",
+    "blend_vb": "f621226d",
+    "ib": "ac3a0dec",
+    "object_indexes": [
+      0
+    ],
+    "object_classifications": [
+      "A"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "a2f096fc"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "78c2d1dd"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "2a7548a9"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "Cat Ear Accessories-猫耳配饰",
+    "draw_vb": "7c3db690",
+    "position_vb": "b4341a72",
+    "texcoord_vb": "f98659b3",
+    "blend_vb": "8650be1b",
+    "ib": "b28a7685",
+    "object_indexes": [
+      0
+    ],
+    "object_classifications": [
+      "A"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "ed1a5b7f"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "f5dc4198"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "5346205a"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "Pink badge-粉色徽章",
+    "draw_vb": "0406d75f",
+    "position_vb": "a7882762",
+    "texcoord_vb": "1ff12440",
+    "blend_vb": "e147258a",
+    "ib": "4e8b2454",
+    "object_indexes": [
+      0
+    ],
+    "object_classifications": [
+      "A"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "ed1a5b7f"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "f5dc4198"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "5346205a"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "Orange green badge-橙绿色徽章",
+    "draw_vb": "6c62e9d0",
+    "position_vb": "e837ab1b",
+    "texcoord_vb": "632b2ed3",
+    "blend_vb": "66797141",
+    "ib": "4dcc384f",
+    "object_indexes": [
+      0
+    ],
+    "object_classifications": [
+      "A"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "96ad58d4"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "8839d1fc"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "cd075caa"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "glasses-眼镜",
+    "draw_vb": "ba8bde72",
+    "position_vb": "6018a88b",
+    "texcoord_vb": "a70c787c",
+    "blend_vb": "a8620018",
+    "ib": "455bcfc7",
+    "object_indexes": [
+      0,
+      984
+    ],
+    "object_classifications": [
+      "A",
+      "B"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "ed1a5b7f"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "f5dc4198"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "5346205a"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "Face-脸",
+    "draw_vb": "04abceb5",
+    "position_vb": "3eb95df2",
+    "blend_vb": "0c9a075b",
+    "ib": "9a9780a7",
+    "MatchFirstIndex": [
+      "0",
+      "8532"
+    ],
+    "PartNameList": [
+      "A",
+      "B"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "75ec3614"
+        ],
+        [
+          "Diffuse",
+          ".dds",
+          "75ec3614"
+        ]
+      ]
+    ]
+  }
+]

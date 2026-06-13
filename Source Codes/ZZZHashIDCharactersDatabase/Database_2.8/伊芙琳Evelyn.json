@@ -1,0 +1,370 @@
+[
+  {
+    "component_name": "Hair-头发",
+    "draw_vb": "798bc78b",
+    "position_vb": "c2fe4e27",
+    "texcoord_vb": "066f6115",
+    "blend_vb": "b43809d2",
+    "ib": "10a5bde2",
+    "object_indexes": [
+      0,
+      10446
+    ],
+    "object_classifications": [
+      "A",
+      "B"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "0e5c3c97"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "e1434e0d"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "b2718585"
+        ]
+      ],
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "0e5c3c97"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "e1434e0d"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "b2718585"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "Hair Shadow-头发阴影",
+    "draw_vb": "28913abf",
+    "position_vb": "1251bc38",
+    "texcoord_vb": "bf111b37",
+    "blend_vb": "94ce70dd",
+    "ib": "8ed17e5a",
+    "object_indexes": [
+      0
+    ],
+    "object_classifications": [
+      "A"
+    ],
+    "texture_hashes": [
+      []
+    ]
+  },
+  {
+    "component_name": "Hairpin - ribbons-发簪-丝带",
+    "draw_vb": "98a87a48",
+    "position_vb": "f1076f2a",
+    "texcoord_vb": "63d18ae4",
+    "blend_vb": "35070aca",
+    "ib": "2488810a",
+    "object_indexes": [
+      0
+    ],
+    "object_classifications": [
+      "A"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "0e5c3c97"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "e1434e0d"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "b2718585"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "Jacket-夹克",
+    "draw_vb": "1fb9dfe2",
+    "position_vb": "4edb27d5",
+    "texcoord_vb": "8b3ed55f",
+    "blend_vb": "022d390f",
+    "ib": "bb6d1023",
+    "object_indexes": [
+      0
+    ],
+    "object_classifications": [
+      "A"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "0e5c3c97"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "e1434e0d"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "b2718585"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "Shoulder-肩膀",
+    "draw_vb": "356f6430",
+    "position_vb": "2b77b077",
+    "texcoord_vb": "3cecd299",
+    "blend_vb": "a6b42907",
+    "ib": "b3eaedb0",
+    "object_indexes": [
+      0
+    ],
+    "object_classifications": [
+      "A"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "a59b14c0"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "d022d32c"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "8624e4e4"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "Body-身体",
+    "draw_vb": "02b04234",
+    "position_vb": "67eafa06",
+    "texcoord_vb": "26f9ba95",
+    "blend_vb": "5ea06832",
+    "ib": "04b53ecd",
+    "object_indexes": [
+      0,
+      50418
+    ],
+    "object_classifications": [
+      "A",
+      "B"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "a59b14c0"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "d022d32c"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "8624e4e4"
+        ]
+      ],
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "a59b14c0"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "Face-脸",
+    "VertexLimit": "c6afc18c",
+    "Position": "fcbd52cb",
+    "Texcoord": "aa2f560e",
+    "Blend": "f9fc3c8b",
+    "ib": "ddf4efa6",
+    "object_indexes": [
+      0,
+      7203,
+      9537
+    ],
+    "object_classifications": [
+      "A",
+      "B",
+      "C"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "8e1d1a6f"
+        ],
+        [
+          "Diffuse",
+          ".dds",
+          "8e1d1a6f"
+        ],
+        [
+          "Diffuse",
+          ".dds",
+          "8e1d1a6f"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "weapon武器-匕首展开状态",
+    "VertexLimit": "3ae20915",
+    "ib": "78699e6c",
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "0e5c3c97"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "e1434e0d"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "b2718585"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "weapon武器-匕首收起状态",
+    "ib": "7fb7467f",
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "0e5c3c97"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "e1434e0d"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "b2718585"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "silk string-丝弦",
+    "VertexLimit": "4ff726df",
+    "ib": "af10bd11",
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "0e5c3c97"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "e1434e0d"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "b2718585"
+        ]
+      ]
+    ]
+  }
+]

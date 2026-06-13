@@ -1,0 +1,122 @@
+[
+  {
+    "component_name": "Hair-头发",
+    "draw_vb": "142ddbbc",
+    "position_vb": "a9673001",
+    "texcoord_vb": "11e38ebb",
+    "blend_vb": "cc32660c",
+    "ib": "bea4a483",
+    "object_indexes": [
+      0
+    ],
+    "object_classifications": [
+      "A"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "1ce58567"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "7d562f53"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "34bdb036"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "Hair Shadow-头发阴影",
+    "ib": "403eace9",
+    "object_indexes": [
+      0
+    ],
+    "object_classifications": [
+      "A"
+    ],
+    "texture_hashes": [
+      []
+    ]
+  },
+  {
+    "component_name": "Body-身体",
+    "draw_vb": "ac1c8f80",
+    "position_vb": "d2844c01",
+    "texcoord_vb": "801edbf4",
+    "blend_vb": "c92a17d8",
+    "ib": "1817f3ca",
+    "object_indexes": [
+      0
+    ],
+    "object_classifications": [
+      "A"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "24639b77"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "7947679c"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "33f28c6d"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "Face-脸",
+    "draw_vb": "04abceb5",
+    "position_vb": "3eb95df2",
+    "texcoord_vb": "1de8fc08",
+    "blend_vb": "36138f65",
+    "ib": "9a9780a7",
+    "MatchFirstIndex": [
+      "0",
+      "8532"
+    ],
+    "PartNameList": [
+      "A",
+      "B"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "75ec3614"
+        ],
+        [
+          "Diffuse",
+          ".dds",
+          "75ec3614"
+        ]
+      ]
+    ]
+  }
+
+]

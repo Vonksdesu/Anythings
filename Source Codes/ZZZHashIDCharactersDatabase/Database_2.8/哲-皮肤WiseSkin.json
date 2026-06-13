@@ -1,0 +1,507 @@
+[
+  {
+    "component_name": "Hair-头发",
+    "draw_vb": "ef9c0510",
+    "position_vb": "e8df7ff3",
+    "texcoord_vb": "774071dd",
+    "blend_vb": "edfd1666",
+    "ib": "d5ca0411",
+    "object_indexes": [
+      0
+    ],
+    "object_classifications": [
+      "A"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "28005a5b"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "8d8269f8"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "f1b20f3d"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "Hair Shadow-头发阴影",
+    "draw_vb": "681651f9",
+    "position_vb": "4af493e5",
+    "texcoord_vb": "ad7d7eca",
+    "blend_vb": "795e9a7c",
+    "ib": "8d08b190",
+    "object_indexes": [
+      0
+    ],
+    "object_classifications": [
+      "A"
+    ],
+    "texture_hashes": [
+      []
+    ]
+  },
+  {
+    "component_name": "Neck-脖子",
+    "draw_vb": "276e1373",
+    "position_vb": "d8ad824b",
+    "texcoord_vb": "39a1dfe3",
+    "blend_vb": "458bbde3",
+    "ib": "01c42a1d",
+    "object_indexes": [
+      0
+    ],
+    "object_classifications": [
+      "A"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "81406abe"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "05b25d35"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "24af1f48"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "Body-身体",
+    "draw_vb": "ca02f614",
+    "position_vb": "a388eb6b",
+    "texcoord_vb": "b39870e1",
+    "blend_vb": "8612559a",
+    "ib": "1eca2097",
+    "object_indexes": [
+      0
+    ],
+    "object_classifications": [
+      "A"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "81406abe"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "05b25d35"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "24af1f48"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "Waist accessories-腰饰",
+    "draw_vb": "0c1c9bf3",
+    "position_vb": "1e5cafee",
+    "texcoord_vb": "06f42a6f",
+    "blend_vb": "0a0aa1a8",
+    "ib": "e7f527ea",
+    "object_indexes": [
+      0
+    ],
+    "object_classifications": [
+      "A"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "3fef0e14"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "08b27f4a"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "a15aa6b3"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "Earrings-耳坠",
+    "draw_vb": "5a617015",
+    "position_vb": "49a9bab4",
+    "texcoord_vb": "a9b9bf40",
+    "blend_vb": "686847cc",
+    "ib": "b856d397",
+    "object_indexes": [
+      0
+    ],
+    "object_classifications": [
+      "A"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "ed1a5b7f"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "f5dc4198"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "5346205a"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "Cat Ear Accessories-猫耳配饰",
+    "draw_vb": "ad73aefc",
+    "position_vb": "53b4170f",
+    "texcoord_vb": "3280491f",
+    "blend_vb": "603fdb26",
+    "ib": "d0e278fc",
+    "object_indexes": [
+      0
+    ],
+    "object_classifications": [
+      "A"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "ed1a5b7f"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "f5dc4198"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "5346205a"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "white badge-白色徽章",
+    "draw_vb": "0406d75f",
+    "position_vb": "13e791fa",
+    "texcoord_vb": "fd95b568",
+    "blend_vb": "e147258a",
+    "ib": "4e8b2454",
+    "object_indexes": [
+      0
+    ],
+    "object_classifications": [
+      "A"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "81406abe"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "05b25d35"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "24af1f48"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "Orange green badge-橙绿色徽章",
+    "draw_vb": "e0931b87",
+    "position_vb": "fe8e2ff8",
+    "texcoord_vb": "b6108302",
+    "blend_vb": "d9691e6b",
+    "ib": "eeabff55",
+    "object_indexes": [
+      0
+    ],
+    "object_classifications": [
+      "A"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "96ad58d4"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "8839d1fc"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "cd075caa"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "Panda headgear-熊猫头套",
+    "draw_vb": "e7d550d0",
+    "position_vb": "c8a749b1",
+    "texcoord_vb": "e938a289",
+    "blend_vb": "ece854ad",
+    "ib": "ac3a0dec",
+    "object_indexes": [
+      0
+    ],
+    "object_classifications": [
+      "A"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "a2f096fc"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "78c2d1dd"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "2a7548a9"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "Black orange ribbon-黑橙色飘带",
+    "draw_vb": "aad48132",
+    "position_vb": "139c0e20",
+    "texcoord_vb": "0f705b4a",
+    "blend_vb": "a60b2098",
+    "ib": "e5f8b021",
+    "object_indexes": [
+      0
+    ],
+    "object_classifications": [
+      "A"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "81406abe"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "05b25d35"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "24af1f48"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "Orange green ribbon-橙绿色飘带",
+    "draw_vb": "2efc0d70",
+    "position_vb": "e801def3",
+    "texcoord_vb": "bc87900c",
+    "blend_vb": "4851307e",
+    "ib": "e5f269f4",
+    "object_indexes": [
+      0
+    ],
+    "object_classifications": [
+      "A"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "96ad58d4"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "8839d1fc"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "cd075caa"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "glasses-眼镜",
+    "draw_vb": "ba8bde72",
+    "position_vb": "66cabdf9",
+    "texcoord_vb": "ac329cd7",
+    "blend_vb": "a8620018",
+    "ib": "bfce3c18",
+    "object_indexes": [
+      0,
+      984
+    ],
+    "object_classifications": [
+      "A",
+      "B"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "ed1a5b7f"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "f5dc4198"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "5346205a"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "Face-脸",
+    "VertexLimit": "6c4552bb",
+    "Position": "5657c1fc",
+    "Texcoord": "c83b6cbf",
+    "Blend": "757bc7cc",
+    "ib": "1fdaf388",
+    "MatchFirstIndex": [
+      "0",
+      "9258"
+    ],
+    "PartNameList": [
+      "A",
+      "B"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "5d75fddc"
+        ],
+        [
+          "Diffuse",
+          ".dds",
+          "5d75fddc"
+        ]
+      ]
+    ]
+  }
+]

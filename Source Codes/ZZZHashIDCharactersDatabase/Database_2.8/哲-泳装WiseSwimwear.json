@@ -1,0 +1,149 @@
+[
+  {
+    "component_name": "Hair-头发",
+    "draw_vb": "77045a80",
+    "position_vb": "16ac44f6",
+    "texcoord_vb": "5c5bde90",
+    "blend_vb": "82396952",
+    "ib": "cb272754",
+    "object_indexes": [
+      0
+    ],
+    "object_classifications": [
+      "A"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "28005a5b"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "8d8269f8"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "f1b20f3d"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "Hair Shadow-头发阴影",
+    "draw_vb": "8e9a12c7",
+    "position_vb": "14fff21a",
+    "texcoord_vb": "49d81f9a",
+    "blend_vb": "a2c79f8d",
+    "ib": "3f771e63",
+    "object_indexes": [
+      0
+    ],
+    "object_classifications": [
+      "A"
+    ],
+    "texture_hashes": [
+      []
+    ]
+  },
+  {
+    "component_name": "Body-身体",
+    "draw_vb": "18e704a8",
+    "position_vb": "d6c86c1e",
+    "texcoord_vb": "acfe9fe4",
+    "blend_vb": "d4147320",
+    "ib": "4fe696c8",
+    "object_indexes": [
+      0,
+      52278
+    ],
+    "object_classifications": [
+      "A",
+      "B"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "d476035d"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "0fa8f99c"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "c2c8606e"
+        ]
+      ],
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "d476035d"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "0fa8f99c"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "c2c8606e"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "Face-脸",
+    "VertexLimit": "6c4552bb",
+    "Position": "5657c1fc",
+    "Texcoord": "c83b6cbf",
+    "Blend": "757bc7cc",
+    "ib": "1fdaf388",
+    "MatchFirstIndex": [
+      "0",
+      "9258"
+    ],
+    "PartNameList": [
+      "A",
+      "B"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "5d75fddc"
+        ],
+        [
+          "Diffuse",
+          ".dds",
+          "5d75fddc"
+        ]
+      ]
+    ]
+  }
+]

@@ -1,0 +1,13 @@
+月城柳Yanagi, IB: f478ee4c
+  blend_vb: fd363c76 -> b558d482
+
+爱丽丝皮肤AliceSkin, IB: 2c37d8c9
+  position_vb: e3a50a16 -> 5324c543
+  texcoord_vb: c6899a42 -> 3136fbad
+  blend_vb: 4fbccfe1 -> e52f08c3
+
+薇薇安皮肤VivianSkin, IB: 3060793b
+  blend_vb: f32eec8a -> 723bccec
+
+伊德海莉Yidhair.json, IB: 12251f42
+  LightMap: 2ae9bee8 -> 5b985a6f

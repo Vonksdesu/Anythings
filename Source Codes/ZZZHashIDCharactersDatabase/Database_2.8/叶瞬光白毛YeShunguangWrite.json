@@ -1,0 +1,545 @@
+[
+  {
+    "component_name": "Hair-头发",
+    "draw_vb": "bd9b6102",
+    "position_vb": "f84ce9bf",
+    "texcoord_vb": "afe311e8",
+    "blend_vb": "e841684d",
+    "ib": "01ef4403",
+    "object_indexes": [
+      0,
+      9846
+    ],
+    "object_classifications": [
+      "A",
+      "B"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "e8a8ac0b"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "9f7defbc"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "c74f9710"
+        ]
+      ],
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "652e15a3"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "9f7defbc"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "c74f9710"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "HairShadow-头发阴影",
+    "draw_vb": "53b4c9f3",
+    "position_vb": "ac4f1cc8",
+    "texcoord_vb": "0818885d",
+    "blend_vb": "4654a675",
+    "ib": "a9c76fcf",
+    "object_indexes": [
+      0
+    ],
+    "object_classifications": [
+      "A"
+    ],
+    "texture_hashes": [
+      []
+    ]
+  },
+  {
+    "component_name": "FrontHair-前发",
+    "draw_vb": "5234bbcb",
+    "position_vb": "2f030baf",
+    "texcoord_vb": "13343914",
+    "blend_vb": "0041e5e3",
+    "ib": "be28e18b",
+    "object_indexes": [
+      0,
+      2208
+    ],
+    "object_classifications": [
+      "A",
+      "B"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "652e15a3"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "9f7defbc"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "c74f9710"
+        ]
+      ],
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "e8a8ac0b"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "9f7defbc"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "c74f9710"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "Body-身体",
+    "draw_vb": "f201bd10",
+    "position_vb": "3239124c",
+    "texcoord_vb": "dbb027eb",
+    "blend_vb": "79c7949c",
+    "ib": "c209c22b",
+    "object_indexes": [
+      0
+    ],
+    "object_classifications": [
+      "A"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "43ca3d50"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "369a2106"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "e41b12be"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "Legs-腿部",
+    "draw_vb": "25033e92",
+    "position_vb": "514dc7f3",
+    "texcoord_vb": "5d7f073e",
+    "blend_vb": "fb37e9f8",
+    "ib": "4a178546",
+    "object_indexes": [
+      0
+    ],
+    "object_classifications": [
+      "A"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "0b7c1487"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "afbdd8a1"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "263992f5"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "Tail-尾巴",
+    "draw_vb": "3fe83226",
+    "position_vb": "9a2dfc61",
+    "texcoord_vb": "cb4b7cc7",
+    "blend_vb": "690ba2b1",
+    "ib": "869976a3",
+    "object_indexes": [
+      0
+    ],
+    "object_classifications": [
+      "A"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "0b7c1487"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "afbdd8a1"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "263992f5"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "Headwear-LongRibbon-头饰-长丝带",
+    "draw_vb": "7ccb6725",
+    "position_vb": "682c1e3c",
+    "texcoord_vb": "1e3923d1",
+    "blend_vb": "093ff56e",
+    "ib": "9258d5f8",
+    "object_indexes": [
+      0
+    ],
+    "object_classifications": [
+      "A"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "804099eb"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "0d70f7cd"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "7bf83964"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "Headwear-ShortRibbon-头饰-短丝带",
+    "draw_vb": "a6f3e58f",
+    "position_vb": "47e62e43",
+    "texcoord_vb": "504a82ea",
+    "blend_vb": "852eedf5",
+    "ib": "ae840e72",
+    "object_indexes": [
+      0
+    ],
+    "object_classifications": [
+      "A"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "e8a8ac0b"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "9f7defbc"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "c74f9710"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "ArmsRibbons-手臂丝带",
+    "draw_vb": "ebdbb8db",
+    "position_vb": "4c1e777e",
+    "texcoord_vb": "49a95c22",
+    "blend_vb": "649a0ed6",
+    "ib": "2d72a119",
+    "object_indexes": [
+      0
+    ],
+    "object_classifications": [
+      "A"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "5bd7d31b"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "72c1cf72"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "a5872c6e"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "TransparentCloth-透明布料",
+    "draw_vb": "67a50546",
+    "position_vb": "5bc3d9ca",
+    "texcoord_vb": "441f1cf2",
+    "blend_vb": "ae7d7235",
+    "ib": "3b1b73fe",
+    "object_indexes": [
+      0
+    ],
+    "object_classifications": [
+      "A"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "5bd7d31b"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "369a2106"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "dd1adbe8"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "BackDecoration-TasselHead-背部装饰-穗头",
+    "draw_vb": "a93cc204",
+    "position_vb": "cad13a53",
+    "texcoord_vb": "7e5fb476",
+    "blend_vb": "f9b50292",
+    "ib": "0534b536",
+    "object_indexes": [
+      0
+    ],
+    "object_classifications": [
+      "A"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "804099eb"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "0d70f7cd"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "7bf83964"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "Eyebrow-眉毛",
+    "ib": "611df76d",
+    "object_indexes": [
+      0
+    ],
+    "object_classifications": [
+      "A"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "ac8c7ca2"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "Face-脸部",
+    "draw_vb": "2f2f9780",
+    "position_vb": "153d04c7",
+    "texcoord_vb": "a1353cc8",
+    "blend_vb": "fa261a46",
+    "ib": "c28e6303",
+    "object_indexes": [
+      0,
+      7308,
+      9972
+    ],
+    "object_classifications": [
+      "A",
+      "B",
+      "C"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "6ed0c951"
+        ]
+      ],
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "6ed0c951"
+        ]
+      ],
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "6ed0c951"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "Sword-剑",
+    "draw_vb": "3a44ca69",
+    "position_vb": "724d29ad",
+    "texcoord_vb": "2c36b1a8",
+    "blend_vb": "2e3a5c01",
+    "ib": "dd46b065",
+    "object_indexes": [
+      0
+    ],
+    "object_classifications": [
+      "A"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "512d9f71"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "8842671b"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "d87a1e13"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "ce96ea2f"
+        ]
+      ]
+    ]
+  }
+]

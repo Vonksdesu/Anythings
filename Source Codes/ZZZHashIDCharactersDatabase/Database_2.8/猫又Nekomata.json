@@ -1,0 +1,187 @@
+[
+  {
+    "component_name": "Hair-头发",
+    "draw_vb": "a00df230",
+    "position_vb": "35439aa6",
+    "texcoord_vb": "9ada013d",
+    "blend_vb": "f16498bf",
+    "ib": "da11fd85",
+    "object_indexes": [
+      0,
+      9156
+    ],
+    "object_classifications": [
+      "A",
+      "B"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "25f3ae9b"
+        ],
+        [
+          "NormalMap",
+          ".jpg",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "1c0193dc"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "3f73186f"
+        ]
+      ],
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "207b8e63"
+        ],
+        [
+          "NormalMap",
+          ".jpg",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "25df29e7"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "b3286755"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "Hair Shadow-头发阴影",
+    "draw_vb": "fef9750a",
+    "position_vb": "0630f676",
+    "texcoord_vb": "bef56da3",
+    "blend_vb": "65ae2514",
+    "ib": "23c162fc",
+    "object_indexes": [
+      0
+    ],
+    "object_classifications": [
+      "A"
+    ],
+    "texture_hashes": [
+      []
+    ]
+  },
+  {
+    "component_name": "Body-身体",
+    "draw_vb": "0c01e6a5",
+    "position_vb": "eaad1408",
+    "texcoord_vb": "f589a51f",
+    "blend_vb": "d27d0e6b",
+    "ib": "26a487ff",
+    "object_indexes": [
+      0
+    ],
+    "object_classifications": [
+      "A"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "207b8e63"
+        ],
+        [
+          "NormalMap",
+          ".jpg",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "25df29e7"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "b3286755"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "Legs-腿",
+    "draw_vb": "99132d05",
+    "position_vb": "3c4015fd",
+    "texcoord_vb": "2a4f8c9e",
+    "blend_vb": "f5efd8b1",
+    "ib": "74688145",
+    "object_indexes": [
+      0
+    ],
+    "object_classifications": [
+      "A"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "207b8e63"
+        ],
+        [
+          "NormalMap",
+          ".jpg",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "25df29e7"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "b3286755"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "Face-脸",
+    "VertexLimit": "c719aab9",
+    "Position": "fd0b39fe",
+    "Texcoord": "aa036e70",
+    "Blend": "5cfcac2d",
+    "ib": "37119851",
+    "MatchFirstIndex": [
+      "0",
+      "9528"
+    ],
+    "PartNameList": [
+      "1",
+      "2"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "ba411d22"
+        ],
+        [
+          "Diffuse",
+          ".dds",
+          "ba411d22"
+        ]
+      ]
+    ]
+  }
+]

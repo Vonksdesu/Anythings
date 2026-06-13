@@ -1,0 +1,456 @@
+[
+  {
+    "component_name": "Hair-头发",
+    "draw_vb": "33b532e5",
+    "position_vb": "639456c7",
+    "texcoord_vb": "a36d2401",
+    "blend_vb": "b93219f1",
+    "ib": "e4785f80",
+    "object_indexes": [
+      0,
+      20631
+    ],
+    "object_classifications": [
+      "A",
+      "B"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "b39896c4"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "31674c56"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "abb852a0"
+        ]
+      ],
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "b39896c4"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "31674c56"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "abb852a0"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "Hair Shadow-头发阴影",
+    "ib": "8f34fc78",
+    "object_indexes": [
+      0
+    ],
+    "object_classifications": [
+      "A"
+    ],
+    "texture_hashes": [
+      []
+    ]
+  },
+  {
+    "component_name": "Tongue-舌头",
+    "draw_vb": "a3b04e84",
+    "position_vb": "3e82033f",
+    "texcoord_vb": "32f6d33a",
+    "blend_vb": "c3082752",
+    "ib": "e5ced7d5",
+    "object_indexes": [
+      0
+    ],
+    "object_classifications": [
+      "A"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "8f55186a"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "Body-身体",
+    "draw_vb": "9645e284",
+    "position_vb": "1a95227f",
+    "texcoord_vb": "e6527ff0",
+    "blend_vb": "3b944072",
+    "ib": "ff2ec4d6",
+    "object_indexes": [
+      0,
+      43281,
+      52734
+    ],
+    "object_classifications": [
+      "A",
+      "B",
+      "C"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "fcfeb117"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "2b6d5c26"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "e5edf7dd"
+        ]
+      ],
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "b39896c4"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "31674c56"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "abb852a0"
+        ]
+      ],
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "ec85e98d"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "6fadb6f5"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "1d5d53cd"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "Tail-尾巴",
+    "draw_vb": "3b4de0d1",
+    "position_vb": "efed0e09",
+    "texcoord_vb": "8f017202",
+    "blend_vb": "90634c3b",
+    "ib": "4c11c155",
+    "object_indexes": [
+      0,
+      7068
+    ],
+    "object_classifications": [
+      "A",
+      "B"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "ec85e98d"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "6fadb6f5"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "1d5d53cd"
+        ]
+      ],
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "ec85e98d"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "6fadb6f5"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "1d5d53cd"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "Eyebrow-眉毛",
+    "ib": "7c01dc6b",
+    "object_indexes": [
+      0
+    ],
+    "object_classifications": [
+      "A"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "8f55186a"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "Face-脸部",
+    "draw_vb": "a2d2a224",
+    "position_vb": "98c03163",
+    "texcoord_vb": "dfc76798",
+    "blend_vb": "ed3245f0",
+    "ib": "d1a31f0b",
+    "object_indexes": [
+      0,
+      7146,
+      9726
+    ],
+    "object_classifications": [
+      "A",
+      "B",
+      "C"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "8f55186a"
+        ]
+      ],
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "8f55186a"
+        ]
+      ],
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "8f55186a"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "SpearHandle-长枪柄",
+    "draw_vb": "9af3bf00",
+    "position_vb": "dee92405",
+    "texcoord_vb": "880e958d",
+    "blend_vb": "6354dee4",
+    "ib": "29b5b0b0",
+    "object_indexes": [
+      0
+    ],
+    "object_classifications": [
+      "A"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "ec85e98d"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "6fadb6f5"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "1d5d53cd"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "SpearHead-长枪头",
+    "ib": "29123d5a",
+    "object_indexes": [
+      0
+    ],
+    "object_classifications": [
+      "A"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "ec85e98d"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "6fadb6f5"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "1d5d53cd"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "SpearBarrel-长枪筒",
+    "draw_vb": "19bac37e",
+    "position_vb": "91e05512",
+    "texcoord_vb": "2785fe49",
+    "blend_vb": "b813c97f",
+    "ib": "bad668cc",
+    "object_indexes": [
+      0
+    ],
+    "object_classifications": [
+      "A"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "ec85e98d"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "6fadb6f5"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "1d5d53cd"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "Spear(changing form)-长枪（变形）",
+    "draw_vb": "7647eba5",
+    "position_vb": "5b71ede8",
+    "texcoord_vb": "c37f63b8",
+    "blend_vb": "32b90f8b",
+    "ib": "d49a5866",
+    "object_indexes": [
+      0
+    ],
+    "object_classifications": [
+      "A"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "ec85e98d"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "6fadb6f5"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "1d5d53cd"
+        ]
+      ]
+    ]
+  }
+]

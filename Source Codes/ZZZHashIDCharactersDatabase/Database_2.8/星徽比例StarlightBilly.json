@@ -1,0 +1,567 @@
+[
+  {
+    "component_name": "Hair-头发",
+    "draw_vb": "0a1f876f",
+    "position_vb": "2182114e",
+    "texcoord_vb": "bedc10c4",
+    "blend_vb": "794d5c7b",
+    "ib": "b126d40d",
+    "object_indexes": [
+      0
+    ],
+    "object_classifications": [
+      "A"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "ff939fb7"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "798adba3"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "b6e1da4b"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "Body-身体",
+    "draw_vb": "c0d45183",
+    "position_vb": "b792110b",
+    "texcoord_vb": "203e1a47",
+    "blend_vb": "ccfa3c1f",
+    "ib": "099cc55b",
+    "object_indexes": [
+      0
+    ],
+    "object_classifications": [
+      "A"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "30b6b9c7"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "da2181cf"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "d85dec5d"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "Torso-躯干",
+    "draw_vb": "617a4f7c",
+    "position_vb": "45992c18",
+    "texcoord_vb": "97c35484",
+    "blend_vb": "a829800f",
+    "ib": "b602e4de",
+    "object_indexes": [
+      0
+    ],
+    "object_classifications": [
+      "A"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "d82e8cd7"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "a28930f3"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "f8f7fdbe"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "LeftArm-左手臂",
+    "draw_vb": "5a7ee5ae",
+    "position_vb": "0d842713",
+    "texcoord_vb": "d4575d84",
+    "blend_vb": "6d19734d",
+    "ib": "85ec4f39",
+    "object_indexes": [
+      0
+    ],
+    "object_classifications": [
+      "A"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "6fe50be9"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "c0a681c1"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "95454832"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "Collar-衣领",
+    "draw_vb": "b729d418",
+    "position_vb": "b5ba7f2c",
+    "texcoord_vb": "6cbb0e03",
+    "blend_vb": "0c780fde",
+    "ib": "fed4432c",
+    "object_indexes": [
+      0
+    ],
+    "object_classifications": [
+      "A"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "d82e8cd7"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "a28930f3"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "f8f7fdbe"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "BackDecoration1-背部装饰1",
+    "draw_vb": "730440ae",
+    "position_vb": "9eda96ca",
+    "texcoord_vb": "02125c63",
+    "blend_vb": "14896011",
+    "ib": "169e16c1",
+    "object_indexes": [
+      0
+    ],
+    "object_classifications": [
+      "A"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "d82e8cd7"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "a28930f3"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "f8f7fdbe"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "BackDecoration2-背部装饰2",
+    "draw_vb": "93a9492c",
+    "position_vb": "c9c3436f",
+    "texcoord_vb": "2f2f4055",
+    "blend_vb": "52225c15",
+    "ib": "11727cec",
+    "object_indexes": [
+      0
+    ],
+    "object_classifications": [
+      "A"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "d82e8cd7"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "a28930f3"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "f8f7fdbe"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "Motorcycle-摩托",
+    "draw_vb": "7a547ef8",
+    "position_vb": "a7516e2b",
+    "texcoord_vb": "09439f49",
+    "blend_vb": "5c3aba5b",
+    "ib": "26d71d07",
+    "object_indexes": [
+      0
+    ],
+    "object_classifications": [
+      "A"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "ed4bde0d"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "573e87e3"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "6b61b30c"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "Face-脸部",
+    "draw_vb": "eabcb930",
+    "position_vb": "d0ae2a77",
+    "texcoord_vb": "7d045e09",
+    "blend_vb": "be8fd496",
+    "ib": "47be3135",
+    "object_indexes": [
+      0
+    ],
+    "object_classifications": [
+      "A"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "f55b5dbb"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "ba8a1e40"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "bdc617ad"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "Gun-手枪",
+    "draw_vb": "ccd59cb9",
+    "position_vb": "e2a3e69e",
+    "texcoord_vb": "dceb0608",
+    "blend_vb": "1f409c43",
+    "ib": "9f671d6b",
+    "object_indexes": [
+      0
+    ],
+    "object_classifications": [
+      "A"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "3541c183"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "6f6aad09"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "11af0644"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "Weapon-主武器",
+    "draw_vb": "cf21b035",
+    "position_vb": "db0321a9",
+    "texcoord_vb": "bbe34d15",
+    "blend_vb": "6023cad8",
+    "ib": "75f90347",
+    "object_indexes": [
+      0
+    ],
+    "object_classifications": [
+      "A"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "6fe50be9"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "c0a681c1"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "95454832"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "WeaponAccessory1-武器配件1",
+    "draw_vb": "696bd946",
+    "position_vb": "f293dadb",
+    "texcoord_vb": "804cf62d",
+    "blend_vb": "7b217048",
+    "ib": "1ee52291",
+    "object_indexes": [
+      0
+    ],
+    "object_classifications": [
+      "A"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "6fe50be9"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "c0a681c1"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "95454832"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "WeaponAccessory2-武器配件2",
+    "draw_vb": "f91227b7",
+    "position_vb": "ce8c77da",
+    "texcoord_vb": "8190a48a",
+    "blend_vb": "131e5a0a",
+    "ib": "8f4285cd",
+    "object_indexes": [
+      0
+    ],
+    "object_classifications": [
+      "A"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "6fe50be9"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "c0a681c1"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "95454832"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "WeaponAccessory3-武器配件3",
+    "draw_vb": "84a7e817",
+    "position_vb": "612b519c",
+    "texcoord_vb": "8a828eae",
+    "blend_vb": "fbf0b1bb",
+    "ib": "15ae37ae",
+    "object_indexes": [
+      0
+    ],
+    "object_classifications": [
+      "A"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "6fe50be9"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "c0a681c1"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "95454832"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "WeaponAccessory4-武器配件4",
+    "draw_vb": "6ccff03a",
+    "position_vb": "20ccc597",
+    "texcoord_vb": "4cfcbaf4",
+    "blend_vb": "82c72748",
+    "ib": "d3e8cd51",
+    "object_indexes": [
+      0
+    ],
+    "object_classifications": [
+      "A"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "6fe50be9"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "c0a681c1"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "95454832"
+        ]
+      ]
+    ]
+  }
+]

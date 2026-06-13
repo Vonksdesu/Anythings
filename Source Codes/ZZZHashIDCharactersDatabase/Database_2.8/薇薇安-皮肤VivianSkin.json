@@ -1,0 +1,354 @@
+[
+  {
+    "component_name": "Hair-头发",
+    "draw_vb": "713a8587",
+    "position_vb": "bec9acb0",
+    "texcoord_vb": "128d277f",
+    "blend_vb": "5b569848",
+    "ib": "4108c0da",
+    "object_indexes": [
+      0,
+      10038,
+      18414
+    ],
+    "object_classifications": [
+      "A",
+      "B",
+      "C"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "15dcce65"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "8a82d289"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "c23ddbea"
+        ]
+      ],
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "a84d933f"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "8e3a20ea"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "2af66072"
+        ]
+      ],
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "a84d933f"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "8e3a20ea"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "2af66072"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "Hair Shadow-头发阴影",
+    "draw_vb": "9898740f",
+    "position_vb": "bbb7d4b1",
+    "texcoord_vb": "fa9735df",
+    "blend_vb": "1853b047",
+    "ib": "b79903af",
+    "object_indexes": [
+      0
+    ],
+    "object_classifications": [
+      "A"
+    ],
+    "texture_hashes": [
+      []
+    ]
+  },
+  {
+    "component_name": "Body-身体",
+    "draw_vb": "d96480bc",
+    "position_vb": "5e46216b",
+    "texcoord_vb": "fb44f88a",
+    "blend_vb": "723bccec",
+    "ib": "3060793b",
+    "object_indexes": [
+      0,
+      45882,
+      46122,
+      46752
+    ],
+    "object_classifications": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "136b3e29"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "69a6a15f"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "527c3676"
+        ]
+      ],
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "136b3e29"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "69a6a15f"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "527c3676"
+        ]
+      ],
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "15dcce65"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "8a82d289"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "c23ddbea"
+        ]
+      ],
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "15dcce65"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "8a82d289"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "c23ddbea"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "Gem-宝石",
+    "draw_vb": "9829025f",
+    "position_vb": "3c88ea03",
+    "texcoord_vb": "a55d2f46",
+    "blend_vb": "53a21868",
+    "ib": "ec7b047c",
+    "object_indexes": [
+      0
+    ],
+    "object_classifications": [
+      "A"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "15dcce65"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "8a82d289"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "c23ddbea"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "Face-脸",
+    "VertexLimit": "fcf74fc0",
+    "Position": "c6e5dc87",
+    "Texcoord": "0afe5a44",
+    "Blend": "ef07b6f6",
+    "ib": "39944f20",
+    "MatchFirstIndex": [
+      "0",
+      "7122",
+      "8550"
+    ],
+    "PartNameList": [
+      "1",
+      "2",
+      "3"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "7b262ab6"
+        ],
+        [
+          "Diffuse",
+          ".dds",
+          "7b262ab6"
+        ],
+        [
+          "Diffuse",
+          ".dds",
+          "7b262ab6"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "weapon武器-伞柄",
+    "VertexLimit": "bd5b581e",
+    "Position": "117996c2",
+    "Texcoord": "fa34947b",
+    "Blend": "ee28f6c2",
+    "ib": "4adf1f7a",
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "1dbeec1f"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "7270dab3"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "6ecc2389"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "weapon武器-伞面",
+    "VertexLimit": "7f5aba6c",
+    "Position": "d4bb64cc",
+    "Texcoord": "bd66871a",
+    "Blend": "431b0b24",
+    "ib": "15c97ffc",
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "1dbeec1f"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "7270dab3"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "6ecc2389"
+        ]
+      ]
+    ]
+  }
+]

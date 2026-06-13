@@ -1,0 +1,497 @@
+[
+  {
+    "component_name": "Hair-头发",
+    "draw_vb": "12bd16f4",
+    "position_vb": "25a8bde2",
+    "texcoord_vb": "9e25742c",
+    "blend_vb": "afe31e96",
+    "ib": "6cb35165",
+    "object_indexes": [
+      0,
+      10632
+    ],
+    "object_classifications": [
+      "A",
+      "B"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "2fff22a7"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "bf2c273a"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "a1658bbd"
+        ]
+      ],
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "2fff22a7"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "bf2c273a"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "a1658bbd"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "Hair Shadow-头发阴影",
+    "draw_vb": "4d61e6f3",
+    "position_vb": "3a097353",
+    "texcoord_vb": "9f4d4106",
+    "blend_vb": "1abfa087",
+    "ib": "468e0f21",
+    "object_indexes": [
+      0
+    ],
+    "object_classifications": [
+      "A"
+    ],
+    "texture_hashes": [
+      []
+    ]
+  },
+  {
+    "component_name": "Body-身体",
+    "draw_vb": "43185be9",
+    "position_vb": "5e2f1e06",
+    "texcoord_vb": "f4cf83ff",
+    "blend_vb": "5b3d022f",
+    "ib": "634ac589",
+    "object_indexes": [
+      0
+    ],
+    "object_classifications": [
+      "A"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "7c7c2622"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "b14c9c6f"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "da2deeaa"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "Accessories-配饰",
+    "draw_vb": "c24ebf3b",
+    "position_vb": "12d6c223",
+    "texcoord_vb": "99be167f",
+    "blend_vb": "746e7bf8",
+    "ib": "914e39c6",
+    "object_indexes": [
+      0
+    ],
+    "object_classifications": [
+      "A"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "2fff22a7"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "bf2c273a"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "a1658bbd"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "ChestClothing-胸部服装",
+    "draw_vb": "72fbbba3",
+    "position_vb": "b2690ac8",
+    "texcoord_vb": "2f706a18",
+    "blend_vb": "319ba025",
+    "ib": "1d81bcc7",
+    "object_indexes": [
+      0
+    ],
+    "object_classifications": [
+      "A"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "2fff22a7"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "bf2c273a"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "a1658bbd"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "SelfBalancingScooter-自平衡滑板车",
+    "draw_vb": "2d77a8c9",
+    "position_vb": "95941dba",
+    "texcoord_vb": "4635f4f0",
+    "blend_vb": "547acb7e",
+    "ib": "651f4fd5",
+    "object_indexes": [
+      0
+    ],
+    "object_classifications": [
+      "A"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "91d18cf9"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "a6726612"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "9896a7c2"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "Face-脸部",
+    "draw_vb": "064aa73b",
+    "position_vb": "3c58347c",
+    "texcoord_vb": "a0dfaf80",
+    "blend_vb": "7625e6d6",
+    "ib": "09d9dca7",
+    "object_indexes": [
+      0,
+      1218,
+      9348
+    ],
+    "object_classifications": [
+      "A",
+      "B",
+      "C"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "f02ebff3"
+        ]
+      ],
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "f02ebff3"
+        ]
+      ],
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "f02ebff3"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "weapon-常驻状态",
+    "draw_vb": "0238f9fc",
+    "position_vb": "8bb86a2d",
+    "texcoord_vb": "5abfc179",
+    "blend_vb": "b6b679de",
+    "ib": "c7f4f4ec",
+    "object_indexes": [
+      0
+    ],
+    "object_classifications": [
+      "A"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "a06afdbc"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "dd157642"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "54a8ad89"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "weapon-驾驶舱",
+    "draw_vb": "5bca6676",
+    "position_vb": "567f9bcd",
+    "texcoord_vb": "030e0aca",
+    "blend_vb": "10c13253",
+    "ib": "75e1ae0a",
+    "object_indexes": [
+      0
+    ],
+    "object_classifications": [
+      "A"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "b2e81a28"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "6f269065"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "ceb90df0"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "weapon-躯干",
+    "draw_vb": "b7c36a17",
+    "position_vb": "e2694177",
+    "texcoord_vb": "efc82ade",
+    "blend_vb": "09c28e33",
+    "ib": "b3f47664",
+    "object_indexes": [
+      0
+    ],
+    "object_classifications": [
+      "A"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "0a4cecd8"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "1962d85c"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "64bb6cb7"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "weapon-手足",
+    "draw_vb": "e0736df2",
+    "position_vb": "fdfdf144",
+    "texcoord_vb": "255a77a9",
+    "blend_vb": "98f46d5b",
+    "ib": "126bd0a1",
+    "object_indexes": [
+      0
+    ],
+    "object_classifications": [
+      "A"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "a065222f"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "f56f3ac1"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "caf87ff4"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "weapon-手部装置",
+    "draw_vb": "c6043e88",
+    "position_vb": "143481a0",
+    "texcoord_vb": "d06b00ad",
+    "blend_vb": "d3adb384",
+    "ib": "71e8d07a",
+    "object_indexes": [
+      0
+    ],
+    "object_classifications": [
+      "A"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "a9a40828"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "d6e62b3f"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "bc0bd24c"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "weapon-背部装置",
+    "draw_vb": "3253babd",
+    "position_vb": "f66c29e6",
+    "texcoord_vb": "72329a18",
+    "blend_vb": "8cb92072",
+    "ib": "8a995990",
+    "object_indexes": [
+      0
+    ],
+    "object_classifications": [
+      "A"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "a9a40828"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "d6e62b3f"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "bc0bd24c"
+        ]
+      ]
+    ]
+  }
+]

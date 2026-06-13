@@ -1,0 +1,287 @@
+[
+  {
+    "component_name": "Body-身体",
+    "draw_vb": "b375f26b",
+    "position_vb": "aba31d2e",
+    "texcoord_vb": "cc541390",
+    "blend_vb": "4727992f",
+    "ib": "cb1a6db9",
+    "object_indexes": [
+      0,
+      21066,
+      21354,
+      61644
+    ],
+    "object_classifications": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "c0928025"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "7d3c4c3d"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "42fc25f0"
+        ]
+      ],
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "c0928025"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "7d3c4c3d"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "42fc25f0"
+        ]
+      ],
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "f2433e17"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "ddeaa4c3"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "de553410"
+        ]
+      ],
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "ed361b8f"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "96280008"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "57446a22"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "weapon-武器-馒头",
+    "draw_vb": "534c2f9b",
+    "position_vb": "4864dcdd",
+    "texcoord_vb": "a6f599e3",
+    "blend_vb": "b88cf297",
+    "ib": "b3556f6e",
+    "object_indexes": [
+      0
+    ],
+    "object_classifications": [
+      "A"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "c0928025"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "7d3c4c3d"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "42fc25f0"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "Face-脸",
+    "draw_vb": "682e8e8d",
+    "texcoord_vb": "1eee2121",
+    "blend_vb": "4aae3329",
+    "ib": "ebb6a59b",
+    "object_indexes": [
+      0
+    ],
+    "object_classifications": [
+      "A"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "ed361b8f"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "96280008"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "57446a22"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "weapon-武器-炒勺",
+    "draw_vb": "2a45b03d",
+    "position_vb": "e56ae11f",
+    "texcoord_vb": "1a769e88",
+    "blend_vb": "cd763e6d",
+    "ib": "45a8cd1b",
+    "object_indexes": [
+      0
+    ],
+    "object_classifications": [
+      "A"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "f2433e17"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "ddeaa4c3"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "de553410"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "weapon-武器-炒锅",
+    "draw_vb": "2e2d67ae",
+    "position_vb": "0ee4a87c",
+    "texcoord_vb": "d569d88e",
+    "blend_vb": "d141908c",
+    "ib": "ff7e9b40",
+    "object_indexes": [
+      0,
+      5166
+    ],
+    "object_classifications": [
+      "A",
+      "B"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "f2433e17"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "ddeaa4c3"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "de553410"
+        ]
+      ],
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "c0928025"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "7d3c4c3d"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "42fc25f0"
+        ]
+      ]
+    ]
+  }
+]

@@ -1,0 +1,244 @@
+[
+  {
+    "component_name": "Hair-头发",
+    "draw_vb": "f6344432",
+    "position_vb": "199853eb",
+    "texcoord_vb": "06e4fd79",
+    "blend_vb": "347e4a48",
+    "ib": "6847bbbd",
+    "object_indexes": [
+      0
+    ],
+    "object_classifications": [
+      "A"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "6d3868f9"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "8c9c25d5"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "Hair Shadow-头发阴影",
+    "draw_vb": "4d61e6f3",
+    "position_vb": "b408b261",
+    "texcoord_vb": "322345a6",
+    "blend_vb": "ab4b28ad",
+    "ib": "4ed9a81f",
+    "object_indexes": [
+      0
+    ],
+    "object_classifications": [
+      "A"
+    ],
+    "texture_hashes": [
+      []
+    ]
+  },
+  {
+    "component_name": "Body-身体",
+    "draw_vb": "8cc1262b",
+    "position_vb": "89df5a07",
+    "texcoord_vb": "91c1b779",
+    "blend_vb": "7ecda89f",
+    "ib": "5a4c1ef3",
+    "object_indexes": [
+      0,
+      46683
+    ],
+    "object_classifications": [
+      "A",
+      "B"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "f86ffe2c"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "80855e0f"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "95cabef3"
+        ]
+      ],
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "f86ffe2c"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "80855e0f"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "95cabef3"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "Amillion-艾米莉安",
+    "draw_vb": "bb7fffe9",
+    "position_vb": "176bf3d7",
+    "texcoord_vb": "077c3500",
+    "blend_vb": "4e1d9c9a",
+    "ib": "40e64ae2",
+    "object_indexes": [
+      0
+    ],
+    "object_classifications": [
+      "A"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "f86ffe2c"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "80855e0f"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "95cabef3"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "Face-脸",
+    "VertexLimit": "9274e401",
+    "Texcoord": "5714e5e6",
+    "Blend": "b25ebcf6",
+    "ib": "7435fc0e",
+    "MatchFirstIndex": [
+      "0",
+      "9456"
+    ],
+    "PartNameList": [
+      "1",
+      "2"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "d1e84a34"
+        ],
+        [
+          "Diffuse",
+          ".dds",
+          "d1e84a34"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "weapon-武器",
+    "VertexLimit": "f6325378",
+    "Position": "00c8b3c5",
+    "Texcoord": "14b0d6b6",
+    "Blend": "2f427bdb",
+    "ib": "f9befc51",
+    "MatchFirstIndex": [
+      "0",
+      "7089"
+    ],
+    "PartNameList": [
+      "1",
+      "2"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "a365836f"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "fda56c66"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "ad4bf30d"
+        ]
+      ],
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "76e8ac35"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "fda56c66"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "ad4bf30d"
+        ]
+      ]
+    ]
+  }
+
+]

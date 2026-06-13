@@ -1,0 +1,331 @@
+[
+  {
+    "component_name": "Hair-头发",
+    "draw_vb": "2d4c7c18",
+    "position_vb": "681aceaa",
+    "texcoord_vb": "84d40d91",
+    "blend_vb": "3d4a4881",
+    "ib": "31178971",
+    "object_indexes": [
+      0,
+      23427
+    ],
+    "object_classifications": [
+      "A",
+      "B"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "c96de436"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "e34356a6"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "6bed1450"
+        ]
+      ],
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "c96de436"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "e34356a6"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "6bed1450"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "HairShadow-头发阴影",
+    "ib": "ff223b2c",
+    "object_indexes": [
+      0
+    ],
+    "object_classifications": [
+      "A"
+    ],
+    "texture_hashes": [
+      []
+    ]
+  },
+  {
+    "component_name": "Body(Pinioned)-身体(束缚状态)",
+    "draw_vb": "19ad87f6",
+    "position_vb": "ffaa183a",
+    "texcoord_vb": "2a9842a1",
+    "blend_vb": "dae4abd0",
+    "ib": "36e794ea",
+    "object_indexes": [
+      0
+    ],
+    "object_classifications": [
+      "A"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "ae109401"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "3864f20c"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "d57df6aa"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "Body(Normal)-身体(正常状态)",
+    "draw_vb": "9cce6ba2",
+    "position_vb": "bf938187",
+    "texcoord_vb": "d99d21e0",
+    "blend_vb": "575d8b1b",
+    "ib": "62a6b4bd",
+    "object_indexes": [
+      0
+    ],
+    "object_classifications": [
+      "A"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "ae109401"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "3864f20c"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "d57df6aa"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "Clothes-衣服",
+    "draw_vb": "947f29ae",
+    "position_vb": "1d63183b",
+    "texcoord_vb": "826446a7",
+    "blend_vb": "58f42be3",
+    "ib": "93f1f568",
+    "object_indexes": [
+      0
+    ],
+    "object_classifications": [
+      "A"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "b9367016"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "d743acd0"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "31d7cbad"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "Leg-腿部",
+    "draw_vb": "dfb01010",
+    "position_vb": "0b822797",
+    "texcoord_vb": "f5fd0e92",
+    "blend_vb": "9839b071",
+    "ib": "fd054d1d",
+    "object_indexes": [
+      0
+    ],
+    "object_classifications": [
+      "A"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "ae109401"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "3864f20c"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "d57df6aa"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "Eyebrow-眉毛",
+    "draw_vb": "a1d5b256",
+    "position_vb": "9bc72111",
+    "texcoord_vb": "d3d65ca5",
+    "blend_vb": "42594132",
+    "ib": "e032287a",
+    "object_indexes": [
+      0
+    ],
+    "object_classifications": [
+      "A"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "9b293811"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "Face-脸部",
+    "draw_vb": "32a38de6",
+    "position_vb": "08b11ea1",
+    "texcoord_vb": "dcd61276",
+    "blend_vb": "bf5b785d",
+    "ib": "ef3c4506",
+    "object_indexes": [
+      0,
+      7008,
+      9300
+    ],
+    "object_classifications": [
+      "A",
+      "B",
+      "C"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "9b293811"
+        ]
+      ],
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "9b293811"
+        ]
+      ],
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "9b293811"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "Weapon-环刃",
+    "draw_vb": "0a06059e",
+    "position_vb": "d242b77a",
+    "texcoord_vb": "f2f5bd28",
+    "blend_vb": "a864dc82",
+    "ib": "8995db58",
+    "object_indexes": [
+      0
+    ],
+    "object_classifications": [
+      "A"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "d1399215"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "369f0efd"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "a179a69c"
+        ]
+      ]
+    ]
+  }
+]

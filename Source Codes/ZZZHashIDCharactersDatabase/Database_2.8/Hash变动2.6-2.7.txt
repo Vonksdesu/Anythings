@@ -1,0 +1,15 @@
+哲Wise.json, IB: 8d6acf4e
+  Diffuse: 868709f2 -> f2fb7a37
+
+千夏皮肤ChinatsuSkin, IB: 6cc4d486 -> a6d82ba5
+  draw_vb: 22c82346 -> 74cc56df
+  position_vb: 327644ee -> 4b93d8eb
+  texcoord_vb: 5e70dde6 -> b9030f86
+  blend_vb: 79de92c7 -> 4a795f2a
+
+千夏皮肤ChinatsuSkin, IB: ee17c9a2
+  position_vb: c77b3235 -> 25cf6bf7
+  texcoord_vb: 0c6b95ca -> 7a31eb8b
+
+爱芮-皮肤ArieSkin.json, IB: c6bb960b
+  Diffuse: a55f187e -> 677f73d9

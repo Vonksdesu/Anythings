@@ -1,0 +1,249 @@
+[
+  {
+    "component_name": "Hair-头发",
+    "draw_vb": "2736d089",
+    "position_vb": "4512a51e",
+    "texcoord_vb": "028c0d28",
+    "blend_vb": "6a65d55c",
+    "ib": "2022936e",
+    "object_indexes": [
+      0,
+      12972
+    ],
+    "object_classifications": [
+      "A",
+      "B"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "d0587bc2"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "42ef8882"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "bc5d6f24"
+        ]
+      ],
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "d0587bc2"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "42ef8882"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "bc5d6f24"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "Hair Shadow-头发阴影",
+    "draw_vb": "225ffc91",
+    "position_vb": "e13a4a8c",
+    "texcoord_vb": "a74fecc6",
+    "blend_vb": "7d881667",
+    "ib": "a5a5654d",
+    "object_indexes": [
+      0
+    ],
+    "object_classifications": [
+      "A"
+    ],
+    "texture_hashes": [
+      []
+    ]
+  },
+  {
+    "component_name": "Body-身体",
+    "draw_vb": "471aa92a",
+    "position_vb": "74f07fc5",
+    "texcoord_vb": "2abc67fb",
+    "blend_vb": "eff05950",
+    "ib": "12251f42",
+    "object_indexes": [
+      0
+    ],
+    "object_classifications": [
+      "A"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "ca51f269"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "5b985a6f"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "0e91ed54"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "Tail-尾巴",
+    "draw_vb": "bf5562d4",
+    "position_vb": "c9dab2d3",
+    "texcoord_vb": "344e456e",
+    "blend_vb": "9b99674d",
+    "ib": "4cb99618",
+    "object_indexes": [
+      0
+    ],
+    "object_classifications": [
+      "A"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "2156a161"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "8bf59f48"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "e0bb4de9"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "eyebrow-眉毛",
+    "VertexLimit": "534c2f9b",
+    "Position": "695ebcdc",
+    "Texcoord": "cf1a7297",
+    "Blend": "ee532c5b",
+    "ib": "02072970",
+    "MatchFirstIndex": [
+      "0"
+    ],
+    "PartNameList": [
+      "1"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "c6e0cfbe"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "Face-脸",
+    "VertexLimit": "8abeb827",
+    "Position": "b0ac2b60",
+    "Texcoord": "08316415",
+    "Blend": "de712ebf",
+    "ib": "a2406060",
+    "MatchFirstIndex": [
+      "0",
+      "6894",
+      "9570"
+    ],
+    "PartNameList": [
+      "1",
+      "2",
+      "3"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "c6e0cfbe"
+        ],
+        [
+          "Diffuse",
+          ".dds",
+          "c6e0cfbe"
+        ],
+        [
+          "Diffuse",
+          ".dds",
+          "c6e0cfbe"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "weapon-武器",
+    "VertexLimit": "6bc320f0",
+    "Position": "09c65b14",
+    "Texcoord": "5a6fe39e",
+    "Blend": "f98b369d",
+    "ib": "bc96ab6e",
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "48889652"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "e6728419"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "42666703"
+        ]
+      ]
+    ]
+  }
+]

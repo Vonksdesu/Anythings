@@ -1,0 +1,18 @@
+哲泳装WiseSwimwear, IB: 4fe696c8
+  blend_vb: 9741e2f0 -> d4147320
+
+铃泳装BelleSwimwear, IB: 43ed3c22
+  blend_vb: 6af00597 -> 4f3ddd5c
+
+铃泳装BelleSwimwear, IB: 69148073
+  blend_vb: 65481194 -> 0139f7e8
+
+爱丽丝皮肤AliceSkin, IB: 2c37d8c9
+  position_vb: 5324c543 -> e3a50a16
+  texcoord_vb: 3136fbad -> c6899a42
+  blend_vb: e52f08c3 -> 4fbccfe1
+
+简Jane, IB: 602c545a
+  Position: 850d4cbf -> eace2dfa
+  Texcoord: 7fd655de -> 535e2453
+  Blend: a14461d9 -> 7310ad6a

@@ -1,0 +1,178 @@
+-----------------------------------------------------
+          11号
+身体 2f88092e → 33e8af55  LightMap
+     81db8cbe → 8ab5b59d  MaterialMap
+头发 787659b9 → 71993491  LightMap
+武器 11b8c8ce → 81fe09dc  LightMap
+     8280cae9 → e2af379d  MaterialMap
+-----------------------------------------------------
+          艾莲
+武器 1cee434f → 1721ed1a  LightMap
+     65b44fab → 9aaa6b4b  MaterialMap
+-----------------------------------------------------
+          安比
+头发 b54f2a3d → 057f3c55  LightMap
+身体 7c24acc9 → 59b123c2  LightMap
+脸   a5783704 → 262947a7  Position
+武器 7730f510 → 3de2dae5  LightMap
+     27277eef → 62f1b72e  LightMap
+-----------------------------------------------------
+          安东
+头发 ee06579e → 41601dfa  LightMap
+     24caeb1f → d47c5823  MaterialMap
+身体 17cf1b74 → ed6f4199  LightMap
+     0238b0ff → 986c9716  MaterialMap
+夹克 886a664a → ef7880e3  LightMap
+武器 22e59c98 → cf503557  LightMap
+     1715a555 → bd257544  MaterialMap
+-----------------------------------------------------
+          扳机
+脸   dfc69ad0 → ba455625  Position
+武器 862efc96 → 988144a6  Position
+     a58b916d → b6d507d9  Texcoord
+-----------------------------------------------------
+          本
+身体 a2f79d33 → 21dd67a7  Blend
+     cb84ed5e → d27a8f6b  LightMap
+     3f4f6bc0 → 2edd6f62  MaterialMap
+脸   3e601b7c → 4465b35d  Position
+武器 e1084e15 → 6fc3d991  LightMap
+     373d41f8 → beeef18a  MaterialMap
+-----------------------------------------------------
+          比利
+头发 0475db07 → ff939fb7  Diffuse
+     47bbe297 → 798adba3  NormalMap
+     4817b1bc → b6e1da4b  LightMap
+身体 789b054e → 6305a7f4  LightMap
+脸   9f02ef2b → cf4769ce  LightMap
+     d166c3e5 → 3a7d88a1  MaterialMap
+武器 d9e1b3e5 → 6f6aad09  LightMap
+     e6468a37 → 11af0644  MaterialMap
+     3c067401 → ff4396e8  Texcoord
+     5b305a7b → 657edd1c  Position
+-----------------------------------------------------
+          波可娜
+武器 320a1179 → 6b141146  MaterialMap
+-----------------------------------------------------
+          苍角
+头发 04654e94 → a70e24a2  LightMap
+武器 4c6d4a67 → 7c4efb96  LightMap
+     081a6bc5 → d0796da7  MaterialMap
+-----------------------------------------------------
+          格莉丝
+头发 8eddd041 → a22d2c2c  LightMap
+     3a38f6f9 → 7bb81a4f  MaterialMap
+身体 993fe3e1 → 895fa458  LightMap
+武器 3f11aec7 → a408585a  LightMap
+     40ef66c0 → bc502577  MaterialMap
+-----------------------------------------------------
+          简
+武器 2bf11154 → 76cda993  LightMap
+     fd5a12a8 → d83ad325  MaterialMap
+-----------------------------------------------------
+          凯撒
+头发 bf19954f → d5d3585b  LightMap
+-----------------------------------------------------
+          珂蕾妲
+头发 1a9b182a → e35571a9  Texcoord
+     8042506d → a451ca03  LightMap
+身体 e3021a32 → 38b31082  Texcoord
+     78e0f9f5 → 7c1bce32  LightMap
+     6f34885f → b60ace0c  MaterialMap
+武器 01f2ccfd → 0c993237  LightMap
+     6baed74d → af1fbaa3  MaterialMap
+-----------------------------------------------------
+          可琳
+头发 2cf242f4 → abc95b03  Texcoord
+     8d999156 → 5fa50113  Blend
+     929aca42 → 74d66671  LightMap
+身体 75e05cdc → e1c1718f  LightMap
+     50a0faea → e58d9767  MaterialMap
+武器 ffc8d0b6 → e8c22497  LightMap
+     f1a0ca75 → b921465e  MaterialMap
+-----------------------------------------------------
+          莱卡恩
+头发 04d061fe → f7daa6d9  LightMap
+身体 814db5bf → fbf5a9b5  LightMap
+腿   072e6786 → 57b175c5  LightMap
+     4a4ea6dc → 4b18f890  MaterialMap
+-----------------------------------------------------
+          莱特
+脸   7bbe9c75 → 90653c42  Position
+-----------------------------------------------------
+          丽娜
+武器 58db98ab → 6aec8cd9  LightMap
+     de862f0c → 6d3db8fe  MaterialMap
+武器-眼睛 4612f446 → 1d68e5ac  LightMap
+         3f0f0f43 → b990fcb9  MaterialMap
+-----------------------------------------------------
+          铃
+头发 f1ee2105 → 7d562f53  LightMap
+脸   ccc76aea → 1de8fc08  Texcoord
+-----------------------------------------------------
+          哲
+脸   b300256d → ebe9f31b  Texcoord
+身体 1d55bd87 → 46462bd8  Blend
+头发 1f21c633 → 8d8269f8  LightMap
+     473f816d → f1b20f3d  MaterialMap
+-----------------------------------------------------
+          零号·安比
+头发 464847b3 → 0b059f91  MaterialMap
+脸   f2f539b8 → e30ca87f  ib
+     6a492df0 → fc66ecd0  Texcoord
+     57c9f0a3 → df6b6f84  Blend
+     "MatchFirstIndex": [
+         "0",
+ "690" → "984",
+         "8442"
+      ],
+-----------------------------------------------------
+          露西
+头盔 b3013a33 → 0a99d9d5  MaterialMap
+-----------------------------------------------------
+          猫又
+头发 548c7f7d → 1c0193dc  LightMap
+     4ca5efc6 → 3f73186f  MaterialMap
+身体 fc53fc6f → 25df29e7  LightMap
+-----------------------------------------------------
+          妮可
+头发 1dfd9e16 → 8c9c25d5  LightMap
+武器 07c48716 → fda56c66  LightMap
+     f071c7ee → ad4bf30d  MaterialMap
+-----------------------------------------------------
+          派派
+身体 9cc2aaa0 → a32c39b9  LightMap
+头发 79953d32 → 1146c5c3  LightMap
+武器 410a000a → 4345e1e7  LightMap
+     f75615d0 → d06e2ef0  MaterialMap
+-----------------------------------------------------
+          浅羽悠真
+头发 d4838b9d → 11041778  LightMap
+腿   ba8e396b → 72885950  MaterialMap
+-----------------------------------------------------
+          青衣
+武器 0b3253ff → 2d703fde  LightMap
+     4d65ae5c → 8d6da65b  MaterialMap
+-----------------------------------------------------
+          赛斯
+头发 d4de9ec1 → a855884d  LightMap
+身体 3d97c2ef → 5b205468  LightMap
+-----------------------------------------------------
+          薇薇安
+武器 9ec4d65f → dd8a1851  MaterialMap
+-----------------------------------------------------
+          耀佳音
+武器 484c92d6 → 7e5fe2c6  LightMap
+     d1d0d241 → 87687182  MaterialMap
+-----------------------------------------------------
+          伊芙琳
+武器 040993a0 → 691f1157  Texcoord
+     33d2866e → 3e2abfae  Position
+-----------------------------------------------------
+          月城柳
+身体 08933e28 → 616200aa  LightMap
+-----------------------------------------------------
+          艾莲皮肤
+身体 d08f1a54 → 1d7b458d  MaterialMap
+头发 0de025b4 → 8740602f  MaterialMap
+尾巴 abb51170 → 51cc39d5  MaterialMap

@@ -1,0 +1,104 @@
+[
+  {
+    "component_name": "Body-身体",
+    "draw_vb": "dfd93ee5",
+    "position_vb": "b4db1979",
+    "texcoord_vb": "c7b58675",
+    "blend_vb": "21dd67a7",
+    "ib": "94288cca",
+    "object_indexes": [
+      0
+    ],
+    "object_classifications": [
+      "A"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "0313ed95"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "d27a8f6b"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "2edd6f62"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "Face-脸",
+    "VertexLimit": "7e77201a",
+    "Blend": "18d26bd2",
+    "ib": "9c4f1a9a",
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "00002f2c"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "2fa5ffa7"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "12e5120e"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "weapon武器",
+    "VertexLimit": "fcc2accc",
+    "Position": "3c5c930c",
+    "Texcoord": "89932f55",
+    "Blend": "7a0c8bf9",
+    "ib": "4e4f3440",
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "bd88580a"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "6fc3d991"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "beeef18a"
+        ]
+      ]
+    ]
+  }
+
+]
+

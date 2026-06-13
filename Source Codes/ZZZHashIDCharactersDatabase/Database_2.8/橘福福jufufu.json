@@ -1,0 +1,259 @@
+[
+  {
+    "component_name": "Hair-头发",
+    "draw_vb": "77d02cb1",
+    "position_vb": "e836ec8f",
+    "texcoord_vb": "fbca830d",
+    "blend_vb": "c9c19a97",
+    "ib": "a4fd9113",
+    "object_indexes": [
+      0
+    ],
+    "object_classifications": [
+      "A"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "db3bdffa"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "5c948f7b"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "9f4d4f72"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "Hair Shadow-头发阴影",
+    "draw_vb": "e636c467",
+    "position_vb": "f0e84fef",
+    "texcoord_vb": "60d9a4fc",
+    "blend_vb": "b18001e6",
+    "ib": "095f38e8",
+    "object_indexes": [
+      0
+    ],
+    "object_classifications": [
+      "A"
+    ],
+    "texture_hashes": [
+      []
+    ]
+  },
+  {
+    "component_name": "Body-身体",
+    "draw_vb": "5c076ce8",
+    "position_vb": "00ba64ca",
+    "texcoord_vb": "2e086db7",
+    "blend_vb": "c06c0417",
+    "ib": "de303163",
+    "object_indexes": [
+      0
+    ],
+    "object_classifications": [
+      "A"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "16e4cac1"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "c952431f"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "d555b4f8"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "Tail-尾巴",
+    "draw_vb": "c84e77d4",
+    "position_vb": "c397375f",
+    "texcoord_vb": "9a198bcf",
+    "blend_vb": "c8fa66e3",
+    "ib": "f8ab3141",
+    "object_indexes": [
+      0
+    ],
+    "object_classifications": [
+      "A"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "db3bdffa"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "5c948f7b"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "9f4d4f72"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "Face-脸",
+    "VertexLimit": "d7802a0b",
+    "Position": "ed92b94c",
+    "Texcoord": "8267358b",
+    "Blend": "512615d6",
+    "ib": "321768df",
+    "MatchFirstIndex": [
+      "0",
+      "9438"
+    ],
+    "PartNameList": [
+      "1",
+      "2"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "37b277db"
+        ],
+        [
+          "Diffuse",
+          ".dds",
+          "37b277db"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "weapon武器-左手爪",
+    "VertexLimit": "303b7a17",
+    "Position": "41006dfa",
+    "Texcoord": "ce435978",
+    "Blend": "fbb7c2a6",
+    "ib": "a27835bb",
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "401f92e6"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "1b61ae30"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "e62eed48"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "weapon武器-右手爪",
+    "VertexLimit": "0468fc0c",
+    "Position": "45b2b661",
+    "Texcoord": "395481f4",
+    "Blend": "18a54256",
+    "ib": "46e339a6",
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "401f92e6"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "1b61ae30"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "e62eed48"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "weapon武器-虎威",
+    "VertexLimit": "03768505",
+    "Position": "245e6459",
+    "Texcoord": "1544d097",
+    "Blend": "7778328f",
+    "ib": "b51e30e5",
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "094ac0a2"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "4bb30541"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "9db94a04"
+        ]
+      ]
+    ]
+  }
+]

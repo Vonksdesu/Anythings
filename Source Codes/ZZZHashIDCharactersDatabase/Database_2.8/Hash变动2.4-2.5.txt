@@ -1,0 +1,44 @@
+哲皮肤WiseSkin, IB: 6acc1eb8 -> 1eca2097
+  draw_vb: 4fa228f9 -> ca02f614
+  position_vb: ae59eabb -> a388eb6b
+  texcoord_vb: a83ada4e -> b39870e1
+  blend_vb: 177ad7e8 -> 8612559a
+
+琉音Dialyn, IB: af39a873
+  blend_vb: 6ff0e4ad -> 3d7e53cf
+
+琉音Dialyn, IB: 1d8f8de6
+  position_vb: 79fc6a95 -> fd32eb72
+  texcoord_vb: c0f5d550 -> 5455d3c6
+  blend_vb: 35709db4 -> 8fe19cc1
+
+简Jane, IB: 9268a5af -> 3275b812
+  draw_vb: 2d06e785 -> 74bc0b7f
+  position_vb: e7a3b7dc -> 33a09cfe
+  texcoord_vb: acec29f8 -> fa617c9a
+  blend_vb: 8721477f -> e42171df
+  object_indexes: [0, 33780] -> [0, 16986]
+
+简Jane, IB: ef86fc9f
+  Texcoord: 9f2f7c53 -> 1fa404c1
+
+铃皮肤BelleSkin, IB: 860e1558 -> d509bdd4
+  draw_vb: 02c9dc4b -> 19e5f486
+  position_vb: 0b3c5e7c -> 8a4e97cd
+  texcoord_vb: 862dc27a -> d761e076
+  blend_vb: 01b0c8b6 -> f3dedb50
+
+莱卡恩Lycaon.json, IB: 6749b6e7 / c28ea8d7
+  Diffuse: 7169ec86 -> 4cb6928e
+
+以下角色模型产生变化：
+简
+新增 手和配饰 IB:294a319a 
+头发权重发生变化，无法修复
+
+铃-道服
+新增 脖子 IB：62ed56cc
+
+哲-道服
+新增 脖子 IB:01c42a1d
+

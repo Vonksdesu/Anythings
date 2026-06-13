@@ -1,0 +1,424 @@
+[
+  {
+    "component_name": "Hair-头发",
+    "draw_vb": "cc070c66",
+    "position_vb": "5c030eea",
+    "texcoord_vb": "06bea24e",
+    "blend_vb": "0c183c3f",
+    "ib": "904ecd0f",
+    "object_indexes": [
+      0,
+      26520
+    ],
+    "object_classifications": [
+      "A",
+      "B"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "2fcfee64"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "8cd786f7"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "3f11dfd9"
+        ]
+      ],
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "2fcfee64"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "8cd786f7"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "3f11dfd9"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "Hair Shadow-头发阴影",
+    "ib": "3ab6d438",
+    "object_indexes": [
+      0
+    ],
+    "object_classifications": [
+      "A"
+    ],
+    "texture_hashes": [
+      []
+    ]
+  },
+  {
+    "component_name": "Body-身体",
+    "draw_vb": "8991360f",
+    "position_vb": "6eb68b62",
+    "texcoord_vb": "712eb020",
+    "blend_vb": "53661c9a",
+    "ib": "b3c6ea5a",
+    "object_indexes": [
+      0
+    ],
+    "object_classifications": [
+      "A"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "f051c211"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "4aca364a"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "f3f8895c"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "Eyebrow-眉毛",
+    "draw_vb": "9f0ab8cd",
+    "position_vb": "a5182b8a",
+    "texcoord_vb": "e3cc1981",
+    "blend_vb": "f5daa764",
+    "ib": "30ea5791",
+    "object_indexes": [
+      0
+    ],
+    "object_classifications": [
+      "A"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "c9b5c6ce"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "Face-脸部",
+    "draw_vb": "9679c257",
+    "position_vb": "ac6b5110",
+    "texcoord_vb": "506dc9e1",
+    "blend_vb": "21299f88",
+    "ib": "1a2c8573",
+    "object_indexes": [
+      0,
+      2652,
+      9504
+    ],
+    "object_classifications": [
+      "A",
+      "B",
+      "C"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "c9b5c6ce"
+        ]
+      ],
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "c9b5c6ce"
+        ]
+      ],
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "c9b5c6ce"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "DisplayScreen-显示屏",
+    "draw_vb": "dd676093",
+    "position_vb": "6f7ae47c",
+    "texcoord_vb": "541d5b0f",
+    "blend_vb": "2ef8be58",
+    "ib": "0b9bd38f",
+    "object_indexes": [
+      0
+    ],
+    "object_classifications": [
+      "A"
+    ],
+    "texture_hashes": [
+      []
+    ]
+  },
+  {
+    "component_name": "WeaponBackpackCharmGrip-背包挂件",
+    "draw_vb": "953975c0",
+    "position_vb": "a28ba31c",
+    "texcoord_vb": "b642db41",
+    "blend_vb": "16e2d8ea",
+    "ib": "337a62c1",
+    "object_indexes": [
+      0
+    ],
+    "object_classifications": [
+      "A"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "6c04b56d"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "39dac70b"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "95070f7f"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "paopao-泡泡(战斗状态)",
+    "draw_vb": "ffe207d5",
+    "position_vb": "3a7143a6",
+    "texcoord_vb": "62519e38",
+    "blend_vb": "38e2fe9f",
+    "ib": "e7a17172",
+    "object_indexes": [
+      0
+    ],
+    "object_classifications": [
+      "A"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "7d8ac131"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "5c5b6aad"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "3c4378db"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "paopao-泡泡(非战斗状态)",
+    "draw_vb": "ffe207d5",
+    "position_vb": "1a0cad46",
+    "texcoord_vb": "df0f6142",
+    "blend_vb": "d4e13802",
+    "ib": "07a82c9c",
+    "object_indexes": [
+      0
+    ],
+    "object_classifications": [
+      "A"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "7d8ac131"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "5c5b6aad"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "3c4378db"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "Weapon-锤子",
+    "draw_vb": "6cbdb4d3",
+    "position_vb": "9220fbd5",
+    "texcoord_vb": "5d7fdc2e",
+    "blend_vb": "4b46dfdc",
+    "ib": "c811c294",
+    "object_indexes": [
+      0
+    ],
+    "object_classifications": [
+      "A"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "003c6497"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "4b4975a2"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "635f5cc9"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "WeaponDecoration-锤子装饰",
+    "draw_vb": "dab9d122",
+    "position_vb": "0a41bae7",
+    "texcoord_vb": "34dc63b4",
+    "blend_vb": "a5ecc7ea",
+    "ib": "0a237cd3",
+    "object_indexes": [
+      0
+    ],
+    "object_classifications": [
+      "A"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "003c6497"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "4b4975a2"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "635f5cc9"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "WeaponDecoration2-锤子装饰2",
+    "draw_vb": "84a9dfca",
+    "position_vb": "81321ee9",
+    "texcoord_vb": "33a66c47",
+    "blend_vb": "0d2178c5",
+    "ib": "8ad8f57d",
+    "object_indexes": [
+      0
+    ],
+    "object_classifications": [
+      "A"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "003c6497"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "4b4975a2"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "635f5cc9"
+        ]
+      ]
+    ]
+  }
+]

@@ -1,0 +1,607 @@
+[
+  {
+    "component_name": "Hair-头发",
+    "draw_vb": "a3091843",
+    "position_vb": "d140d2e7",
+    "texcoord_vb": "f3c092c5",
+    "blend_vb": "9d35aee2",
+    "ib": "9821017e",
+    "object_indexes": [
+      0
+    ],
+    "object_classifications": [
+      "A"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "7f823598"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "d4ee59c7"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "12a407b1"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "Hair Shadow-头发阴影",
+    "draw_vb": "72411765",
+    "position_vb": "35b94ea8",
+    "texcoord_vb": "aecf6710",
+    "blend_vb": "527b317a",
+    "ib": "fb69fc45",
+    "object_indexes": [
+      0
+    ],
+    "object_classifications": [
+      "A"
+    ],
+    "texture_hashes": [
+      []
+    ]
+  },
+  {
+    "component_name": "Body-身体",
+    "draw_vb": "291f7f5a",
+    "position_vb": "f595d24d",
+    "texcoord_vb": "cb885260",
+    "blend_vb": "01e0c8d9",
+    "ib": "6619364f",
+    "object_indexes": [
+      0
+    ],
+    "object_classifications": [
+      "A"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "a271e894"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "d02bc66c"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "3e808ef6"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "ShoulderAmmo-肩甲霰弹发射器",
+    "draw_vb": "dd91b126",
+    "position_vb": "d55c7763",
+    "texcoord_vb": "1c68a02f",
+    "blend_vb": "e6fca033",
+    "ib": "5e717358",
+    "object_indexes": [
+      0
+    ],
+    "object_classifications": [
+      "A"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "6a33b25e"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "e30f025b"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "58d5c840"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "Extras-附加物品",
+    "draw_vb": "52e3c65f",
+    "position_vb": "5f445c20",
+    "texcoord_vb": "ac21fba4",
+    "blend_vb": "0f5035dd",
+    "ib": "fcac8411",
+    "object_indexes": [
+      0,
+      204
+    ],
+    "object_classifications": [
+      "A",
+      "B"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "7f823598"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "d4ee59c7"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "12a407b1"
+        ]
+      ],
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "6a33b25e"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "e30f025b"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "58d5c840"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "HipAmmo-臀部弹药",
+    "draw_vb": "82889576",
+    "position_vb": "45d265c0",
+    "texcoord_vb": "75c5e659",
+    "blend_vb": "9a268159",
+    "ib": "a63028ae",
+    "object_indexes": [
+      0
+    ],
+    "object_classifications": [
+      "A"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "6a33b25e"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "e30f025b"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "58d5c840"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "Face-脸",
+    "VertexLimit": "33e6da2d",
+    "Position": "09f4496a",
+    "Texcoord": "0c6f696b",
+    "Blend": "6c9ffbbf",
+    "ib": "f1c241b7",
+    "MatchFirstIndex": [
+      "0",
+      "1056"
+    ],
+    "PartNameList": [
+      "1",
+      "2"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "a1eabb9f"
+        ],
+        [
+          "Diffuse",
+          ".dds",
+          "a1eabb9f"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "weapon武器变形后-枪身",
+    "VertexLimit": "1756495e",
+    "Position": "04a00393",
+    "Texcoord": "8bade376",
+    "Blend": "9d99178a",
+    "ib": "a9188e3c",
+    "MatchFirstIndex": [
+      "0",
+      "9606"
+    ],
+    "PartNameList": [
+      "1",
+      "2"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "6a33b25e"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "e30f025b"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "58d5c840"
+        ]
+      ],
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "1747290f"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "84de8345"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "852f5de0"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "weapon武器变形后-霰弹发射器",
+    "VertexLimit": "d853623a",
+    "Position": "49c9bbf7",
+    "Texcoord": "e03ad35f",
+    "Blend": "0e291903",
+    "ib": "a7f00ae5",
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "6a33b25e"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "e30f025b"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "58d5c840"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "weapon武器变形后-中间组合部件",
+    "VertexLimit": "7ae1f70f",
+    "Position": "53738d91",
+    "Texcoord": "c03acfb5",
+    "Blend": "8f4f2e30",
+    "ib": "d19a5cd0",
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "6a33b25e"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "e30f025b"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "58d5c840"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "weapon武器-枪把",
+    "VertexLimit": "d04cc3dd",
+    "Position": "d3630839",
+    "Texcoord": "3ffbf9b5",
+    "Blend": "32a33b84",
+    "ib": "db111545",
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "1747290f"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "84de8345"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "852f5de0"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "weapon武器-枪变形用卡扣",
+    "VertexLimit": "3421e96d",
+    "Position": "7cab956b",
+    "Texcoord": "61312746",
+    "Blend": "c8e16aaf",
+    "ib": "e5a92555",
+    "MatchFirstIndex": [
+      "0",
+      "360"
+    ],
+    "PartNameList": [
+      "1",
+      "2"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "1747290f"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "84de8345"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "852f5de0"
+        ]
+      ],
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "6a33b25e"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "e30f025b"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "58d5c840"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "weapon武器变形前-枪身",
+    "VertexLimit": "7b103bdf",
+    "Position": "e3e969f4",
+    "Texcoord": "a102d142",
+    "Blend": "b0cda17f",
+    "ib": "f8e6c967",
+    "MatchFirstIndex": [
+      "0",
+      "3282"
+    ],
+    "PartNameList": [
+      "1",
+      "2"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "1747290f"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "84de8345"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "852f5de0"
+        ]
+      ],
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "6a33b25e"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "e30f025b"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "58d5c840"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "weapon-武器变形前-e技能增幅器",
+    "VertexLimit": "b179d1e8",
+    "Position": "c84557c0",
+    "Texcoord": "b7ad2492",
+    "Blend": "93d2f31a",
+    "ib": "e7263d9a",
+    "MatchFirstIndex": [
+      "0",
+      "2268"
+    ],
+    "PartNameList": [
+      "1",
+      "2"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "6a33b25e"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "e30f025b"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "58d5c840"
+        ]
+      ],
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "1747290f"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "84de8345"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "852f5de0"
+        ]
+      ]
+    ]
+  }
+]

@@ -1,0 +1,350 @@
+[
+  {
+    "component_name": "Body-身体",
+    "draw_vb": "1aab74cc",
+    "position_vb": "6fab5f8b",
+    "texcoord_vb": "9b4cef87",
+    "blend_vb": "dba0d45e",
+    "ib": "698046e6",
+    "object_indexes": [
+      0,
+      39831,
+      39945,
+      39987
+    ],
+    "object_classifications": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "19c3125c"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "f44f6316"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "7099d2dc"
+        ]
+      ],
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "19c3125c"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "f44f6316"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "7099d2dc"
+        ]
+      ],
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "19c3125c"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "f44f6316"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "7099d2dc"
+        ]
+      ],
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "19c3125c"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "f44f6316"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "7099d2dc"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "BothArms-双臂",
+    "draw_vb": "8e08205b",
+    "position_vb": "121a1aa7",
+    "texcoord_vb": "d17bb604",
+    "blend_vb": "0bc8c485",
+    "ib": "635709b5",
+    "object_indexes": [
+      0
+    ],
+    "object_classifications": [
+      "A"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "d6a9d46e"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "46d2edd3"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "721a29de"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "Leg-腿部",
+    "draw_vb": "ae8abe08",
+    "position_vb": "dc2a8ff5",
+    "texcoord_vb": "132c3f5c",
+    "blend_vb": "edc17446",
+    "ib": "5f855404",
+    "object_indexes": [
+      0,
+      10950
+    ],
+    "object_classifications": [
+      "A",
+      "B"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "a75cf25e"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "1003c4df"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "1125ccff"
+        ]
+      ],
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "a75cf25e"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "1003c4df"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "1125ccff"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "Face-脸部",
+    "draw_vb": "0a12bb17",
+    "position_vb": "8be7477c",
+    "texcoord_vb": "ec9b7916",
+    "blend_vb": "bafd83bb",
+    "ib": "f3b6e869",
+    "object_indexes": [
+      0,
+      3915
+    ],
+    "object_classifications": [
+      "A",
+      "B"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "0a1f42fb"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "81cd7414"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "ef8ba12a"
+        ]
+      ],
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "0a1f42fb"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "81cd7414"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "ef8ba12a"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "PalmsBall-掌心球",
+    "draw_vb": "16698b4f",
+    "position_vb": "679f2627",
+    "texcoord_vb": "daf0e9f9",
+    "blend_vb": "3a3a9a42",
+    "ib": "084eb825",
+    "object_indexes": [
+      0
+    ],
+    "object_classifications": [
+      "A"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "3b8e4eda"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "4a7ef137"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "cc671a53"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "WeaponBall-武器球",
+    "draw_vb": "00f0ed60",
+    "position_vb": "289bb2ef",
+    "texcoord_vb": "d6d66d05",
+    "blend_vb": "48237f26",
+    "ib": "9bb1eb14",
+    "object_indexes": [
+      0
+    ],
+    "object_classifications": [
+      "A"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "3b8e4eda"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "4a7ef137"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "cc671a53"
+        ]
+      ]
+    ]
+  }
+]

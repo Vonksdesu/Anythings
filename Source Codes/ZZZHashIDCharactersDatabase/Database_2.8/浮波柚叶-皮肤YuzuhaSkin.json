@@ -1,0 +1,314 @@
+[
+  {
+    "component_name": "Hair-头发",
+    "draw_vb": "630debc9",
+    "position_vb": "051f9657",
+    "texcoord_vb": "dc2821dc",
+    "blend_vb": "606c88ae",
+    "ib": "7a504287",
+    "object_indexes": [
+      0,
+      18075
+    ],
+    "object_classifications": [
+      "A",
+      "B"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "521a3242"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "c400f5b7"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "3f70d124"
+        ]
+      ],
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "521a3242"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "c400f5b7"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "3f70d124"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "Hair Shadow-头发阴影",
+    "draw_vb": "8a540628",
+    "position_vb": "3a4533fc",
+    "texcoord_vb": "a39c4806",
+    "blend_vb": "9fc9b6f8",
+    "ib": "afb6117a",
+    "object_indexes": [
+      0
+    ],
+    "object_classifications": [
+      "A"
+    ],
+    "texture_hashes": [
+      []
+    ]
+  },
+  {
+    "component_name": "Body-身体",
+    "draw_vb": "07437c27",
+    "position_vb": "2a7b9144",
+    "texcoord_vb": "0c9062c5",
+    "blend_vb": "523cf99d",
+    "ib": "b298482d",
+    "object_indexes": [
+      0,
+      43176
+    ],
+    "object_classifications": [
+      "A",
+      "B"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "4f4c2b65"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "c3e64779"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "ac2f3dcb"
+        ]
+      ],
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "4f4c2b65"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "c3e64779"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "ac2f3dcb"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "Accessories-配饰与鞋子",
+    "draw_vb": "ca3209f7",
+    "position_vb": "f271d524",
+    "texcoord_vb": "ce14b4b7",
+    "blend_vb": "294d341c",
+    "ib": "a8de520e",
+    "object_indexes": [
+      0,
+      8493
+    ],
+    "object_classifications": [
+      "A",
+      "B"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "54591ef6"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "a78340ed"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "1d0dabdb"
+        ]
+      ],
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "54591ef6"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "a78340ed"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "1d0dabdb"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "LeopardCat1-狸猫非战斗中形态",
+    "draw_vb": "b6e62152",
+    "position_vb": "9d4425e5",
+    "texcoord_vb": "a7394f34",
+    "blend_vb": "2a45c137",
+    "ib": "14ac0d52",
+    "object_indexes": [
+      0
+    ],
+    "object_classifications": [
+      "A"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "4f4c2b65"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "c3e64779"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "ac2f3dcb"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "Face-脸",
+    "VertexLimit": "3578d11c",
+    "Position": "0f6a425b",
+    "Texcoord": "9d0f7ef5",
+    "Blend": "52400cce",
+    "ib": "507384ea",
+    "MatchFirstIndex": [
+      "0",
+      "7206",
+      "9600"
+    ],
+    "PartNameList": [
+      "1",
+      "2",
+      "3"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "d394bc13"
+        ],
+        [
+          "Diffuse",
+          ".dds",
+          "d394bc13"
+        ],
+        [
+          "Diffuse",
+          ".dds",
+          "d394bc13"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "weapon武器-伞",
+    "VertexLimit": "b36355ab",
+    "Position": "79849b37",
+    "Texcoord": "d5283f28",
+    "Blend": "d7204982",
+    "ib": "b34a880c",
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "caeee529"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "f74f81e8"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "6657efd2"
+        ]
+      ]
+    ]
+  }
+]
+
+

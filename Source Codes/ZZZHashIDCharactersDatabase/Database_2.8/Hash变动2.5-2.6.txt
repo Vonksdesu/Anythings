@@ -1,0 +1,2 @@
+铃泳装/皮肤, IB: 9a9780a7
+  texcoord_vb: ccc76aea -> bcfc3326

@@ -1,0 +1,308 @@
+[
+  {
+    "component_name": "Hair-头发",
+    "draw_vb": "d011ed6c",
+    "position_vb": "e49def56",
+    "texcoord_vb": "b8cb383f",
+    "blend_vb": "28a01b2c",
+    "ib": "ecaf558f",
+    "object_indexes": [
+      0,
+      14916
+    ],
+    "object_classifications": [
+      "A",
+      "B"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "012e84e9"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "a6ea6d83"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "d5462e37"
+        ]
+      ],
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "012e84e9"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "a6ea6d83"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "d5462e37"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "HairShadow-头发阴影",
+    "ib": "244eb75a",
+    "object_indexes": [
+      0
+    ],
+    "object_classifications": [
+      "A"
+    ],
+    "texture_hashes": [
+      []
+    ]
+  },
+  {
+    "component_name": "Body-身体",
+    "draw_vb": "a4a705f6",
+    "position_vb": "6567066b",
+    "texcoord_vb": "01c36f40",
+    "blend_vb": "5121459b",
+    "ib": "a913e9a9",
+    "object_indexes": [
+      0
+    ],
+    "object_classifications": [
+      "A"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "18299e4d"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "6b59bc2d"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "93d7173c"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "Clothes-衣服",
+    "draw_vb": "467f402c",
+    "position_vb": "c2b0eca3",
+    "texcoord_vb": "6eb82b02",
+    "blend_vb": "958db681",
+    "ib": "fbb18630",
+    "object_indexes": [
+      0
+    ],
+    "object_classifications": [
+      "A"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "66724f5a"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "7b8eb437"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "1e1485e7"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "Face-脸部",
+    "draw_vb": "0dbd45ea",
+    "position_vb": "37afd6ad",
+    "texcoord_vb": "7a476f86",
+    "blend_vb": "d7781c46",
+    "ib": "dbd59d30",
+    "object_indexes": [
+      0,
+      7290,
+      9234
+    ],
+    "object_classifications": [
+      "A",
+      "B",
+      "C"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "1d487fd5"
+        ]
+      ],
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "1d487fd5"
+        ]
+      ],
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "1d487fd5"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "Sword-刀身",
+    "draw_vb": "9d6f441f",
+    "position_vb": "81a99d68",
+    "texcoord_vb": "aeb95d61",
+    "blend_vb": "8bc72b94",
+    "ib": "0275d39f",
+    "object_indexes": [
+      0
+    ],
+    "object_classifications": [
+      "A"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "e1215530"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "9d2adcc5"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "4659445f"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "SwordSheath-刀鞘",
+    "draw_vb": "e3590e91",
+    "position_vb": "fc93f762",
+    "texcoord_vb": "a9ac3439",
+    "blend_vb": "38c91cb1",
+    "ib": "562b2030",
+    "object_indexes": [
+      0
+    ],
+    "object_classifications": [
+      "A"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "e1215530"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "9d2adcc5"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "4659445f"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "SwordHandle-刀柄",
+    "draw_vb": "5e1e12aa",
+    "position_vb": "10545b04",
+    "texcoord_vb": "51af1803",
+    "blend_vb": "c55927b0",
+    "ib": "1a82a439",
+    "object_indexes": [
+      0
+    ],
+    "object_classifications": [
+      "A"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "e1215530"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "9d2adcc5"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "4659445f"
+        ]
+      ]
+    ]
+  }
+]

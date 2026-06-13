@@ -1,0 +1,354 @@
+[
+  {
+    "component_name": "Hair-头发",
+    "draw_vb": "2e01f7f7",
+    "position_vb": "71d0dfd9",
+    "texcoord_vb": "406beb54",
+    "blend_vb": "ef4a8bb6",
+    "ib": "c4eb6168",
+    "object_indexes": [
+      0,
+      36537
+    ],
+    "object_classifications": [
+      "A",
+      "B"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "a84d933f"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "8e3a20ea"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "2af66072"
+        ]
+      ],
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "a84d933f"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "8e3a20ea"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "2af66072"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "Hair Shadow-头发阴影",
+    "draw_vb": "b1bf0e1a",
+    "position_vb": "a544d14e",
+    "texcoord_vb": "4a5054ba",
+    "blend_vb": "2376d129",
+    "ib": "548f7dff",
+    "object_indexes": [
+      0
+    ],
+    "object_classifications": [
+      "A"
+    ],
+    "texture_hashes": [
+      []
+    ]
+  },
+  {
+    "component_name": "Body-身体",
+    "draw_vb": "5c34690a",
+    "position_vb": "64a6b06d",
+    "texcoord_vb": "55dae493",
+    "blend_vb": "e7122fe8",
+    "ib": "cd609d98",
+    "object_indexes": [
+      0
+    ],
+    "object_classifications": [
+      "A"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "0635e2dd"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "e21c3a6b"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "81f7d37c"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "Gem-宝石",
+    "draw_vb": "8a6fd2f9",
+    "position_vb": "3c32547b",
+    "texcoord_vb": "45c0ac67",
+    "blend_vb": "a23da1ce",
+    "ib": "14602a61",
+    "object_indexes": [
+      0
+    ],
+    "object_classifications": [
+      "A"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "a84d933f"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "8e3a20ea"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "2af66072"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "Face-脸",
+    "VertexLimit": "fcf74fc0",
+    "Position": "c6e5dc87",
+    "Texcoord": "0afe5a44",
+    "Blend": "ef07b6f6",
+    "ib": "39944f20",
+    "MatchFirstIndex": [
+      "0",
+      "7122",
+      "8550"
+    ],
+    "PartNameList": [
+      "1",
+      "2",
+      "3"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "7b262ab6"
+        ],
+        [
+          "Diffuse",
+          ".dds",
+          "7b262ab6"
+        ],
+        [
+          "Diffuse",
+          ".dds",
+          "7b262ab6"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "weapon武器-伞柄展开",
+    "VertexLimit": "66cc3370",
+    "Position": "7c80f1d8",
+    "Texcoord": "79ee2ea7",
+    "Blend": "5d4a63ca",
+    "ib": "1b843cb1",
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "e2327fb8"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "9277a2c1"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "dd8a1851"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "weapon武器-伞柄收起",
+    "VertexLimit": "56ccb629",
+    "Position": "d06d75e0",
+    "Texcoord": "2e01f6e0",
+    "Blend": "b24f5c99",
+    "ib": "7232ac6f",
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "e2327fb8"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "9277a2c1"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "dd8a1851"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "weapon武器-伞面",
+    "VertexLimit": "d175e722",
+    "Position": "b586b07e",
+    "Texcoord": "2809e5db",
+    "Blend": "d97d4c96",
+    "ib": "28f8090e",
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "e2327fb8"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "9277a2c1"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "dd8a1851"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "weapon武器-sword剑",
+    "VertexLimit": "8413730c",
+    "Position": "cb21ccdf",
+    "Texcoord": "af180e46",
+    "Blend": "12f34479",
+    "ib": "a031575e",
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "e2327fb8"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "9277a2c1"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "dd8a1851"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "weapon武器-喷射器",
+    "VertexLimit": "cc2d7ad1",
+    "Position": "30e3560c",
+    "Texcoord": "c8ede4d4",
+    "Blend": "15002e84",
+    "ib": "e69dfc8c",
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "e2327fb8"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "9277a2c1"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "dd8a1851"
+        ]
+      ]
+    ]
+  }
+]

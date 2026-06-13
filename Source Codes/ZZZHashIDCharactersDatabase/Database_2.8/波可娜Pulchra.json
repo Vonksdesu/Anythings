@@ -1,0 +1,283 @@
+[
+  {
+    "component_name": "Hair Shadow-头发阴影",
+    "draw_vb": "096ad3f4",
+    "position_vb": "3dba047b",
+    "texcoord_vb": "09fcf321",
+    "blend_vb": "6b643cdd",
+    "ib": "243cdff6",
+    "object_indexes": [
+      0
+    ],
+    "object_classifications": [
+      "A"
+    ],
+    "texture_hashes": [
+      []
+    ]
+  },
+  {
+    "component_name": "Mask-口罩",
+    "draw_vb": "992028e7",
+    "position_vb": "eed9f960",
+    "texcoord_vb": "0e117b28",
+    "blend_vb": "0db288cb",
+    "ib": "5b30f4da",
+    "object_indexes": [
+      0
+    ],
+    "object_classifications": [
+      "A"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "46bab365"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "03d28ecd"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "6b141146"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "Body-身体",
+    "draw_vb": "2be39a26",
+    "position_vb": "a74c8d89",
+    "texcoord_vb": "5204f58d",
+    "blend_vb": "9381fa0b",
+    "ib": "bd385763",
+    "object_indexes": [
+      0,
+      39972
+    ],
+    "object_classifications": [
+      "A",
+      "B"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "7fc03353"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "d8462af0"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "d404b789"
+        ]
+      ],
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "57be79d6"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "12c44063"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "a553df20"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "Waist supply-腰部补给",
+    "draw_vb": "ec497419",
+    "blend_vb": "5391a870",
+    "ib": "425a7565",
+    "object_indexes": [
+      "0",
+      "2358"
+    ],
+    "object_classifications": [
+      "A",
+      "B"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "ebd6c100"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "798adba3"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "6f17d782"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "b8e1e3f6"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "Wrist supply-手腕补给",
+    "draw_vb": "29a6299d",
+    "position_vb": "8329562b",
+    "texcoord_vb": "caa1f21c",
+    "blend_vb": "55119041",
+    "ib": "96cb7dc9",
+    "object_indexes": [
+      "0"
+    ],
+    "object_classifications": [
+      "A"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "ebd6c100"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "798adba3"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "6f17d782"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "b8e1e3f6"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "Face-脸",
+    "VertexLimit": "d704bf57",
+    "Position": "ed162c10",
+    "Texcoord": "2a29bb4e",
+    "Blend": "7e443147",
+    "ib": "62de5837",
+    "MatchFirstIndex": [
+      "0",
+      "9774"
+    ],
+    "PartNameList": [
+      "A",
+      "B"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "1626aafe"
+        ],
+        [
+          "Diffuse",
+          ".dds",
+          "1626aafe"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "weapon武器-左手",
+    "ib": "5b644956",
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "46bab365"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "03d28ecd"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "6b141146"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "weapon武器-右手",
+    "ib": "bfc94dff",
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "46bab365"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "03d28ecd"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "6b141146"
+        ]
+      ]
+    ]
+  }
+
+]
+

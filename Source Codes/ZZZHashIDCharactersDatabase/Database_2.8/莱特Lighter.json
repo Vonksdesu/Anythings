@@ -1,0 +1,256 @@
+[
+  {
+    "component_name": "Hair-头发",
+    "draw_vb": "bd669b85",
+    "position_vb": "037b6287",
+    "texcoord_vb": "22a08e39",
+    "blend_vb": "d88fa0aa",
+    "ib": "542b8aa9",
+    "object_indexes": [
+      0
+    ],
+    "object_classifications": [
+      "A"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "4e088042"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "6d3f91bc"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "d331b850"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "Hair Shadow-头发阴影",
+    "draw_vb": "4104c8e0",
+    "position_vb": "e144ad1c",
+    "texcoord_vb": "7749cb20",
+    "blend_vb": "3abed50b",
+    "ib": "cf4c4714",
+    "object_indexes": [
+      0
+    ],
+    "object_classifications": [
+      "A"
+    ],
+    "texture_hashes": [
+      []
+    ]
+  },
+  {
+    "component_name": "Body-身体",
+    "draw_vb": "84ed822e",
+    "position_vb": "f6bbabb5",
+    "texcoord_vb": "e1ae7f38",
+    "blend_vb": "da216bb6",
+    "ib": "8899e0fd",
+    "object_indexes": [
+      0
+    ],
+    "object_classifications": [
+      "A"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "5ed96bf2"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "da6f4dc0"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "94aebd7e"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "Cloak-披风",
+    "draw_vb": "701ad22d",
+    "position_vb": "b642df39",
+    "texcoord_vb": "1f9a45b3",
+    "blend_vb": "609ecf0b",
+    "ib": "2de659bd",
+    "object_indexes": [
+      0
+    ],
+    "object_classifications": [
+      "A"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "4e088042"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "6d3f91bc"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "d331b850"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "Glasses-眼镜",
+    "draw_vb": "62623b11",
+    "position_vb": "fc862707",
+    "texcoord_vb": "527dad23",
+    "blend_vb": "3395524c",
+    "ib": "b20b7cd5",
+    "object_indexes": [
+      0,
+      1875
+    ],
+    "object_classifications": [
+      "A",
+      "B"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "5ed96bf2"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "da6f4dc0"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "94aebd7e"
+        ]
+      ],
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "5ed96bf2"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "da6f4dc0"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "94aebd7e"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "Face-脸",
+    "VertexLimit": "aa77af05",
+    "Texcoord": "af14829b",
+    "Blend": "7edbb44e",
+    "ib": "dcc7bb78",
+    "MatchFirstIndex": [
+      "0",
+      "8364"
+    ],
+    "PartNameList": [
+      "1",
+      "2"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "4524e91a"
+        ],
+        [
+          "Diffuse",
+          ".dds",
+          "4524e91a"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "weapon-武器",
+    "VertexLimit": "390caccd",
+    "Position": "5841afbd",
+    "Texcoord": "88aecee2",
+    "Blend": "e83ca18e",
+    "ib": "018b03f0",
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "8b854866"
+        ],
+        [
+          "NormalMap",
+          ".dds",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "547cbcd8"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "3617c303"
+        ]
+      ]
+    ]
+  }
+]

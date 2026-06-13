@@ -1,0 +1,245 @@
+[
+  {
+    "component_name": "Hair-头发",
+    "draw_vb": "daba2b23",
+    "position_vb": "0e52a354",
+    "texcoord_vb": "42ca0c9b",
+    "blend_vb": "0bbe1d7d",
+    "ib": "9e12899f",
+    "object_indexes": [
+      0
+    ],
+    "object_classifications": [
+      "A"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "ac5f6d76"
+        ],
+        [
+          "NormalMap",
+          ".jpg",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "99cfa935"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "f80b57f0"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "Hair Shadow-头发阴影",
+    "draw_vb": "de0bb6f9",
+    "position_vb": "9c8be112",
+    "texcoord_vb": "bb35cc80",
+    "blend_vb": "eb448ade",
+    "ib": "c1628e55",
+    "object_indexes": [
+      0
+    ],
+    "object_classifications": [
+      "A"
+    ],
+    "texture_hashes": [
+      []
+    ]
+  },
+  {
+    "component_name": "Hair accessories-头饰",
+    "draw_vb": "01864eed",
+    "position_vb": "fe235fbb",
+    "texcoord_vb": "49188dc8",
+    "blend_vb": "07a1d434",
+    "ib": "13c75775",
+    "object_indexes": [
+      0
+    ],
+    "object_classifications": [
+      "A"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "ac5f6d76"
+        ],
+        [
+          "NormalMap",
+          ".jpg",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "99cfa935"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "f80b57f0"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "Body-身体",
+    "draw_vb": "2fe26340",
+    "position_vb": "7ff000de",
+    "texcoord_vb": "f4fbc5c0",
+    "blend_vb": "b558d482",
+    "ib": "f478ee4c",
+    "object_indexes": [
+      0
+    ],
+    "object_classifications": [
+      "A"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "c7c4f5c5"
+        ],
+        [
+          "NormalMap",
+          ".jpg",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "616200aa"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "c2ae5d2b"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "lens-镜片",
+    "root_vs": "",
+    "draw_vb": "178a1ff8",
+    "position_vb": "8e3cf210",
+    "blend_vb": "6b5d6e39",
+    "texcoord_vb": "dd32963a",
+    "ib": "44d9123b",
+    "object_indexes": [
+      0
+    ],
+    "object_classifications": [
+      "A"
+    ],
+    "texture_hashes": [
+      []
+    ]
+  },
+  {
+    "component_name": "Face脸",
+    "VertexLimit": "47323770",
+    "Position": "7d20a437",
+    "Texcoord": "69c75b70",
+    "Blend": "4cb3e0ea",
+    "ib": "0817204c",
+    "MatchFirstIndex": [
+      "0",
+      "8616"
+    ],
+    "PartNameList": [
+      "1",
+      "2"
+    ],
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "95d9e92e"
+        ],
+        [
+          "Diffuse",
+          ".dds",
+          "95d9e92e"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "weapon武器-刀鞘",
+    "VertexLimit": "9e8cddbf",
+    "Position": "a07928b5",
+    "Texcoord": "c6d97eb4",
+    "Blend": "74491025",
+    "ib": "27d49f0b",
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "b2aca818"
+        ],
+        [
+          "NormalMap",
+          ".jpg",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "e4891108"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "240ee9dc"
+        ]
+      ]
+    ]
+  },
+  {
+    "component_name": "weapon武器-长刀",
+    "VertexLimit": "b680db32",
+    "Position": "03634f2c",
+    "Texcoord": "61f72721",
+    "Blend": "14b8daf0",
+    "ib": "2d7f2223",
+    "texture_hashes": [
+      [
+        [
+          "Diffuse",
+          ".dds",
+          "b2aca818"
+        ],
+        [
+          "NormalMap",
+          ".jpg",
+          "ebac056e"
+        ],
+        [
+          "LightMap",
+          ".dds",
+          "e4891108"
+        ],
+        [
+          "MaterialMap",
+          ".dds",
+          "240ee9dc"
+        ]
+      ]
+    ]
+  }
+]
