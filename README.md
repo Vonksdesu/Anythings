@@ -9,8 +9,8 @@ This project wasn’t entirely my own creation from the start. I simply continue
 ### Owner & Contributors
 
 1. **Owner**:
-   - petrascyll: (sdsdsd)
+   - petrascyll: 
 
 3.  **Contributors**:
 	- HammyCate:
-	- EnteleJiang: 
+	- EnteleJiang: https://gamebanana.com/members/4064027
