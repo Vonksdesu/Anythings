@@ -18,3 +18,7 @@ This project wasn’t entirely my own creation from the start. I simply continue
 ### Project Origins
 
 - **GameBanana**: https://gamebanana.com/tools/21671
+
+## About The Project
+
+
