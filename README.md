@@ -8,7 +8,7 @@ This project wasn’t entirely my own creation from the start. I simply continue
 
 ### Owner & Contributors
 
-1. **Owner**: petrascyll
+1. **Owner**: petrascyll: 
 
 2.  **Contributors**:
 	- **HammyCate**
