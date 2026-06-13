@@ -1,4 +1,4 @@
-# ZZZ-Mod-Fixer by petrasycll
+# ZZZ-Mod-Fixer by petrascyll
 
 This is a project to update and fix the character mod hash IDs from the game Zenless Zone Zero (ZZZ) to the latest version of the game.
 
