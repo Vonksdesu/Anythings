@@ -72,13 +72,3 @@ This is the most recommended method to prevent any hidden conflicts and ensure t
 This project is not my own original creation from scratch; I am simply maintaining and updating it of my own volition to keep the tool working for the community. 
 
 As this is my first time maintaining a project like this and I am working on it solo, there may still be bugs or edge cases where some mods cannot be fully repaired. I apologize for any inconvenience, and I highly appreciate your understanding and support!
-
----
-
-## Future Updates & Support
-
-I plan to continue maintaining and updating this tool for future game versions of *Zenless Zone Zero*. 
-
-To stay updated on future releases, bug fixes, and improvements, please consider:
-* **Starring (⭐)** this repository to show your support.
-* **Watching (👀)** this repository to get notified immediately when a new update is released.
