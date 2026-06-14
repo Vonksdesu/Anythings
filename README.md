@@ -30,14 +30,6 @@ This project is built upon the amazing work of the original creators in the modd
 
 ---
 
-## Disclaimer
-
-This project is not my own original creation from scratch; I am simply maintaining and updating it of my own volition to keep the tool working for the community. 
-
-As this is my first time maintaining a project like this and I am working on it solo, there may still be bugs or edge cases where some mods cannot be fully repaired. I apologize for any inconvenience, and I highly appreciate your understanding and support!
-
----
-
 ## How to Use
 
 1. **Download**: Download the latest `zzz-mod-fixer-2.8.exe` from the [Releases](../../releases) page.
@@ -45,3 +37,11 @@ As this is my first time maintaining a project like this and I am working on it 
    > ⚠️ **Important:** Do *not* create a new folder for the `.exe` inside the `Mods` folder, as the program may not work properly.
 3. **Run**: Run the program and wait for the process to complete.
 4. **Launch**: Once the process is finished, open your **XXMI Launcher** and launch *Zenless Zone Zero*.
+
+---
+
+## Disclaimer
+
+This project is not my own original creation from scratch; I am simply maintaining and updating it of my own volition to keep the tool working for the community. 
+
+As this is my first time maintaining a project like this and I am working on it solo, there may still be bugs or edge cases where some mods cannot be fully repaired. I apologize for any inconvenience, and I highly appreciate your understanding and support!
