@@ -1,30 +1,37 @@
-# ZZZ-Mod-Fixer by petrascyll
+# ZZZ-Mod-Fixer (Community Update)
 
-This is a project to update and fix the character mod hash IDs from the game Zenless Zone Zero (ZZZ) to the latest version of the game.
+This is a Python-based tool designed to update and fix character skin mod hash IDs for the game **Zenless Zone Zero (ZZZ)** to ensure compatibility with the latest versions of the game.
 
-## Diclaimer
-
-This project wasn’t entirely my own creation from the start. I simply continued working on it of my own volition, without being told to or pressured by anyone else. I also apologize if this program still can’t fix the issue with the mod that remains broken. Since this is my first time working on this project, and I’m doing it all by myself, there may be some mistakes I’ve made. Thank you for your understanding.
-
-**PLEASE NOTE THAT THIS PROGRAM IS EXCLUSIVELY DESIGNED TO FIX AND UPDATE CHARACTER SKIN MODS ONLY, IT IS NOT INTENDED FOR OTHER MODS.**
-
-### Owner & Contributors
-
-1. **Owner**:
-   - petrascyll: https://gamebanana.com/members/2644630
-
-3.  **Contributors**:
-	- HammyCate: https://gamebanana.com/members/3539653
-	- EnteleJiang: https://gamebanana.com/members/4064027
-
-### Project Origins
-
-- **GameBanana**: https://gamebanana.com/tools/21671
+---
 
 ## About The Project
 
-Here, I am simply continuing a project originally started by petrascyll. I am doing this to update the ZZZ-Mod-Fixer program to the latest versions of the Zenless Zone Zero game (2.6–2.8). Since the original creator of this project has not made any updates at all so far, I have taken the initiative to update it on my own.
+This project is a community-driven continuation of the original **ZZZ-Mod-Fixer** tool. 
 
-Additionally, in this project, I discovered a coding issue where the updated `.ini` mod files do not function properly because they conflict with the backup `.ini` mod files (the originals), which are also placed directly inside the mod folder.
+Since the original creator has not released any new updates, I have taken the initiative to update the program independently to support Zenless Zone Zero versions **2.6 to 2.8**. 
 
-So here, I’m updating for the latest version of the Zenless Zone Zero game and also making a slight modification to move the old `.ini` mod files to a separate folder.
+### Key Improvements in This Version:
+* **Updated Hash Database**: Added support for newer character hashes (v2.6 – v2.8).
+* **Backup File Conflict Fix**: In the original version, updated `.ini` mod files often conflicted with the backup (original) `.ini` files when left in the same folder. I have modified the code to automatically move the old/backup `.ini` files to a separate folder, preventing any conflicts and keeping your mod directory clean.
+
+*Note: This tool is exclusively designed to fix and update character skin mods. It is not intended for other types of mods.*
+
+---
+
+## Project Origins & Credits
+
+This project is built upon the amazing work of the original creators in the modding community.
+
+* **Original Tool on GameBanana**: [ZZZ-Mod-Fixer (GameBanana)](https://gamebanana.com/tools/21671)
+* **Original Owner**: [petrascyll](https://gamebanana.com/members/2644630)
+* **Contributors**:
+  * [HammyCate](https://gamebanana.com/members/3539653)
+  * [EnteleJiang](https://gamebanana.com/members/4064027)
+
+---
+
+## Disclaimer
+
+This project is not my own original creation from scratch; I am simply maintaining and updating it of my own volition to keep the tool working for the community. 
+
+As this is my first time maintaining a project like this and I am working on it solo, there may still be bugs or edge cases where some mods cannot be fully repaired. I apologize for any inconvenience, and I highly appreciate your understanding and support!
