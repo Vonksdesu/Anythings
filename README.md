@@ -46,6 +46,25 @@ Before using this tool, make sure you have the following installed:
 3. **Run**: Run the program and wait for the process to complete.
 4. **Launch**: Once the process is finished, open your **XXMI Launcher** and launch *Zenless Zone Zero*.
 
+### ⚠️ Notice for Users of the Original ZZZ-Mod-Fixer
+
+If you have previously processed your mods using **Petrascyll's original tool**, you may experience conflicts due to left-over backup files that cause the mods to fail to load. 
+
+To resolve this, please choose one of the two options below:
+
+#### **Option 1: Quick Cleanup (Manual)**
+Use this option if you want to keep your current mod setup:
+1. Open your mod folder(s).
+2. Manually find and **delete** all old backup `.ini` files that start with `DISABLED_BACKUP_` (e.g., `DISABLED_BACKUP_1.ini`).
+3. Run the game via **XXMI Launcher**.
+
+#### **Option 2: Clean Setup (Highly Recommended)**
+This is the most recommended method to prevent any hidden conflicts and ensure the best results:
+1. **Delete all mod folders** inside your main `Mods` directory.
+2. Replace them with **fresh, untouched mod files** (use backups that have *never* been modified or processed by Petrascyll's original program).
+3. Place and run my `zzz-mod-fixer-2.8.exe` inside the `Mods` folder to automatically update them.
+4. Launch the game via **XXMI Launcher**.
+
 ---
 
 ## Disclaimer
