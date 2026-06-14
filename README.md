@@ -40,7 +40,7 @@ Before using this tool, make sure you have the following installed:
 
 ## How to Use
 
-1. **Download**: Download the latest `zzz-mod-fixer-2.8.exe` from the [Releases](../../releases) page.
+1. **Download**: Download the latest `zzz-mod-fixer-v2.8.exe` from the [Releases](../../releases) page.
 2. **Placement**: Place the `.exe` file **directly** inside the `Mods` folder within your **XXMI Launcher** installation directory. 
    > ⚠️ **Important:** Do *not* create a new folder for the `.exe` inside the `Mods` folder, as the program may not work properly.
 3. **Run**: Run the program and wait for the process to complete.
@@ -62,7 +62,7 @@ Use this option if you want to keep your current mod setup:
 This is the most recommended method to prevent any hidden conflicts and ensure the best results:
 1. **Delete all mod folders** inside your main `Mods` directory.
 2. Replace them with **fresh, untouched mod files** (use backups that have *never* been modified or processed by Petrascyll's original program).
-3. Place and run my `zzz-mod-fixer-2.8.exe` inside the `Mods` folder to automatically update them.
+3. Place and run my `zzz-mod-fixer-v2.8.exe` inside the `Mods` folder to automatically update them.
 4. Launch the game via **XXMI Launcher**.
 
 ---
