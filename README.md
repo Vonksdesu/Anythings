@@ -30,6 +30,14 @@ This project is built upon the amazing work of the original creators in the modd
 
 ---
 
+## Requirements
+
+Before using this tool, make sure you have the following installed:
+* **XXMI Launcher** (by SpectrumQT): This fixer is designed to work specifically with the directory structure created by this launcher.
+  * Download the official launcher here: [SpectrumQT/XXMI-Launcher](https://github.com/SpectrumQT/XXMI-Launcher)
+
+---
+
 ## How to Use
 
 1. **Download**: Download the latest `zzz-mod-fixer-2.8.exe` from the [Releases](../../releases) page.
