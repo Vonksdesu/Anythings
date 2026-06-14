@@ -1,6 +1,6 @@
 # ZZZ-Mod-Fixer (Community Update)
 
-This is a Python-based tool designed to update and fix character skin mod hash IDs for the game **Zenless Zone Zero (ZZZ)** to ensure compatibility with the latest versions of the game.
+This is a Python-based tool designed to update and fix character skin mod hash IBs for the game **Zenless Zone Zero (ZZZ)** to ensure compatibility with the latest versions of the game.
 
 ---
 
