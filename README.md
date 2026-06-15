@@ -77,6 +77,17 @@ If you have successfully run the program but your mod is still not working, plea
 * **Check the Premium Skin Requirement**: Some skin mods are specifically designed to replace *premium, paid, or event-exclusive* character skins rather than the character's default skin. **You must actually own that specific premium skin in-game** for the mod to work. If you do not own the required premium skin, the mod will remain broken even after updating the hashes.
 * **Read the Mod Creator's Instructions**: Always carefully read the instructions, description, and requirements provided by the original mod author on GameBanana. Some mods require extra steps, specific settings, or unique files to function correctly. In many cases, a broken mod is caused by user error or missing a step in the author's guide, rather than an outdated hash.
 
+### ❓ My mod textures are glitched or some parts are missing. Is it a folder issue?
+Yes, **poor folder organization and nested folders are the most common causes of broken mods.** Please follow these rules after downloading a mod:
+
+* **Do Not Blindly Drag and Drop**: When you download a `.zip` or `.rar` mod from GameBanana and extract it, **do not just blindly drop the extracted folder straight into your `Mods` directory.**
+* **Rename the Folder**: First, rename the extracted folder to a clear and recognizable name so you can easily identify and manage it in the future.
+* **Inspect the Folder Structure**: Open the extracted folder and look inside before placing it.
+  * *Is it just a flat list of files, or are there sub-folders?* 
+  * If there are sub-folders, check what they are. Sometimes, modders bundle multiple different skin options, recolors, or weapon variants for the same character in one single download. Each of these options has its own unique 3D model structures, coordinates, and hashes.
+  * If you blindly throw nested folders or conflicting variants into the directory without separating them, **no fixer tool in the world will ever be able to repair them** due to user negligence.
+* **Read the Local README Files**: If you find a `README.txt`, `README.md`, or any text instruction file inside the extracted mod folder, **please take a moment to read it carefully.** Modders often include crucial local instructions or troubleshooting tips that were not posted on their GameBanana page. Please do not skip reading these files.
+
 ---
 
 ## Disclaimer
