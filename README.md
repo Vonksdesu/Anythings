@@ -8,10 +8,10 @@ This is a Python-based tool designed to update and fix character skin mod hash I
 
 This project is a community-driven continuation of the original **ZZZ-Mod-Fixer** tool. 
 
-Since the original creator has not released any new updates, I have taken the initiative to update the program independently to support Zenless Zone Zero versions **2.6 to 2.8**. 
+Since the original creator is no longer releasing updates, I have taken the initiative to independently maintain the program and keep it updated for newer game versions of *Zenless Zone Zero*.
 
-### Key Improvements in This Version:
-* **Updated Hash Database**: Added support for newer character hashes (v2.6 – v2.8).
+### Core Features & Improvements:
+* **Continuous Hash Updates**: The character hash database is regularly updated to support newer game versions. To see which exact game version is currently supported, please check the [Releases](../../releases) page (where all version-specific updates are posted).
 * **Backup File Conflict Fix**: In the original version, updated `.ini` mod files often conflicted with the backup (original) `.ini` files when left in the same folder. I have modified the code to automatically move the old/backup `.ini` files to a separate folder, preventing any conflicts and keeping your mod directory clean.
 
 *Note: This tool is exclusively designed to fix and update character skin mods. It is not intended for other types of mods.*
