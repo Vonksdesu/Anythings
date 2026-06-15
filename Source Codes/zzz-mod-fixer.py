@@ -178,104 +178,85 @@ class Ini():
         if self._touched:
             basename = os.path.basename(self.filepath).split('.ini')[0]
             
-            # 1. Menentukan direktori backup luar Mods secara dinamis
             backup_dir = None
             
-            # Coba cari folder Data/ZZMI atau ZZMI secara relatif ke atas dari lokasi file .ini ini
             current_path = Path(self.filepath).parent.resolve()
             for parent in [current_path] + list(current_path.parents):
-                # === Pola Bawaan Sebelumnya (Data/ZZMI) ===
                 test_path = parent / 'Data' / 'ZZMI'
                 if test_path.is_dir():
                     backup_dir = test_path / '(.ini) Caches'
                     break
-                
-                # === Logika Baru Tambahan (ZZMI Saja) ===
-                # Periksa jika nama folder induk itu sendiri adalah 'ZZMI' (misal ditaruh di dalam ZZMI/Mods/...)
                 if parent.name.upper() == 'ZZMI':
                     backup_dir = parent / '(.ini) Caches'
                     break
-                
-                # Periksa jika di dalam folder induk terdapat folder bernama 'ZZMI' langsung
                 test_path_direct = parent / 'ZZMI'
                 if test_path_direct.is_dir():
                     backup_dir = test_path_direct / '(.ini) Caches'
                     break
             
-            # Jika tidak ditemukan secara relatif, coba cari di semua drive aktif (A:\\ sampai Z:\\)
             if not backup_dir:
                 import string
                 for letter in string.ascii_uppercase:
                     drive = f"{letter}:\\"
                     if os.path.exists(drive):
-                        # === Pola Bawaan Sebelumnya (Data/ZZMI) ===
-                        # Periksa pola folder kustom (Drive:\XXMI\Data\ZZMI)
                         test_path1 = Path(drive) / 'XXMI' / 'Data' / 'ZZMI'
                         if test_path1.is_dir():
                             backup_dir = test_path1 / '(.ini) Caches'
                             break
-                        # Periksa pola root drive (Drive:\Data\ZZMI)
                         test_path2 = Path(drive) / 'Data' / 'ZZMI'
                         if test_path2.is_dir():
                             backup_dir = test_path2 / '(.ini) Caches'
                             break
-
-                        # === Logika Baru Tambahan (ZZMI Saja) ===
-                        # Periksa pola (Drive:\XXMI\ZZMI)
                         test_path3 = Path(drive) / 'XXMI' / 'ZZMI'
                         if test_path3.is_dir():
                             backup_dir = test_path3 / '(.ini) Caches'
                             break
-                        # Periksa pola (Drive:\XXMI Launcher\ZZMI)
                         test_path4 = Path(drive) / 'XXMI Launcher' / 'ZZMI'
                         if test_path4.is_dir():
                             backup_dir = test_path4 / '(.ini) Caches'
                             break
-                        # Periksa pola langsung di root (Drive:\ZZMI)
                         test_path5 = Path(drive) / 'ZZMI'
                         if test_path5.is_dir():
                             backup_dir = test_path5 / '(.ini) Caches'
                             break
 
-            # Konversi backup_dir ke string absolut jika ditemukan
+            
             if backup_dir:
                 backup_dir = str(backup_dir.absolute())
             else:
-                # Fallback pengaman jika tidak ditemukan di sistem drive mana pun
+                
                 backup_dir = os.path.abspath(self.filepath.split(basename+'.ini')[0])
             
             try:
                 os.makedirs(backup_dir, exist_ok=True)
             except Exception as e:
-                print(f"⚠️  Failed to create external backup folder at '{backup_dir}': {e}")
+                print(f"⚠  Failed to create external backup folder at '{backup_dir}': {e}")
                 backup_dir = os.path.abspath(self.filepath.split(basename+'.ini')[0])
             
-            # 2. Mengubah format ekstensi dari .ini ke .txt agar diabaikan oleh GIMI/ZZMI
+            
             backup_filename = f'DISABLED_BACKUP_{int(time.time())}_{basename}.txt'
             backup_fullpath = os.path.join(backup_dir, backup_filename)
 
             try:
-                # Menggunakan shutil.move agar aman meskipun proses backup dilakukan lintas drive/device
                 import shutil
                 shutil.move(self.filepath, backup_fullpath)
                 print(f'Created Backup: {backup_filename} at {backup_dir}')
             except Exception as e:
-                print(f"⚠️  Failed to relocate backup externally (Different Drive/Access): {e}")
-                # Fallback darurat: Tulis cadangan .txt di folder mod asal
+                print(f"⚠  Failed to relocate backup externally (Different Drive/Access): {e}")
+                
                 try:
                     backup_fallback_filename = f'DISABLED_BACKUP_{int(time.time())}.{basename}.txt'
                     backup_fallback_dir = os.path.abspath(self.filepath.split(basename+'.ini')[0])
                     backup_fallback_path = os.path.join(backup_fallback_dir, backup_fallback_filename)
-                    # Membaca file asli sebelum ditimpa
+                    
                     with open(self.filepath, 'r', encoding=self.encoding) as original_file:
                         original_content = original_file.read()
                     with open(backup_fallback_path, 'w', encoding=self.encoding) as backup_file:
                         backup_file.write(original_content)
                     print(f'Created Backup (Emergency): {backup_fallback_filename} at {backup_fallback_dir}')
                 except Exception as ex:
-                    print(f"❌ Failed to create emergency backup: {ex}")
+                    print(f"✖ Failed to create emergency backup: {ex}")
 
-            # 3. Menulis file .ini baru yang sudah diperbarui ke lokasi aslinya
             with open(self.filepath, 'w', encoding=self.encoding) as updated_ini:
                 updated_ini.write(self.content)
 
