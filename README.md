@@ -69,6 +69,16 @@ This is the most recommended method to prevent any hidden conflicts and ensure t
 
 ---
 
+## Troubleshooting & FAQs
+
+### ❓ My mod is still broken after running the fixer. What should I do?
+If you have successfully run the program but your mod is still not working, please check the following:
+
+* **Check the Premium Skin Requirement**: Some skin mods are specifically designed to replace *premium, paid, or event-exclusive* character skins rather than the character's default skin. **You must actually own that specific premium skin in-game** for the mod to work. If you do not own the required premium skin, the mod will remain broken even after updating the hashes.
+* **Read the Mod Creator's Instructions**: Always carefully read the instructions, description, and requirements provided by the original mod author on GameBanana. Some mods require extra steps, specific settings, or unique files to function correctly. In many cases, a broken mod is caused by user error or missing a step in the author's guide, rather than an outdated hash.
+
+---
+
 ## Disclaimer
 
 This project is not my own original creation from scratch; I am simply maintaining and updating it of my own volition to keep the tool working for the community. 
