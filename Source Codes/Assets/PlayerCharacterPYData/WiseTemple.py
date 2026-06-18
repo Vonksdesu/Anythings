@@ -1,6 +1,6 @@
 """
 WiseTemple Character Hash Commands
-ZZZ Mod Fixer v2.8
+ZZZ Mod Fixer v3.0
 """
 
 def get_hash_commands(log, update_hash, comment_sections, comment_commandlists,
@@ -35,7 +35,7 @@ def get_hash_commands(log, update_hash, comment_sections, comment_commandlists,
 'ef9c0510': [(log, ('2.8: WiseTemple Hair draw_vb',)),                  (add_section_if_missing, ('d5ca0411', 'WiseTemple.Hair.IB', 'match_priority = 0\n'))],
 'e8df7ff3': [(log, ('2.8: WiseTemple Hair position_vb',)),              (add_section_if_missing, ('d5ca0411', 'WiseTemple.Hair.IB', 'match_priority = 0\n'))],
 '774071dd': [(log, ('2.8: WiseTemple Hair texcoord_vb',)),              (add_section_if_missing, ('d5ca0411', 'WiseTemple.Hair.IB', 'match_priority = 0\n'))],
-'edfd1666': [(log, ('2.8: WiseTemple Hair blend_vb',)),                 (add_section_if_missing, ('d5ca0411', 'WiseTemple.Hair.IB', 'match_priority = 0\n'))],
+'edfd1666': [(log, ('2.8 -> 3.0: WiseTemple Hair blend_vb Hash [Legacy]',)), (update_hash, ('68e4f572',))],
 
 # Hair Shadow
 '681651f9': [(log, ('2.8: WiseTemple HairShadow draw_vb',)),            (add_section_if_missing, ('8d08b190', 'WiseTemple.HairShadow.IB', 'match_priority = 0\n'))],
@@ -47,13 +47,13 @@ def get_hash_commands(log, update_hash, comment_sections, comment_commandlists,
 '276e1373': [(log, ('2.8: WiseTemple Neck draw_vb',)),                  (add_section_if_missing, ('01c42a1d', 'WiseTemple.Neck.IB', 'match_priority = 0\n'))],
 'd8ad824b': [(log, ('2.8: WiseTemple Neck position_vb',)),              (add_section_if_missing, ('01c42a1d', 'WiseTemple.Neck.IB', 'match_priority = 0\n'))],
 '39a1dfe3': [(log, ('2.8: WiseTemple Neck texcoord_vb',)),              (add_section_if_missing, ('01c42a1d', 'WiseTemple.Neck.IB', 'match_priority = 0\n'))],
-'458bbde3': [(log, ('2.8: WiseTemple Neck blend_vb',)),                 (add_section_if_missing, ('01c42a1d', 'WiseTemple.Neck.IB', 'match_priority = 0\n'))],
+'458bbde3': [(log, ('2.8 -> 3.0: WiseTemple Neck blend_vb Hash [Legacy]',)), (update_hash, ('e0b1e734',))],
 
 # Body (WiseTemple Outfit)
 'ca02f614': [(log, ('2.8: WiseTemple Body draw_vb',)),                  (add_section_if_missing, ('1eca2097', 'WiseTemple.Body.IB', 'match_priority = 0\n'))],
 'a388eb6b': [(log, ('2.8: WiseTemple Body position_vb',)),              (add_section_if_missing, ('1eca2097', 'WiseTemple.Body.IB', 'match_priority = 0\n'))],
 'b39870e1': [(log, ('2.8: WiseTemple Body texcoord_vb',)),              (add_section_if_missing, ('1eca2097', 'WiseTemple.Body.IB', 'match_priority = 0\n'))],
-'8612559a': [(log, ('2.8: WiseTemple Body blend_vb',)),                 (add_section_if_missing, ('1eca2097', 'WiseTemple.Body.IB', 'match_priority = 0\n'))],
+'8612559a': [(log, ('2.8 -> 3.0: WiseTemple Body blend_vb Hash [Legacy]',)), (update_hash, ('f28a6363',))],
 
 # WaistAccessories (DiskPlayer Acc)
 '0c1c9bf3': [(log, ('2.8: WiseTemple WaistAccessories draw_vb',)),       (add_section_if_missing, ('e7f527ea', 'WiseTemple.DiskPlayer.IB', 'match_priority = 0\n'))],
@@ -122,13 +122,23 @@ def get_hash_commands(log, update_hash, comment_sections, comment_commandlists,
 '177ad7e8': [(log, ('2.5 -> 2.8: WiseTemple Body Blend [Legacy]',)),    (update_hash, ('8612559a',))],
 '4fa228f9': [(log, ('2.5 -> 2.8: WiseTemple Body Draw [Legacy]',)),     (update_hash, ('ca02f614',))],
 
-# === Pembaruan Referensi Hash Rusak (Broken References Fix v2.8) ===
+# === Broken References Fix (v2.8) ===
 'f425bd04': [(log, ('2.8: Wise Body Texcoord Hash [Legacy] 2.0',)),     (update_hash, ('91fbd2fa',))],
 '84529dab': [(log, ('2.8: Wise BodyA Diffuse 2048p Hash [Legacy] Old',)), (update_hash, ('f2fb7a37',))],
 'ef76b675': [(log, ('2.8: Wise BodyA Diffuse 1024p Hash [Legacy] Old',)), (update_hash, ('3d7a53b0',))],
 
-# === Pembaruan Sinkronisasi 2.8 ===
+# === 2.8 Sync Updates ===
 '868709f2': [(log, ('2.7 -> 2.8: Wise BodyA Diffuse [Legacy]',)), (update_hash, ('f2fb7a37',))],
+
+# === 3.0 Database Updates (Strict Sync) ===
+# Hair VBs
+'68e4f572': [(log, ('3.0: WiseTemple Hair blend_vb Hash',)),            (add_section_if_missing, ('d5ca0411', 'WiseTemple.Hair.IB', 'match_priority = 0\n'))],
+
+# Neck VBs
+'e0b1e734': [(log, ('3.0: WiseTemple Neck blend_vb Hash',)),            (add_section_if_missing, ('01c42a1d', 'WiseTemple.Neck.IB', 'match_priority = 0\n'))],
+
+# Body VBs
+'f28a6363': [(log, ('3.0: WiseTemple Body blend_vb Hash',)),            (add_section_if_missing, ('1eca2097', 'WiseTemple.Body.IB', 'match_priority = 0\n'))],
 
 # === Face Textures ===
 '5d75fddc': [
@@ -171,15 +181,18 @@ def get_hash_commands(log, update_hash, comment_sections, comment_commandlists,
     ],
 
 # === Neck & Body Textures ===
-'9fc3646e': [
-        (log,                           ('2.8: WiseTemple Neck, Body Diffuse Hash',)),
+'669191ec': [
+        (log,                           ('3.0: WiseTemple Neck, Body Diffuse Hash',)),
         (add_section_if_missing,        ('01c42a1d', 'WiseTemple.Neck.IB', 'match_priority = 0\n')),
         (add_section_if_missing,        ('1eca2097', 'WiseTemple.Body.IB', 'match_priority = 0\n')),
     ],
+'9fc3646e': [
+        (log,                           ('2.8 -> 3.0: WiseTemple Neck, Body Diffuse Hash [Legacy]',)),
+        (update_hash,                   ('669191ec',)),
+    ],
 '81406abe': [
-        (log,                           ('2.8: WiseTemple Body/Neck Diffuse Hash [Legacy]',)),
-        (add_section_if_missing,        ('01c42a1d', 'WiseTemple.Neck.IB', 'match_priority = 0\n')),
-        (add_section_if_missing,        ('1eca2097', 'WiseTemple.Body.IB', 'match_priority = 0\n')),
+        (log,                           ('2.8 -> 3.0: WiseTemple Body/Neck Diffuse Hash [Legacy]',)),
+        (update_hash,                   ('669191ec',)),
     ],
 'dd79b44b': [
         (log,                           ('2.8: WiseTemple Neck, Body LightMap Hash',)),
@@ -292,5 +305,5 @@ def get_hash_commands(log, update_hash, comment_sections, comment_commandlists,
 # Character metadata
 CHARACTER_INFO = {
     'name': 'WiseTemple',
-    'game_versions': ['2.8'],
+    'game_versions': ['2.8', '3.0'],
 }

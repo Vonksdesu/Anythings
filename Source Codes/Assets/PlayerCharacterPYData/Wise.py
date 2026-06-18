@@ -1,6 +1,6 @@
 """
 Wise Character Hash Commands
-ZZZ Mod Fixer v2.8
+ZZZ Mod Fixer v3.0
 """
 
 def get_hash_commands(log, update_hash, comment_sections, comment_commandlists,
@@ -38,7 +38,7 @@ def get_hash_commands(log, update_hash, comment_sections, comment_commandlists,
 'b581dc0a': [(log, ('2.8: Wise Body draw_vb Hash',)),                   (add_section_if_missing, ('8d6acf4e', 'Wise.Body.IB', 'match_priority = 0\n'))],
 '67f21c9f': [(log, ('2.8: Wise Body position_vb Hash',)),               (add_section_if_missing, ('8d6acf4e', 'Wise.Body.IB', 'match_priority = 0\n'))],
 '91fbd2fa': [(log, ('2.8: Wise Body texcoord_vb Hash',)),               (add_section_if_missing, ('8d6acf4e', 'Wise.Body.IB', 'match_priority = 0\n'))],
-'46462bd8': [(log, ('2.8: Wise Body blend_vb Hash',)),                  (add_section_if_missing, ('8d6acf4e', 'Wise.Body.IB', 'match_priority = 0\n'))],
+'46462bd8': [(log, ('2.8 -> 3.0: Wise Body blend_vb Hash [Legacy]',)),   (update_hash, ('03dadd2a',))],
 
 # Bag
 '24ca2d36': [(log, ('2.8: Wise Bag draw_vb Hash',)),                     (add_section_if_missing, ('b1df5d22', 'Wise.Bag.IB', 'match_priority = 0\n'))],
@@ -73,13 +73,17 @@ def get_hash_commands(log, update_hash, comment_sections, comment_commandlists,
 '3b4f22ad': [(log, ('2.8: Wise HairA, BagA NormalMap 2048p Hash [Legacy]',)), (update_hash, ('ebac056e',))],
 'f43c8025': [(log, ('2.8: Wise BodyA NormalMap 2048p Hash [Legacy]',)), (update_hash, ('ebac056e',))],
 
-# === Pembaruan Referensi Hash Rusak (Broken References Fix v2.8) ===
+# === Broken References Fix (v2.8) ===
 'f425bd04': [(log, ('2.8: Wise Body Texcoord Hash [Legacy] 2.0',)),     (update_hash, ('91fbd2fa',))],
-'84529dab': [(log, ('2.8: Wise BodyA Diffuse 2048p Hash [Legacy] Old',)), (update_hash, ('f2fb7a37',))], # Update ke f2fb7a37
+'84529dab': [(log, ('2.8: Wise BodyA Diffuse 2048p Hash [Legacy] Old',)), (update_hash, ('f2fb7a37',))], # Update to f2fb7a37
 'ef76b675': [(log, ('2.8: Wise BodyA Diffuse 1024p Hash [Legacy] Old',)), (update_hash, ('3d7a53b0',))],
 
-# === Pembaruan Sinkronisasi 2.8 ===
+# === 2.8 Sync Updates ===
 '868709f2': [(log, ('2.7 -> 2.8: Wise BodyA Diffuse [Legacy]',)), (update_hash, ('f2fb7a37',))],
+
+# === 3.0 Database Updates (Strict Sync) ===
+# Body VBs
+'03dadd2a': [(log, ('3.0: Wise Body blend_vb Hash',)),                  (add_section_if_missing, ('8d6acf4e', 'Wise.Body.IB', 'match_priority = 0\n'))],
 
 # === Face Textures ===
 '5d75fddc': [
@@ -138,15 +142,19 @@ def get_hash_commands(log, update_hash, comment_sections, comment_commandlists,
     ],
 
 # === Body Textures ===
-'f2fb7a37': [
-        (log,                           ('2.8: Wise BodyA Diffuse 2048p Hash (v2.8 Target)',)),
+'a9652fa4': [
+        (log,                           ('3.0: Wise Body Diffuse Hash',)),
         (add_section_if_missing,        (('8d6acf4e', '054ea752'), 'Wise.Body.IB', 'match_priority = 0\n')),
         (multiply_section_if_missing,   (('3d7a53b0', 'ef76b675'), 'Wise.BodyA.Diffuse.1024')),
+    ],
+'f2fb7a37': [
+        (log,                           ('2.8 -> 3.0: Wise BodyA Diffuse 2048p Hash [Legacy]',)),
+        (update_hash,                   ('a9652fa4',)),
     ],
 '3d7a53b0': [
         (log,                           ('2.8: Wise BodyA Diffuse 1024p Hash [Legacy]',)),
         (add_section_if_missing,        (('8d6acf4e', '054ea752'), 'Wise.Body.IB', 'match_priority = 0\n')),
-        (multiply_section_if_missing,   (('f2fb7a37', '84529dab'), 'Wise.BodyA.Diffuse.2048')), # Update ke f2fb7a37
+        (multiply_section_if_missing,   (('a9652fa4', '84529dab'), 'Wise.BodyA.Diffuse.2048')), # Update to a9652fa4
     ],
 'dea7a8ca': [
         (log,                           ('2.8: Wise Body Diffuse Hash',)),
@@ -202,5 +210,5 @@ def get_hash_commands(log, update_hash, comment_sections, comment_commandlists,
 # Character metadata
 CHARACTER_INFO = {
     'name': 'Wise',
-    'game_versions': ['1.0', '1.1', '1.2', '1.3', '1.4', '1.5', '1.6', '1.7', '2.8'],
+    'game_versions': ['1.0', '1.1', '1.2', '1.3', '1.4', '1.5', '1.6', '1.7', '2.8', '3.0'],
 }

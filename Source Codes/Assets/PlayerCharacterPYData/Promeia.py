@@ -1,6 +1,6 @@
 """
 Promeia Character Hash Commands
-ZZZ Mod Fixer v2.8
+ZZZ Mod Fixer v3.0
 """
 
 def get_hash_commands(log, update_hash, comment_sections, comment_commandlists,
@@ -25,6 +25,12 @@ def get_hash_commands(log, update_hash, comment_sections, comment_commandlists,
 'ef3c4506': [(log, ('2.8: Promeia Face IB Hash',)),            (add_ib_check_if_missing,)],
 '8995db58': [(log, ('2.8: Promeia Weapon IB Hash',)),          (add_ib_check_if_missing,)],
 
+# === IB Hashes (v3.0 Target) ===
+'0ae14c24': [(log, ('3.0: Promeia Cloak IB Hash',)),                 (add_ib_check_if_missing,)],
+'b386901d': [(log, ('3.0: Promeia CloakChest IB Hash',)),            (add_ib_check_if_missing,)],
+'10c77d62': [(log, ('3.0: Promeia Chest IB Hash',)),                 (add_ib_check_if_missing,)],
+'ec003379': [(log, ('3.0: Promeia Legs IB Hash',)),                  (add_ib_check_if_missing,)],
+
 # === VB Hashes ===
 # Hair
 '2d4c7c18': [(log, ('2.8: Promeia Hair draw_vb Hash',)),                 (add_section_if_missing, ('31178971', 'Promeia.Hair.IB', 'match_priority = 0\n'))],
@@ -39,19 +45,31 @@ def get_hash_commands(log, update_hash, comment_sections, comment_commandlists,
 'dae4abd0': [(log, ('2.8: Promeia BodyPinioned blend_vb Hash',)),        (add_section_if_missing, ('36e794ea', 'Promeia.BodyPinioned.IB', 'match_priority = 0\n'))],
 
 # Body - Normal State (BodyNormal)
-'9cce6ba2': [(log, ('2.8: Promeia BodyNormal draw_vb Hash',)),           (add_section_if_missing, ('62a6b4bd', 'Promeia.BodyNormal.IB', 'match_priority = 0\n'))],
+'9cce6ba2': [
+        (log,                           ('2.8 -> 3.0: Promeia BodyNormal / Chest draw_vb Hash',)),
+        (add_section_if_missing,        ('62a6b4bd', 'Promeia.BodyNormal.IB', 'match_priority = 0\n')),
+        (add_section_if_missing,        ('10c77d62', 'Promeia.Chest.IB', 'match_priority = 0\n')),
+    ],
 'bf938187': [(log, ('2.8: Promeia BodyNormal position_vb Hash',)),       (add_section_if_missing, ('62a6b4bd', 'Promeia.BodyNormal.IB', 'match_priority = 0\n'))],
 'd99d21e0': [(log, ('2.8: Promeia BodyNormal texcoord_vb Hash',)),       (add_section_if_missing, ('62a6b4bd', 'Promeia.BodyNormal.IB', 'match_priority = 0\n'))],
 '575d8b1b': [(log, ('2.8: Promeia BodyNormal blend_vb Hash',)),          (add_section_if_missing, ('62a6b4bd', 'Promeia.BodyNormal.IB', 'match_priority = 0\n'))],
 
 # Clothes
-'947f29ae': [(log, ('2.8: Promeia Clothes draw_vb Hash',)),              (add_section_if_missing, ('93f1f568', 'Promeia.Clothes.IB', 'match_priority = 0\n'))],
+'947f29ae': [
+        (log,                           ('2.8 -> 3.0: Promeia Clothes / Cloak draw_vb Hash',)),
+        (add_section_if_missing,        ('93f1f568', 'Promeia.Clothes.IB', 'match_priority = 0\n')),
+        (add_section_if_missing,        ('0ae14c24', 'Promeia.Cloak.IB', 'match_priority = 0\n')),
+    ],
 '1d63183b': [(log, ('2.8: Promeia Clothes position_vb Hash',)),          (add_section_if_missing, ('93f1f568', 'Promeia.Clothes.IB', 'match_priority = 0\n'))],
 '826446a7': [(log, ('2.8: Promeia Clothes texcoord_vb Hash',)),          (add_section_if_missing, ('93f1f568', 'Promeia.Clothes.IB', 'match_priority = 0\n'))],
 '58f42be3': [(log, ('2.8: Promeia Clothes blend_vb Hash',)),             (add_section_if_missing, ('93f1f568', 'Promeia.Clothes.IB', 'match_priority = 0\n'))],
 
 # Leg
-'dfb01010': [(log, ('2.8: Promeia Leg draw_vb Hash',)),                  (add_section_if_missing, ('fd054d1d', 'Promeia.Leg.IB', 'match_priority = 0\n'))],
+'dfb01010': [
+        (log,                           ('2.8 -> 3.0: Promeia Leg / Legs draw_vb Hash',)),
+        (add_section_if_missing,        ('fd054d1d', 'Promeia.Leg.IB', 'match_priority = 0\n')),
+        (add_section_if_missing,        ('ec003379', 'Promeia.Legs.IB', 'match_priority = 0\n')),
+    ],
 '0b822797': [(log, ('2.8: Promeia Leg position_vb Hash',)),              (add_section_if_missing, ('fd054d1d', 'Promeia.Leg.IB', 'match_priority = 0\n'))],
 'f5fd0e92': [(log, ('2.8: Promeia Leg texcoord_vb Hash',)),              (add_section_if_missing, ('fd054d1d', 'Promeia.Leg.IB', 'match_priority = 0\n'))],
 '9839b071': [(log, ('2.8: Promeia Leg blend_vb Hash',)),                 (add_section_if_missing, ('fd054d1d', 'Promeia.Leg.IB', 'match_priority = 0\n'))],
@@ -90,6 +108,28 @@ def get_hash_commands(log, update_hash, comment_sections, comment_commandlists,
 '09271c02': [(log, ('2.0 -> 2.8: Promeia Weapon MaterialMap [Legacy]',)),  (update_hash, ('a179a69c',))],
 'ebac056e': [(log, ('2.8: Promeia Shared NormalMap [Legacy]',)),           (update_hash, ('798adba3',))],
 
+# === 3.0 Database Updates (Strict Sync) ===
+# Cloak VBs
+'f6cc27b6': [(log, ('3.0: Promeia Cloak position_vb',)),             (add_section_if_missing, ('0ae14c24', 'Promeia.Cloak.IB', 'match_priority = 0\n'))],
+'bf00cc95': [(log, ('3.0: Promeia Cloak texcoord_vb',)),             (add_section_if_missing, ('0ae14c24', 'Promeia.Cloak.IB', 'match_priority = 0\n'))],
+'4b0d6867': [(log, ('3.0: Promeia Cloak blend_vb',)),                (add_section_if_missing, ('0ae14c24', 'Promeia.Cloak.IB', 'match_priority = 0\n'))],
+
+# CloakChest VBs
+'dd86f5ae': [(log, ('3.0: Promeia CloakChest draw_vb',)),            (add_section_if_missing, ('b386901d', 'Promeia.CloakChest.IB', 'match_priority = 0\n'))],
+'68e2baef': [(log, ('3.0: Promeia CloakChest position_vb',)),        (add_section_if_missing, ('b386901d', 'Promeia.CloakChest.IB', 'match_priority = 0\n'))],
+'6fe5f8c1': [(log, ('3.0: Promeia CloakChest texcoord_vb',)),        (add_section_if_missing, ('b386901d', 'Promeia.CloakChest.IB', 'match_priority = 0\n'))],
+'112582ea': [(log, ('3.0: Promeia CloakChest blend_vb',)),           (add_section_if_missing, ('b386901d', 'Promeia.CloakChest.IB', 'match_priority = 0\n'))],
+
+# Chest VBs
+'2dbfe8c9': [(log, ('3.0: Promeia Chest position_vb',)),             (add_section_if_missing, ('10c77d62', 'Promeia.Chest.IB', 'match_priority = 0\n'))],
+'1fc95f5b': [(log, ('3.0: Promeia Chest texcoord_vb',)),             (add_section_if_missing, ('10c77d62', 'Promeia.Chest.IB', 'match_priority = 0\n'))],
+'ee35cc06': [(log, ('3.0: Promeia Chest blend_vb',)),                (add_section_if_missing, ('10c77d62', 'Promeia.Chest.IB', 'match_priority = 0\n'))],
+
+# Legs VBs
+'4c1d0a70': [(log, ('3.0: Promeia Legs position_vb',)),             (add_section_if_missing, ('ec003379', 'Promeia.Legs.IB', 'match_priority = 0\n'))],
+'03d6f933': [(log, ('3.0: Promeia Legs texcoord_vb',)),             (add_section_if_missing, ('ec003379', 'Promeia.Legs.IB', 'match_priority = 0\n'))],
+'65bba179': [(log, ('3.0: Promeia Legs blend_vb',)),                (add_section_if_missing, ('ec003379', 'Promeia.Legs.IB', 'match_priority = 0\n'))],
+
 # === Face & Eyebrow Textures (v2.8 Target) ===
 '9b293811': [
         (log,                           ('2.8: Promeia FaceA, Eyebrow Diffuse Hash',)),
@@ -113,22 +153,45 @@ def get_hash_commands(log, update_hash, comment_sections, comment_commandlists,
 
 # === Body (Pinioned & Normal) & Leg Shared Textures (v2.8 Target) ===
 'ae109401': [
-        (log,                           ('2.8: Promeia Body, Leg Diffuse Hash',)),
+        (log,                           ('2.8 -> 3.0: Promeia Body, Leg Diffuse Hash',)),
         (add_section_if_missing,        ('36e794ea', 'Promeia.BodyPinioned.IB', 'match_priority = 0\n')),
         (add_section_if_missing,        ('62a6b4bd', 'Promeia.BodyNormal.IB', 'match_priority = 0\n')),
         (add_section_if_missing,        ('fd054d1d', 'Promeia.Leg.IB', 'match_priority = 0\n')),
+        (add_section_if_missing,        ('b386901d', 'Promeia.CloakChest.IB', 'match_priority = 0\n')),
+        (add_section_if_missing,        ('10c77d62', 'Promeia.Chest.IB', 'match_priority = 0\n')),
+        (add_section_if_missing,        ('ec003379', 'Promeia.Legs.IB', 'match_priority = 0\n')),
     ],
 '3864f20c': [
-        (log,                           ('2.8: Promeia Body, Leg LightMap Hash',)),
+        (log,                           ('2.8 -> 3.0: Promeia Body, Leg LightMap Hash',)),
         (add_section_if_missing,        ('36e794ea', 'Promeia.BodyPinioned.IB', 'match_priority = 0\n')),
         (add_section_if_missing,        ('62a6b4bd', 'Promeia.BodyNormal.IB', 'match_priority = 0\n')),
         (add_section_if_missing,        ('fd054d1d', 'Promeia.Leg.IB', 'match_priority = 0\n')),
+        (add_section_if_missing,        ('b386901d', 'Promeia.CloakChest.IB', 'match_priority = 0\n')),
+        (add_section_if_missing,        ('10c77d62', 'Promeia.Chest.IB', 'match_priority = 0\n')),
+        (add_section_if_missing,        ('ec003379', 'Promeia.Legs.IB', 'match_priority = 0\n')),
     ],
 'd57df6aa': [
-        (log,                           ('2.8: Promeia Body, Leg MaterialMap Hash',)),
+        (log,                           ('2.8 -> 3.0: Promeia Body, Leg MaterialMap Hash',)),
         (add_section_if_missing,        ('36e794ea', 'Promeia.BodyPinioned.IB', 'match_priority = 0\n')),
         (add_section_if_missing,        ('62a6b4bd', 'Promeia.BodyNormal.IB', 'match_priority = 0\n')),
         (add_section_if_missing,        ('fd054d1d', 'Promeia.Leg.IB', 'match_priority = 0\n')),
+        (add_section_if_missing,        ('b386901d', 'Promeia.CloakChest.IB', 'match_priority = 0\n')),
+        (add_section_if_missing,        ('10c77d62', 'Promeia.Chest.IB', 'match_priority = 0\n')),
+        (add_section_if_missing,        ('ec003379', 'Promeia.Legs.IB', 'match_priority = 0\n')),
+    ],
+
+# === Cloak Textures (v3.0 Target) ===
+'e1492a53': [
+        (log,                           ('3.0: Promeia Cloak Diffuse Hash',)),
+        (add_section_if_missing,        ('0ae14c24', 'Promeia.Cloak.IB', 'match_priority = 0\n')),
+    ],
+'9bf7f5cc': [
+        (log,                           ('3.0: Promeia Cloak LightMap Hash',)),
+        (add_section_if_missing,        ('0ae14c24', 'Promeia.Cloak.IB', 'match_priority = 0\n')),
+    ],
+'d37b40a9': [
+        (log,                           ('3.0: Promeia Cloak MaterialMap Hash',)),
+        (add_section_if_missing,        ('0ae14c24', 'Promeia.Cloak.IB', 'match_priority = 0\n')),
     ],
 
 # === Clothes Textures (v2.8 Target) ===
@@ -161,13 +224,17 @@ def get_hash_commands(log, update_hash, comment_sections, comment_commandlists,
 
 # === Shared Normal Map ===
 '798adba3': [
-        (log,                           ('2.8: Promeia Shared NormalMap Hash (v2.8 Target)',)),
+        (log,                           ('2.8 -> 3.0: Promeia Shared NormalMap Hash',)),
         (add_section_if_missing,        ('31178971', 'Promeia.Hair.IB', 'match_priority = 0\n')),
         (add_section_if_missing,        ('36e794ea', 'Promeia.BodyPinioned.IB', 'match_priority = 0\n')),
         (add_section_if_missing,        ('62a6b4bd', 'Promeia.BodyNormal.IB', 'match_priority = 0\n')),
         (add_section_if_missing,        ('93f1f568', 'Promeia.Clothes.IB', 'match_priority = 0\n')),
         (add_section_if_missing,        ('fd054d1d', 'Promeia.Leg.IB', 'match_priority = 0\n')),
         (add_section_if_missing,        ('8995db58', 'Promeia.Weapon.IB', 'match_priority = 0\n')),
+        (add_section_if_missing,        ('0ae14c24', 'Promeia.Cloak.IB', 'match_priority = 0\n')),
+        (add_section_if_missing,        ('b386901d', 'Promeia.CloakChest.IB', 'match_priority = 0\n')),
+        (add_section_if_missing,        ('10c77d62', 'Promeia.Chest.IB', 'match_priority = 0\n')),
+        (add_section_if_missing,        ('ec003379', 'Promeia.Legs.IB', 'match_priority = 0\n')),
     ],
     }
 
@@ -175,5 +242,5 @@ def get_hash_commands(log, update_hash, comment_sections, comment_commandlists,
 # Character metadata
 CHARACTER_INFO = {
     'name': 'Promeia',
-    'game_versions': ['2.8'],
+    'game_versions': ['2.8', '3.0'],
 }

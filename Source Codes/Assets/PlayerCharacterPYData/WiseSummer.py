@@ -1,6 +1,6 @@
 """
 WiseSummer Character Hash Commands
-ZZZ Mod Fixer v2.8
+ZZZ Mod Fixer v3.0
 """
 
 def get_hash_commands(log, update_hash, comment_sections, comment_commandlists,
@@ -16,9 +16,13 @@ def get_hash_commands(log, update_hash, comment_sections, comment_commandlists,
     return {
 # === IB Hashes ===
 '1fdaf388': [(log, ('2.8: WiseSummer Face IB Hash (shared with Wise)',)), (add_ib_check_if_missing,)],
-'4fe696c8': [(log, ('2.8: WiseSummer Body IB Hash',)),                  (add_ib_check_if_missing,)],
-'cb272754': [(log, ('2.8: WiseSummer Hair IB Hash',)),                  (add_ib_check_if_missing,)],
+'4fe696c8': [(log, ('2.8 -> 3.0: WiseSummer Body IB Hash [Legacy]',)), (update_hash, ('19a3f02e',))],
+'cb272754': [(log, ('2.8 -> 3.0: WiseSummer Hair IB Hash [Legacy]',)), (update_hash, ('0ec31440',))],
 '3f771e63': [(log, ('2.8: WiseSummer HairShadow IB Hash',)),            (add_ib_check_if_missing,)],
+
+# === IB Hashes (v3.0 Target) ===
+'0ec31440': [(log, ('3.0: WiseSummer Hair IB Hash',)),                  (add_ib_check_if_missing,)],
+'19a3f02e': [(log, ('3.0: WiseSummer Body IB Hash',)),                  (add_ib_check_if_missing,)],
 
 # === VB Hashes ===
 # Hair
@@ -31,7 +35,7 @@ def get_hash_commands(log, update_hash, comment_sections, comment_commandlists,
 '8e9a12c7': [(log, ('2.8: WiseSummer HairShadow draw_vb',)),            (add_section_if_missing, ('3f771e63', 'WiseSummer.HairShadow.IB', 'match_priority = 0\n'))],
 '14fff21a': [(log, ('2.8: WiseSummer HairShadow position_vb',)),        (add_section_if_missing, ('3f771e63', 'WiseSummer.HairShadow.IB', 'match_priority = 0\n'))],
 '49d81f9a': [(log, ('2.8: WiseSummer HairShadow texcoord_vb',)),        (add_section_if_missing, ('3f771e63', 'WiseSummer.HairShadow.IB', 'match_priority = 0\n'))],
-'a2c79f8d': [(log, ('2.8: WiseSummer HairShadow blend_vb',)),             (add_section_if_missing, ('3f771e63', 'WiseSummer.HairShadow.IB', 'match_priority = 0\n'))],
+'a2c79f8d': [(log, ('2.8: WiseSummer HairShadow blend_vb',)),           (add_section_if_missing, ('3f771e63', 'WiseSummer.HairShadow.IB', 'match_priority = 0\n'))],
 
 # Body
 '18e704a8': [(log, ('2.8: WiseSummer Body draw_vb',)),                  (add_section_if_missing, ('4fe696c8', 'WiseSummer.Body.IB', 'match_priority = 0\n'))],
@@ -44,6 +48,19 @@ def get_hash_commands(log, update_hash, comment_sections, comment_commandlists,
 '5657c1fc': [(log, ('2.8: WiseSummer Face Position',)),                 (add_section_if_missing, ('1fdaf388', 'WiseSummer.Face.IB', 'match_priority = 0\n'))],
 'c83b6cbf': [(log, ('2.8: WiseSummer Face Texcoord',)),                 (add_section_if_missing, ('1fdaf388', 'WiseSummer.Face.IB', 'match_priority = 0\n'))],
 '757bc7cc': [(log, ('2.8: WiseSummer Face Blend',)),                    (add_section_if_missing, ('1fdaf388', 'WiseSummer.Face.IB', 'match_priority = 0\n'))],
+
+# === 3.0 Database Updates (Strict Sync) ===
+# Hair VBs
+'20f40e82': [(log, ('3.0: WiseSummer Hair draw_vb',)),                  (add_section_if_missing, ('0ec31440', 'WiseSummer.Hair.IB', 'match_priority = 0\n'))],
+'1a6be2b0': [(log, ('3.0: WiseSummer Hair position_vb',)),              (add_section_if_missing, ('0ec31440', 'WiseSummer.Hair.IB', 'match_priority = 0\n'))],
+'951a90bf': [(log, ('3.0: WiseSummer Hair texcoord_vb',)),              (add_section_if_missing, ('0ec31440', 'WiseSummer.Hair.IB', 'match_priority = 0\n'))],
+'16c55ecc': [(log, ('3.0: WiseSummer Hair blend_vb',)),                 (add_section_if_missing, ('0ec31440', 'WiseSummer.Hair.IB', 'match_priority = 0\n'))],
+
+# Body VBs
+'44accf08': [(log, ('3.0: WiseSummer Body draw_vb',)),                  (add_section_if_missing, ('19a3f02e', 'WiseSummer.Body.IB', 'match_priority = 0\n'))],
+'71a703c7': [(log, ('3.0: WiseSummer Body position_vb',)),              (add_section_if_missing, ('19a3f02e', 'WiseSummer.Body.IB', 'match_priority = 0\n'))],
+'31d424fc': [(log, ('3.0: WiseSummer Body texcoord_vb',)),              (add_section_if_missing, ('19a3f02e', 'WiseSummer.Body.IB', 'match_priority = 0\n'))],
+'9ab40475': [(log, ('3.0: WiseSummer Body blend_vb',)),                 (add_section_if_missing, ('19a3f02e', 'WiseSummer.Body.IB', 'match_priority = 0\n'))],
 
 # === Face Textures ===
 '5d75fddc': [
@@ -71,41 +88,50 @@ def get_hash_commands(log, update_hash, comment_sections, comment_commandlists,
 'd476035d': [
         (log,                           ('2.8: WiseSummer BodyA Diffuse Hash [Legacy]',)),
         (add_section_if_missing,        ('4fe696c8', 'WiseSummer.Body.IB', 'match_priority = 0\n')),
+        (add_section_if_missing,        ('19a3f02e', 'WiseSummer.Body.IB', 'match_priority = 0\n')),
     ],
 '0fa8f99c': [
         (log,                           ('2.8: WiseSummer BodyA LightMap Hash [Legacy]',)),
         (add_section_if_missing,        ('4fe696c8', 'WiseSummer.Body.IB', 'match_priority = 0\n')),
+        (add_section_if_missing,        ('19a3f02e', 'WiseSummer.Body.IB', 'match_priority = 0\n')),
     ],
 'c2c8606e': [
         (log,                           ('2.8: WiseSummer FaceA, BodyA MaterialMap Hash [Legacy]',)),
         (add_section_if_missing,        ('1fdaf388', 'WiseSummer.Face.IB', 'match_priority = 0\n')),
         (add_section_if_missing,        ('4fe696c8', 'WiseSummer.Body.IB', 'match_priority = 0\n')),
+        (add_section_if_missing,        ('19a3f02e', 'WiseSummer.Body.IB', 'match_priority = 0\n')),
     ],
 
 # === Hair Textures ===
 '28005a5b': [
         (log,                           ('2.8: WiseSummer HairA Diffuse Hash',)),
-        (add_section_if_missing,        ('cb272754', 'WiseSummer.Hair.IB', 'match_priority = 0\n')),
+        (add_section_if_missing,        (('cb272754', 'f6cac296'), 'WiseSummer.Hair.IB', 'match_priority = 0\n')),
+        (add_section_if_missing,        ('0ec31440', 'WiseSummer.Hair.IB', 'match_priority = 0\n')),
     ],
 'cb0d0c22': [
         (log,                           ('2.8: WiseSummer HairA Diffuse Hash [Legacy]',)),
         (add_section_if_missing,        ('cb272754', 'WiseSummer.Hair.IB', 'match_priority = 0\n')),
+        (add_section_if_missing,        ('0ec31440', 'WiseSummer.Hair.IB', 'match_priority = 0\n')),
     ],
 '8d8269f8': [
         (log,                           ('2.8: WiseSummer HairA LightMap Hash',)),
-        (add_section_if_missing,        ('cb272754', 'WiseSummer.Hair.IB', 'match_priority = 0\n')),
+        (add_section_if_missing,        (('cb272754', 'f6cac296'), 'WiseSummer.Hair.IB', 'match_priority = 0\n')),
+        (add_section_if_missing,        ('0ec31440', 'WiseSummer.Hair.IB', 'match_priority = 0\n')),
     ],
 '33368e12': [
         (log,                           ('2.8: WiseSummer HairA LightMap Hash [Legacy]',)),
         (add_section_if_missing,        ('cb272754', 'WiseSummer.Hair.IB', 'match_priority = 0\n')),
+        (add_section_if_missing,        ('0ec31440', 'WiseSummer.Hair.IB', 'match_priority = 0\n')),
     ],
 'f1b20f3d': [
         (log,                           ('2.8: WiseSummer HairA MaterialMap Hash',)),
-        (add_section_if_missing,        ('cb272754', 'WiseSummer.Hair.IB', 'match_priority = 0\n')),
+        (add_section_if_missing,        (('cb272754', 'f6cac296'), 'WiseSummer.Hair.IB', 'match_priority = 0\n')),
+        (add_section_if_missing,        ('0ec31440', 'WiseSummer.Hair.IB', 'match_priority = 0\n')),
     ],
 'd9383a15': [
         (log,                           ('2.8: WiseSummer HairA MaterialMap Hash [Legacy]',)),
         (add_section_if_missing,        ('cb272754', 'WiseSummer.Hair.IB', 'match_priority = 0\n')),
+        (add_section_if_missing,        ('0ec31440', 'WiseSummer.Hair.IB', 'match_priority = 0\n')),
     ],
 
 # === Shared Normal Map ===
@@ -113,11 +139,15 @@ def get_hash_commands(log, update_hash, comment_sections, comment_commandlists,
         (log,                           ('2.8: WiseSummer Shared NormalMap Hash',)),
         (add_section_if_missing,        ('cb272754', 'WiseSummer.Hair.IB', 'match_priority = 0\n')),
         (add_section_if_missing,        ('4fe696c8', 'WiseSummer.Body.IB', 'match_priority = 0\n')),
+        (add_section_if_missing,        ('0ec31440', 'WiseSummer.Hair.IB', 'match_priority = 0\n')),
+        (add_section_if_missing,        ('19a3f02e', 'WiseSummer.Body.IB', 'match_priority = 0\n')),
     ],
 'ebac056e': [
         (log,                           ('2.8: WiseSummer BodyA, HairA NormalMap Hash [Legacy]',)),
         (add_section_if_missing,        ('4fe696c8', 'WiseSummer.Body.IB', 'match_priority = 0\n')),
         (add_section_if_missing,        ('cb272754', 'WiseSummer.Hair.IB', 'match_priority = 0\n')),
+        (add_section_if_missing,        ('19a3f02e', 'WiseSummer.Body.IB', 'match_priority = 0\n')),
+        (add_section_if_missing,        ('0ec31440', 'WiseSummer.Hair.IB', 'match_priority = 0\n')),
     ],
     }
 
@@ -125,5 +155,5 @@ def get_hash_commands(log, update_hash, comment_sections, comment_commandlists,
 # Character metadata
 CHARACTER_INFO = {
     'name': 'WiseSummer',
-    'game_versions': ['2.8'],
+    'game_versions': ['2.8', '3.0'],
 }
