@@ -8,7 +8,7 @@ from pathlib import Path
 from collections import Counter
 
 # DATABASE VERSION CONFIGURATION (Change this for future versions)
-DATABASE_VERSION = "2.8"
+DATABASE_VERSION = "3.0"
 
 # ANSI color codes for terminal output
 class Colors:
@@ -126,14 +126,61 @@ def build_py_hash_index(py_data_path, mock_command_classes):
         
     return hash_to_module, module_to_hashes, module_to_char_info
 
+def longest_common_substring_length(s1, s2):
+    m = [[0] * (1 + len(s2)) for _ in range(1 + len(s1))]
+    longest = 0
+    for x in range(1, 1 + len(s1)):
+        for y in range(1, 1 + len(s2)):
+            if s1[x - 1] == s2[y - 1]:
+                m[x][y] = m[x - 1][y - 1] + 1
+                longest = max(longest, m[x][y])
+    return longest
+
 def clean_name(name):
     name_no_ext = Path(name).stem
+    # Extract only letters and digits (removing Chinese characters, spaces, and punctuation)
     latin_and_digits = "".join(re.findall(r'[a-zA-Z0-9]+', name_no_ext))
-    for stop_word in ['skin', 'summer', 'swimwear', 'temple', 'chandelier', 'campus', 'outfit', 'pose', 'write', 'ult', 'sword']:
-        latin_and_digits = re.sub(stop_word, '', latin_and_digits, flags=re.IGNORECASE)
     return latin_and_digits.lower()
 
-def find_associated_modules(json_filename, json_ib_hashes, json_all_hashes, hash_to_module, module_to_hashes):
+def has_name_match(json_name, mod_name, module_to_char_info=None):
+    c1 = clean_name(json_name)
+    
+    # Generate all possible name candidates for the module to check against
+    candidates = [mod_name]
+    if module_to_char_info and mod_name in module_to_char_info:
+        info = module_to_char_info[mod_name]
+        if 'name' in info:
+            candidates.append(info['name'])
+        if 'display_name' in info:
+            candidates.append(info['display_name'])
+        if 'base_character' in info:
+            candidates.append(info['base_character'])
+            
+    for candidate in candidates:
+        c2 = clean_name(candidate)
+        if not c2:
+            continue
+            
+        # 1. Direct substring match (e.g., "wise" in "wiseoathofskies")
+        if c1 in c2 or c2 in c1:
+            return True
+            
+        # 2. Common prefix match (e.g., "janeskin" and "janedoenocturneoflight" share "jane")
+        common_prefix_len = 0
+        for i in range(min(len(c1), len(c2))):
+            if c1[i] == c2[i]:
+                common_prefix_len += 1
+            else:
+                break
+                
+        min_len = min(len(c1), len(c2))
+        required_prefix_len = min(min_len, 3) # Using 3 to support short names like "Ben"
+        if common_prefix_len >= required_prefix_len:
+            return True
+            
+    return False
+
+def find_associated_modules(json_filename, json_ib_hashes, json_all_hashes, hash_to_module, module_to_hashes, module_to_char_info):
     associated = set()
     methods = []
     
@@ -145,13 +192,10 @@ def find_associated_modules(json_filename, json_ib_hashes, json_all_hashes, hash
         associated.update(ib_matches)
         methods.append("IB Hash Trail (Highly Accurate)")
     
-    clean_json = clean_name(json_filename)
     name_matches = set()
-    if clean_json:
-        for character_name in module_to_hashes.keys():
-            clean_mod = clean_name(character_name)
-            if clean_json in clean_mod or clean_mod in clean_json:
-                name_matches.add(character_name)
+    for character_name in module_to_hashes.keys():
+        if has_name_match(json_filename, character_name, module_to_char_info):
+            name_matches.add(character_name)
     if name_matches:
         associated.update(name_matches)
         methods.append("Name Similarity (Accurate)")
@@ -166,14 +210,27 @@ def find_associated_modules(json_filename, json_ib_hashes, json_all_hashes, hash
             associated.update(component_matches)
             methods.append("Component Hash Trail (Accurate)")
             
-    if len(associated) > 1 and clean_json:
+    # Strict name filtering based on prefix similarity
+    if len(associated) > 1:
         strict_associated = set()
         for mod_name in associated:
-            clean_mod = clean_name(mod_name)
-            if clean_json in clean_mod or clean_mod in clean_json:
+            if has_name_match(json_filename, mod_name, module_to_char_info):
                 strict_associated.add(mod_name)
         if strict_associated:
             associated = strict_associated
+            
+    # Unique IB Hash Disambiguation (Intelligent Outfit/Skin Splitting)
+    # Automatically splits distinct outfits while keeping same-outfit split files grouped
+    if len(associated) > 1:
+        unique_ib_counts = {mod_name: 0 for mod_name in associated}
+        for h in json_ib_hashes:
+            defining_mods = [mod for mod in associated if h in module_to_hashes[mod]]
+            if len(defining_mods) == 1:
+                unique_ib_counts[defining_mods[0]] += 1
+                
+        max_unique = max(unique_ib_counts.values()) if unique_ib_counts else 0
+        if max_unique > 0:
+            associated = {mod_name for mod_name, count in unique_ib_counts.items() if count == max_unique}
             
     return list(associated), " + ".join(methods) if methods else "Unidentified"
 
@@ -239,7 +296,7 @@ def check_sync():
         ib_hashes, other_hashes = parse_json_structure(json_file)
         all_json_hashes = ib_hashes | other_hashes
         
-        associated_modules, method = find_associated_modules(filename, ib_hashes, all_json_hashes, hash_to_module, module_to_hashes)
+        associated_modules, method = find_associated_modules(filename, ib_hashes, all_json_hashes, hash_to_module, module_to_hashes, module_to_char_info)
         
         is_missing_or_empty = False
         if not associated_modules:

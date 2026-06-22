@@ -6,9 +6,10 @@
 # 1.7 Hashes updated by shaojiang
 
 # 2.5 update with dyanmic character data overhaul by ConfoundedHermit
+# 3.0 SlotFix integration with conflict resolution added
 
-# Last Updated: 2026-01-12
-# Game Version at time of update: 2.5
+# Last Updated: 2026-06-22
+# Game Version at time of update: 3.0
 
 import os
 import re
@@ -27,7 +28,7 @@ global_modified_buffers: dict[str, list[str]] = {}
 
 def main():
     parser = argparse.ArgumentParser(
-        prog="ZZZ Fix 2.5 by ConfoundedHermit",
+        prog="ZZZ Fix 3.0 by ConfoundedHermit",
         description=('')
     )
 
@@ -142,6 +143,72 @@ class Ini():
 
             self._done_hashes.add(hash)
 
+        # Apply automated SlotFix processing with conflict resolution
+        self.apply_slot_fix()
+
+        return self
+
+    def apply_slot_fix(self):
+        """
+        Parses the .ini file sections and automatically converts old ps-t3/4/5/6 slot
+        references to the standardized SlotFix format, while resolving legacy conflicts.
+        """
+        pattern = re.compile(
+            r'^([ \t]*\[TextureOverride[^\]]+\])(.*?)(?=(?:^[ \t]*\[|\Z))', 
+            flags=re.MULTILINE | re.DOTALL | re.IGNORECASE
+        )
+        
+        slot_converted_count = 0
+        
+        def repl(match):
+            nonlocal slot_converted_count
+            header = match.group(1)
+            body = match.group(2)
+            
+            # Check if this TextureOverride contains old direct texture slots
+            if any(slot in body.lower() for slot in ["ps-t3", "ps-t4", "ps-t5", "ps-t6"]):
+                # Convert old slots to dynamic XXMI SlotFix resources
+                body = re.sub(r'^[ \t]*ps-t3\s*=\s*([^\r\n]+)', r'Resource\\ZZMI\\Diffuse = ref \1', body, flags=re.IGNORECASE | re.MULTILINE)
+                body = re.sub(r'^[ \t]*ps-t4\s*=\s*([^\r\n]+)', r'Resource\\ZZMI\\NormalMap = ref \1', body, flags=re.IGNORECASE | re.MULTILINE)
+                body = re.sub(r'^[ \t]*ps-t5\s*=\s*([^\r\n]+)', r'Resource\\ZZMI\\LightMap = ref \1', body, flags=re.IGNORECASE | re.MULTILINE)
+                body = re.sub(r'^[ \t]*ps-t6\s*=\s*([^\r\n]+)', r'Resource\\ZZMI\\MaterialMap = ref \1', body, flags=re.IGNORECASE | re.MULTILINE)
+                
+                # Comment out run = CommandListSkinTexture to prevent conflicts with SlotFix
+                body = re.sub(r'^[ \t]*(run\s*=\s*CommandListSkinTexture)', r';\1', body, flags=re.IGNORECASE | re.MULTILINE)
+                
+                # Ensure the SlotFix executor is run at the end of the section (before draw/drawindexed)
+                if "commandlist\\zzmi\\settextures" not in body.lower():
+                    set_textures_cmd = "run = CommandList\\ZZMI\\SetTextures"
+                    lines = body.splitlines()
+                    insert_idx = -1
+                    for idx, line in enumerate(lines):
+                        if "drawindexed" in line.lower() or "draw" in line.lower():
+                            insert_idx = idx
+                            break
+                    
+                    if insert_idx != -1:
+                        lines.insert(insert_idx, set_textures_cmd)
+                    else:
+                        last_non_empty = len(lines)
+                        for idx in range(len(lines) - 1, -1, -1):
+                            if lines[idx].strip() and not lines[idx].strip().startswith(';'):
+                                last_non_empty = idx + 1
+                                break
+                        lines.insert(last_non_empty, set_textures_cmd)
+                    
+                    line_ending = "\r\n" if "\r\n" in body else "\n"
+                    body = line_ending.join(lines)
+                
+                slot_converted_count += 1
+                self._touched = True
+                
+            return header + body
+
+        self.content = pattern.sub(repl, self.content)
+        
+        if slot_converted_count > 0:
+            print(f'\t✓ Applied SlotFix to {slot_converted_count} section(s)')
+            
         return self
 
     def execute(self, commands, default_args):
@@ -306,7 +373,7 @@ def get_critical_content(section):
 # Hardcoded to only return vb1 i.e. texcoord resources for now
 # (TextureOverride sections are special commandlists)
 def process_commandlist(ini_content: str, commandlist: str, target: str):
-    line_pattern = re.compile(r'^\s*(run|{})\s*=\s*(.*)\s*$', flags=re.IGNORECASE)
+    line_pattern = re.compile(r'^\s*(run|{})\s*=\s*(.*)\s*$'.format(target), flags=re.IGNORECASE)
     resources = []
 
     for line in commandlist.splitlines():
@@ -636,11 +703,12 @@ class create_new_section():
 @dataclass(kw_only=True)
 class transfer_indexed_sections():
     trg_indices: tuple[str] = None
-    src_indices: tuple[str] = None
+    transfer_indexed_sections: tuple[str] = None
 
     def execute(self, default_args: DefaultArgs):
         ini         = default_args.ini
-        hash        = default_args.hash
+        active_hash = default_args.hash
+        data        = default_args.data
 
         title = None
         p = get_section_hash_pattern(hash)
@@ -864,12 +932,6 @@ class zzz_13_remap_texcoord():
             offset += struct.calcsize(f'<{format_chunk}')
             offsets.append(offset)
 
-        # Debugging
-        # print(f'\t\tOld Format stride: {struct.calcsize('<' + ''.join(self.old_format))}')
-        # print(f'\t\tNew Format stride: {struct.calcsize('<' + ''.join(self.new_format))}')
-        # print(f'\t\tBuffer Stride: {stride}')
-        # print(f'\t\tOffsets: {offsets}')
-
         # Need to find all Texcoord Resources used by this hash directly
         # through TextureOverrides or run through Commandlists... 
         pattern = get_section_hash_pattern(hash)
@@ -939,7 +1001,7 @@ class zzz_13_remap_texcoord():
                             if (j == 0 and old_chunk == '4B' and new_chunk == '4f'):
                                 new_buffer.extend(struct.pack('<4f', *[b/255 for b in struct.unpack_from('<4B', buffer, i*stride + 0)]))
                             elif (j == 0 and old_chunk == '4f' and new_chunk == '4B'):
-                                new_buffer.extend(struct.pack('<4B', *[int(b*255) for b in struct.unpack_from('<4f', buffer, i*stride + 0)]))
+                                new_buffer.extend(struct.pack('<4B', *[max(0, min(255, int(b * 255))) if b == b else 0 for b in struct.unpack_from('<4f', buffer, i*stride + 0)]))
 
                             # General Element Remap
                             else:
@@ -1030,7 +1092,7 @@ class zzz_12_shrink_texcoord_color():
                 new_buffer.extend(struct.pack(
                         '<4B',
                         *[
-                            int(f * 255)
+                            max(0, min(255, int(f * 255))) if f == f else 0
                             for f in struct.unpack_from('<4f', buffer, i*stride + 0)
                         ]
                     ))
