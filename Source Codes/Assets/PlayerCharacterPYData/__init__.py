@@ -6,17 +6,17 @@ This package contains individual character modules, each with their own
 hash commands dictionary.
 """
 
-__version__ = '2.8'
+__version__ = '3.0'
 
 CHARACTERS = [
     'Alice',
     'AliceSummer',
     'Anby',
     'Anton',
-    'Arie',
-    'ArieAgent',
-    'ArieAgentSkin',
-    'ArieSkin',
+    'Aria',
+    'AriaAgent',
+    'AriaAgentDiscordantNote',
+    'AriaDiscordantNote',
     'AstraChandelier',
     'AstraYao',
     'Banyue',
@@ -28,8 +28,6 @@ CHARACTERS = [
     'Billy',
     'Burnice',
     'Caesar',
-    'Chinatsu',
-    'ChinatsuSkin',
     'Cissia',
     'Corin',
     'Dialyn',
@@ -40,6 +38,7 @@ CHARACTERS = [
     'Harumasa',
     'Hugo',
     'JaneDoe',
+    'JaneDoeNocturneOfLight'
     'JuFufu',
     'Koleda',
     'Lighter',
@@ -47,18 +46,18 @@ CHARACTERS = [
     'Lucy',
     'Lycaon',
     'Manato',
-    'ManatoWhite',
+    'ManatoWhiteHeartSilhouette',
     'Miyabi',
-    'MiyabiSkin',
-    'Nanyu',
-    'NanyuSkin',
+    'MiyabiDignifiedBlossom',
+    'NangongYu',
+    'NangongYuRhapsodyMuse',
     'Nekomata',
     'Nicole',
     'NicoleCutie',
     'Norma',
     'Orphie',
     'PanYinhu',
-    'PanYinhuSkin',
+    'PanYinhuCulinaryJewel',
     'Piper',
     'Promeia',
     'Pulchra',
@@ -71,6 +70,8 @@ CHARACTERS = [
     'Soldier11',
     'Soukaku',
     'StarlightBilly',
+    'Sunna',
+    'SunnaAfternoonTeaBreak'
     'Trigger',
     'Velina',
     'VelinaShadeOfLeisure',

@@ -1,6 +1,6 @@
 """
 BelleTemple Character Hash Commands
-ZZZ Mod Fixer v2.8
+ZZZ Mod Fixer v3.0
 """
 
 def get_hash_commands(log, update_hash, comment_sections, comment_commandlists,
@@ -16,7 +16,7 @@ def get_hash_commands(log, update_hash, comment_sections, comment_commandlists,
     return {
 # === IB Hashes ===
 '30e40390': [(log, ('2.8: BelleTemple HeadAcc IB Hash',)),              (add_ib_check_if_missing,)],
-'62ed56cc': [(log, ('2.8: BelleTemple Neck IB Hash',)),                 (add_ib_check_if_missing,)],
+'62ed56cc': [(log, ('2.8 -> 3.0: BelleTemple Neck IB Hash [Legacy]',)), (update_hash, ('d0627e1f',))],
 '9a9780a7': [(log, ('2.8: BelleTemple Face IB Hash',)),                 (add_ib_check_if_missing,)],
 'aa9ffb85': [(log, ('2.8: BelleTemple Hair IB Hash',)),                 (add_ib_check_if_missing,)],
 'bcc9e4e1': [(log, ('2.8: BelleTemple Legs IB Hash',)),                 (add_ib_check_if_missing,)],
@@ -33,6 +33,10 @@ def get_hash_commands(log, update_hash, comment_sections, comment_commandlists,
 '4e8b2454': [(log, ('2.8: BelleTemple Pink Badge IB Hash',)),           (add_ib_check_if_missing,)],
 '4dcc384f': [(log, ('2.8: BelleTemple Orange Green Badge IB Hash',)),   (add_ib_check_if_missing,)],
 '455bcfc7': [(log, ('2.8: BelleTemple Glasses IB Hash',)),               (add_ib_check_if_missing,)],
+
+# === IB Hashes (v3.0 Target) ===
+'d0627e1f': [(log, ('3.0: BelleTemple Neck IB Hash',)),                  (add_ib_check_if_missing,)],
+'20d3a340': [(log, ('3.0: BelleTemple Headwear IB Hash',)),              (add_ib_check_if_missing,)],
 
 # === VB Hashes ===
 # HeadAcc
@@ -56,7 +60,7 @@ def get_hash_commands(log, update_hash, comment_sections, comment_commandlists,
 # Hair
 '992d149f': [(log, ('2.8: BelleTemple Hair draw_vb',)),                 (add_section_if_missing, ('aa9ffb85', 'BelleTemple.Hair.IB', 'match_priority = 0\n'))],
 '71d2bf80': [(log, ('2.8: BelleTemple Hair position_vb',)),             (add_section_if_missing, ('aa9ffb85', 'BelleTemple.Hair.IB', 'match_priority = 0\n'))],
-'39ac6700': [(log, ('2.8: BelleTemple Hair blend_vb',)),                (add_section_if_missing, ('aa9ffb85', 'BelleTemple.Hair.IB', 'match_priority = 0\n'))],
+'39ac6700': [(log, ('2.8 -> 3.0: BelleTemple Hair blend_vb [Legacy]',)), (update_hash, ('8f7ae834',))],
 'a5e62ece': [(log, ('2.8: BelleTemple Hair texcoord_vb',)),             (add_section_if_missing, ('aa9ffb85', 'BelleTemple.Hair.IB', 'match_priority = 0\n'))],
 
 # HairWAcc
@@ -68,25 +72,25 @@ def get_hash_commands(log, update_hash, comment_sections, comment_commandlists,
 # Face
 '04abceb5': [(log, ('2.8: BelleTemple Face draw_vb',)),                 (add_section_if_missing, ('9a9780a7', 'BelleTemple.Face.IB', 'match_priority = 0\n'))],
 '3eb95df2': [(log, ('2.8: BelleTemple Face position_vb',)),             (add_section_if_missing, ('9a9780a7', 'BelleTemple.Face.IB', 'match_priority = 0\n'))],
-'0c9a075b': [(log, ('2.8: BelleTemple Face blend_vb',)),                (add_section_if_missing, ('9a9780a7', 'BelleTemple.Face.IB', 'match_priority = 0\n'))],
-'ccc76aea': [(log, ('2.8: BelleTemple Face texcoord_vb',)),             (add_section_if_missing, ('9a9780a7', 'BelleTemple.Face.IB', 'match_priority = 0\n'))],
+'0c9a075b': [(log, ('2.8 -> 3.0: BelleTemple Face blend_vb [Legacy]',)), (update_hash, ('359e4502',))],
+'ccc76aea': [(log, ('2.8 -> 3.0: BelleTemple Face texcoord_vb Hash [Legacy]',)), (update_hash, ('d3000b22',))],
 
 # Neck
-'4c215c73': [(log, ('2.8: BelleTemple Neck draw_vb',)),                 (add_section_if_missing, ('62ed56cc', 'BelleTemple.Neck.IB', 'match_priority = 0\n'))],
-'be75a4be': [(log, ('2.8: BelleTemple Neck position_vb',)),             (add_section_if_missing, ('62ed56cc', 'BelleTemple.Neck.IB', 'match_priority = 0\n'))],
-'3bd79a0b': [(log, ('2.8: BelleTemple Neck blend_vb',)),                (add_section_if_missing, ('62ed56cc', 'BelleTemple.Neck.IB', 'match_priority = 0\n'))],
-'dd2b89aa': [(log, ('2.8: BelleTemple Neck texcoord_vb',)),             (add_section_if_missing, ('62ed56cc', 'BelleTemple.Neck.IB', 'match_priority = 0\n'))],
+'4c215c73': [(log, ('2.8 -> 3.0: BelleTemple Neck draw_vb Hash [Legacy]',)), (update_hash, ('3f594476',))],
+'be75a4be': [(log, ('2.8 -> 3.0: BelleTemple Neck position_vb Hash [Legacy]',)), (update_hash, ('e2ee9309',))],
+'dd2b89aa': [(log, ('2.8 -> 3.0: BelleTemple Neck texcoord_vb Hash [Legacy]',)), (update_hash, ('2f7f6398',))],
+'3bd79a0b': [(log, ('2.8 -> 3.0: BelleTemple Neck blend_vb Hash [Legacy]',)), (update_hash, ('0a11b1d7',))],
 
 # Body
 '19e5f486': [(log, ('2.8: BelleTemple Body draw_vb',)),                 (add_section_if_missing, ('d509bdd4', 'BelleTemple.Body.IB', 'match_priority = 0\n'))],
 '8a4e97cd': [(log, ('2.8: BelleTemple Body position_vb',)),             (add_section_if_missing, ('d509bdd4', 'BelleTemple.Body.IB', 'match_priority = 0\n'))],
-'f3dedb50': [(log, ('2.8: BelleTemple Body blend_vb',)),                (add_section_if_missing, ('d509bdd4', 'BelleTemple.Body.IB', 'match_priority = 0\n'))],
+'f3dedb50': [(log, ('2.8 -> 3.0: BelleTemple Body blend_vb Hash [Legacy]',)), (update_hash, ('4d74d5e9',))],
 'd761e076': [(log, ('2.8: BelleTemple Body texcoord_vb',)),             (add_section_if_missing, ('d509bdd4', 'BelleTemple.Body.IB', 'match_priority = 0\n'))],
 
 # Legs
 '720d6a16': [(log, ('2.8: BelleTemple Legs draw_vb',)),                 (add_section_if_missing, ('bcc9e4e1', 'BelleTemple.Legs.IB', 'match_priority = 0\n'))],
 '42b88f48': [(log, ('2.8: BelleTemple Legs position_vb',)),             (add_section_if_missing, ('bcc9e4e1', 'BelleTemple.Legs.IB', 'match_priority = 0\n'))],
-'f53b2eba': [(log, ('2.8: BelleTemple Legs blend_vb',)),                (add_section_if_missing, ('bcc9e4e1', 'BelleTemple.Legs.IB', 'match_priority = 0\n'))],
+'f53b2eba': [(log, ('2.8 -> 3.0: BelleTemple Legs blend_vb Hash [Legacy]',)), (update_hash, ('922a7db6',))],
 '82d0aadd': [(log, ('2.8: BelleTemple Legs texcoord_vb',)),             (add_section_if_missing, ('bcc9e4e1', 'BelleTemple.Legs.IB', 'match_priority = 0\n'))],
 
 # Red Knot Rope VBs
@@ -137,6 +141,11 @@ def get_hash_commands(log, update_hash, comment_sections, comment_commandlists,
 '632b2ed3': [(log, ('2.8: BelleTemple Orange Green Badge texcoord_vb',)),(add_section_if_missing, ('4dcc384f', 'BelleTemple.OrangeGreenBadge.IB', 'match_priority = 0\n'))],
 '66797141': [(log, ('2.8: BelleTemple Orange Green Badge blend_vb',)),   (add_section_if_missing, ('4dcc384f', 'BelleTemple.OrangeGreenBadge.IB', 'match_priority = 0\n'))],
 
+# === Headwear VBs (Reactivated for v3.0) ===
+'2f828e6a': [(log, ('3.0: BelleTemple Headwear draw_vb',)),                 (add_section_if_missing, ('20d3a340', 'BelleTemple.Headwear.IB', 'match_priority = 0\n'))],
+'4dec8913': [(log, ('3.0: BelleTemple Headwear position_vb',)),             (add_section_if_missing, ('20d3a340', 'BelleTemple.Headwear.IB', 'match_priority = 0\n'))],
+'cdd7fc8a': [(log, ('3.0: BelleTemple Headwear texcoord_vb',)),             (add_section_if_missing, ('20d3a340', 'BelleTemple.Headwear.IB', 'match_priority = 0\n'))],
+
 # === Body Updates ===
 '01b0c8b6': [(log, ('2.8: Updating BelleTemple Body blend_vb to f3dedb50',)), (update_hash, ('f3dedb50',))],
 '862dc27a': [(log, ('2.8: Updating BelleTemple Body texcoord_vb to d761e076',)), (update_hash, ('d761e076',))],
@@ -145,16 +154,36 @@ def get_hash_commands(log, update_hash, comment_sections, comment_commandlists,
 '860e1558': [(log, ('2.8: Updating BelleTemple Body IB to d509bdd4',)), (update_hash, ('d509bdd4',))],
 
 # === Neck Updates ===
-'20d3a340': [(log, ('2.8: Updating BelleTemple Neck IB to 62ed56cc',)), (update_hash, ('62ed56cc',))],
-'2f828e6a': [(log, ('2.8: Updating BelleTemple Neck draw_vb to 4c215c73',)), (update_hash, ('4c215c73',))],
-'cdd7fc8a': [(log, ('2.8: Updating BelleTemple Neck texcoord_vb to dd2b89aa',)), (update_hash, ('dd2b89aa',))],
-'db7add33': [(log, ('2.8: Updating BelleTemple Neck blend_vb to 3bd79a0b',)), (update_hash, ('3bd79a0b',))],
-'4dec8913': [(log, ('2.8: Updating BelleTemple Neck position_vb to be75a4be',)), (update_hash, ('be75a4be',))],
+'20d3a340': [(log, ('3.0: BelleTemple Headwear IB Hash',)),                 (add_ib_check_if_missing,)],
 
-# === Pembaruan Referensi Hash Rusak (Broken References Fix v2.8) ===
+# === Broken References Fix (v2.8) ===
 'f425bd04': [(log, ('2.8: Belle Body Texcoord Hash [Legacy] 2.0',)),     (update_hash, ('91fbd2fa',))],
 '84529dab': [(log, ('2.8: Belle BodyA Diffuse 2048p Hash [Legacy] Old',)), (update_hash, ('da2bfe2f',))],
 'ef76b675': [(log, ('2.8: Belle BodyA Diffuse 1024p Hash [Legacy] Old',)), (update_hash, ('0a2e0f42',))],
+'db7add33': [(log, ('2.8 -> 3.0: BelleTemple Neck blend_vb Hash [Legacy]',)), (update_hash, ('3bd79a0b',))],
+
+# === 3.0 Database Updates (Strict Sync) ===
+# Hair
+'8f7ae834': [(log, ('3.0: BelleTemple Hair blend_vb',)),                 (add_section_if_missing, ('aa9ffb85', 'BelleTemple.Hair.IB', 'match_priority = 0\n'))],
+
+# Headwear
+'f18dd23f': [(log, ('3.0: BelleTemple Headwear blend_vb',)),             (add_section_if_missing, ('20d3a340', 'BelleTemple.Headwear.IB', 'match_priority = 0\n'))],
+
+# Neck
+'3f594476': [(log, ('3.0: BelleTemple Neck draw_vb',)),                  (add_section_if_missing, ('d0627e1f', 'BelleTemple.Neck.IB', 'match_priority = 0\n'))],
+'e2ee9309': [(log, ('3.0: BelleTemple Neck position_vb',)),              (add_section_if_missing, ('d0627e1f', 'BelleTemple.Neck.IB', 'match_priority = 0\n'))],
+'2f7f6398': [(log, ('3.0: BelleTemple Neck texcoord_vb',)),              (add_section_if_missing, ('d0627e1f', 'BelleTemple.Neck.IB', 'match_priority = 0\n'))],
+'0a11b1d7': [(log, ('3.0: BelleTemple Neck blend_vb',)),                 (add_section_if_missing, ('d0627e1f', 'BelleTemple.Neck.IB', 'match_priority = 0\n'))],
+
+# Torso / Body
+'4d74d5e9': [(log, ('3.0: BelleTemple Body blend_vb',)),                 (add_section_if_missing, ('d509bdd4', 'BelleTemple.Body.IB', 'match_priority = 0\n'))],
+
+# Leg / Legs
+'922a7db6': [(log, ('3.0: BelleTemple Legs blend_vb',)),                 (add_section_if_missing, ('bcc9e4e1', 'BelleTemple.Legs.IB', 'match_priority = 0\n'))],
+
+# Face
+'359e4502': [(log, ('3.0: BelleTemple Face blend_vb',)),                 (add_section_if_missing, ('9a9780a7', 'BelleTemple.Face.IB', 'match_priority = 0\n'))],
+'d3000b22': [(log, ('3.0: BelleTemple Face texcoord_vb',)),              (add_section_if_missing, ('9a9780a7', 'BelleTemple.Face.IB', 'match_priority = 0\n'))],
 
 # === Face Textures ===
 '75ec3614': [
@@ -340,12 +369,18 @@ def get_hash_commands(log, update_hash, comment_sections, comment_commandlists,
 
 # === Shared Normal Map ===
 '798adba3': [
-        (log,                           ('2.8: BelleTemple Shared NormalMap Hash',)),
+        (log,                           ('2.8 -> 3.0: BelleTemple Shared NormalMap Hash (Target)',)),
         (add_section_if_missing,        ('aa9ffb85', 'BelleTemple.Hair.IB', 'match_priority = 0\n')),
         (add_section_if_missing,        ('62ed56cc', 'BelleTemple.Neck.IB', 'match_priority = 0\n')),
         (add_section_if_missing,        ('bcc9e4e1', 'BelleTemple.Legs.IB', 'match_priority = 0\n')),
         (add_section_if_missing,        ('d509bdd4', 'BelleTemple.Body.IB', 'match_priority = 0\n')),
         (add_section_if_missing,        ('2ac09c8f', 'BelleTemple.OrangeGreenRibbon.IB', 'match_priority = 0\n')),
+        (add_section_if_missing,        ('d0627e1f', 'BelleTemple.Neck.IB', 'match_priority = 0\n')),
+        (add_section_if_missing,        ('20d3a340', 'BelleTemple.Headwear.IB', 'match_priority = 0\n')),
+    ],
+'ebac056e': [
+        (log,                           ('3.0: BelleTemple Shared NormalMap Hash [Legacy]',)),
+        (update_hash,                   ('798adba3',)),
     ],
     }
 
@@ -353,5 +388,5 @@ def get_hash_commands(log, update_hash, comment_sections, comment_commandlists,
 # Character metadata
 CHARACTER_INFO = {
     'name': 'BelleTemple',
-    'game_versions': ['2.8'],
+    'game_versions': ['2.8', '3.0'],
 }

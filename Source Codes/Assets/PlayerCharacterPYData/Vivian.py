@@ -1,6 +1,6 @@
 """
 Vivian Character Hash Commands
-ZZZ Mod Fixer v2.8
+ZZZ Mod Fixer v3.0
 """
 
 def get_hash_commands(log, update_hash, comment_sections, comment_commandlists,
@@ -195,9 +195,9 @@ def get_hash_commands(log, update_hash, comment_sections, comment_commandlists,
         (add_section_if_missing,        ('e69dfc8c', 'Vivian.WeaponThruster.IB', 'match_priority = 0\n')),
     ],
 
-# === Normal Map ===
+# === Shared Normal Map ===
 '798adba3': [
-        (log,                           ('2.8: Vivian Shared NormalMap Hash',)),
+        (log,                           ('3.0: Vivian Shared NormalMap Hash (Target)',)),
         (add_section_if_missing,        ('c4eb6168', 'Vivian.Hair.IB', 'match_priority = 0\n')),
         (add_section_if_missing,        ('cd609d98', 'Vivian.Body.IB', 'match_priority = 0\n')),
         (add_section_if_missing,        ('14602a61', 'Vivian.Gem.IB', 'match_priority = 0\n')),
@@ -206,6 +206,10 @@ def get_hash_commands(log, update_hash, comment_sections, comment_commandlists,
         (add_section_if_missing,        ('28f8090e', 'Vivian.WeaponUmbrellaFace.IB', 'match_priority = 0\n')),
         (add_section_if_missing,        ('a031575e', 'Vivian.WeaponSword.IB', 'match_priority = 0\n')),
         (add_section_if_missing,        ('e69dfc8c', 'Vivian.WeaponThruster.IB', 'match_priority = 0\n')),
+    ],
+'ebac056e': [
+        (log,                           ('3.0: Vivian Shared NormalMap Hash [Legacy]',)),
+        (update_hash,                   ('798adba3',)),
     ],
 
 # === Weapon Shared Textures ===
@@ -239,5 +243,5 @@ def get_hash_commands(log, update_hash, comment_sections, comment_commandlists,
 # Character metadata
 CHARACTER_INFO = {
     'name': 'Vivian',
-    'game_versions': ['1.0', '1.1', '1.2', '1.3', '1.4', '1.5', '1.6', '1.7', '2.8'],
+    'game_versions': ['1.0', '1.1', '1.2', '1.3', '1.4', '1.5', '1.6', '1.7', '2.8', '3.0'],
 }

@@ -21,6 +21,9 @@ def get_hash_commands(log, update_hash, comment_sections, comment_commandlists,
 '6c0b932e': [(log, ('3.0: Velina Head IB Hash',)),                      (add_ib_check_if_missing,)],
 '6cfb2498': [(log, ('3.0: Velina Face IB Hash',)),                      (add_ib_check_if_missing,)],
 '5eb66b57': [(log, ('3.0: Velina Hair IB Hash',)),                      (add_ib_check_if_missing,)],
+'6f33df95': [(log, ('3.0: Velina HairShadow IB Hash',)),                (add_ib_check_if_missing,)],
+'8ac40392': [(log, ('3.0: Velina Weapon IB Hash',)),                     (add_ib_check_if_missing,)],
+'9fbf4911': [(log, ('3.0: Velina Fan IB Hash',)),                        (add_ib_check_if_missing,)],
 
 # === VB Hashes ===
 # Body
@@ -58,6 +61,19 @@ def get_hash_commands(log, update_hash, comment_sections, comment_commandlists,
 '53954bd7': [(log, ('3.0: Velina Hair position_vb',)),                  (add_section_if_missing, ('5eb66b57', 'Velina.Hair.IB', 'match_priority = 0\n'))],
 '9f40d9d1': [(log, ('3.0: Velina Hair texcoord_vb',)),                  (add_section_if_missing, ('5eb66b57', 'Velina.Hair.IB', 'match_priority = 0\n'))],
 'a1c210e2': [(log, ('3.0: Velina Hair blend_vb',)),                     (add_section_if_missing, ('5eb66b57', 'Velina.Hair.IB', 'match_priority = 0\n'))],
+
+# === 3.0 Database Updates (Strict Sync) ===
+# Weapon VBs
+'1d3db60d': [(log, ('3.0: Velina Weapon draw_vb',)),                    (add_section_if_missing, ('8ac40392', 'Velina.Weapon.IB', 'match_priority = 0\n'))],
+'4f3ab614': [(log, ('3.0: Velina Weapon position_vb',)),                (add_section_if_missing, ('8ac40392', 'Velina.Weapon.IB', 'match_priority = 0\n'))],
+'1b43f126': [(log, ('3.0: Velina Weapon texcoord_vb',)),                (add_section_if_missing, ('8ac40392', 'Velina.Weapon.IB', 'match_priority = 0\n'))],
+'4ba016b1': [(log, ('3.0: Velina Weapon blend_vb',)),                   (add_section_if_missing, ('8ac40392', 'Velina.Weapon.IB', 'match_priority = 0\n'))],
+
+# Fan VBs
+'2f496de0': [(log, ('3.0: Velina Fan draw_vb',)),                      (add_section_if_missing, ('9fbf4911', 'Velina.Fan.IB', 'match_priority = 0\n'))],
+'738fb0b1': [(log, ('3.0: Velina Fan position_vb',)),                  (add_section_if_missing, ('9fbf4911', 'Velina.Fan.IB', 'match_priority = 0\n'))],
+'f8e38f88': [(log, ('3.0: Velina Fan texcoord_vb',)),                  (add_section_if_missing, ('9fbf4911', 'Velina.Fan.IB', 'match_priority = 0\n'))],
+'055b892d': [(log, ('3.0: Velina Fan blend_vb',)),                     (add_section_if_missing, ('9fbf4911', 'Velina.Fan.IB', 'match_priority = 0\n'))],
 
 # === Face Textures ===
 '93ce2562': [
@@ -119,6 +135,23 @@ def get_hash_commands(log, update_hash, comment_sections, comment_commandlists,
         (add_section_if_missing,        ('6c0b932e', 'Velina.Head.IB', 'match_priority = 0\n')),
     ],
 
+# === Weapon & Fan Textures ===
+'185d733b': [
+        (log,                           ('3.0: Velina Weapon, Fan Diffuse Hash',)),
+        (add_section_if_missing,        ('8ac40392', 'Velina.Weapon.IB', 'match_priority = 0\n')),
+        (add_section_if_missing,        ('9fbf4911', 'Velina.Fan.IB', 'match_priority = 0\n')),
+    ],
+'e0e44e38': [
+        (log,                           ('3.0: Velina Weapon, Fan LightMap Hash',)),
+        (add_section_if_missing,        ('8ac40392', 'Velina.Weapon.IB', 'match_priority = 0\n')),
+        (add_section_if_missing,        ('9fbf4911', 'Velina.Fan.IB', 'match_priority = 0\n')),
+    ],
+'b45cdc1a': [
+        (log,                           ('3.0: Velina Weapon, Fan MaterialMap Hash',)),
+        (add_section_if_missing,        ('8ac40392', 'Velina.Weapon.IB', 'match_priority = 0\n')),
+        (add_section_if_missing,        ('9fbf4911', 'Velina.Fan.IB', 'match_priority = 0\n')),
+    ],
+
 # === Shared Normal Map ===
 '798adba3': [
         (log,                           ('3.0: Velina Shared NormalMap Hash (Target)',)),
@@ -126,6 +159,8 @@ def get_hash_commands(log, update_hash, comment_sections, comment_commandlists,
         (add_section_if_missing,        ('6b25e6d8', 'Velina.Legs.IB', 'match_priority = 0\n')),
         (add_section_if_missing,        ('6c0b932e', 'Velina.Head.IB', 'match_priority = 0\n')),
         (add_section_if_missing,        ('5eb66b57', 'Velina.Hair.IB', 'match_priority = 0\n')),
+        (add_section_if_missing,        ('8ac40392', 'Velina.Weapon.IB', 'match_priority = 0\n')),
+        (add_section_if_missing,        ('9fbf4911', 'Velina.Fan.IB', 'match_priority = 0\n')),
     ],
 'ebac056e': [
         (log,                           ('3.0: Velina Shared NormalMap Hash [Legacy]',)),
@@ -133,6 +168,8 @@ def get_hash_commands(log, update_hash, comment_sections, comment_commandlists,
         (add_section_if_missing,        ('6b25e6d8', 'Velina.Legs.IB', 'match_priority = 0\n')),
         (add_section_if_missing,        ('6c0b932e', 'Velina.Head.IB', 'match_priority = 0\n')),
         (add_section_if_missing,        ('5eb66b57', 'Velina.Hair.IB', 'match_priority = 0\n')),
+        (add_section_if_missing,        ('8ac40392', 'Velina.Weapon.IB', 'match_priority = 0\n')),
+        (add_section_if_missing,        ('9fbf4911', 'Velina.Fan.IB', 'match_priority = 0\n')),
     ],
     }
 

@@ -88,8 +88,10 @@ def get_hash_commands(log, update_hash, comment_sections, comment_commandlists,
 
 # Weapon - Ring Blade
 '0a06059e': [(log, ('2.8: Promeia Weapon draw_vb Hash',)),               (add_section_if_missing, ('8995db58', 'Promeia.Weapon.IB', 'match_priority = 0\n'))],
-'d242b77a': [(log, ('2.8: Promeia Weapon position_vb Hash',)),           (add_section_if_missing, ('8995db58', 'Promeia.Weapon.IB', 'match_priority = 0\n'))],
-'f2f5bd28': [(log, ('2.8: Promeia Weapon texcoord_vb Hash',)),           (add_section_if_missing, ('8995db58', 'Promeia.Weapon.IB', 'match_priority = 0\n'))],
+'35ecba91': [(log, ('3.0: Promeia Weapon position_vb',)),             (add_section_if_missing, ('8995db58', 'Promeia.Weapon.IB', 'match_priority = 0\n'))],
+'d242b77a': [(log, ('2.8 -> 3.0: Promeia Weapon position_vb Hash [Legacy]',)), (update_hash, ('35ecba91',))],
+'064658e2': [(log, ('3.0: Promeia Weapon texcoord_vb',)),             (add_section_if_missing, ('8995db58', 'Promeia.Weapon.IB', 'match_priority = 0\n'))],
+'f2f5bd28': [(log, ('2.8 -> 3.0: Promeia Weapon texcoord_vb Hash [Legacy]',)), (update_hash, ('064658e2',))],
 'a864dc82': [(log, ('2.8: Promeia Weapon blend_vb Hash',)),              (add_section_if_missing, ('8995db58', 'Promeia.Weapon.IB', 'match_priority = 0\n'))],
 
 # === Legacy Hash Updates ===
@@ -209,17 +211,29 @@ def get_hash_commands(log, update_hash, comment_sections, comment_commandlists,
     ],
 
 # === Weapon Textures (v2.8 Target) ===
+'328135c5': [
+        (log,                           ('3.0: Promeia Weapon Diffuse Hash',)),
+        (add_section_if_missing,        ('8995db58', 'Promeia.Weapon.IB', 'match_priority = 0\n')),
+    ],
 'd1399215': [
-        (log,                           ('2.8: Promeia WeaponA Diffuse Hash',)),
+        (log,                           ('2.8 -> 3.0: Promeia Weapon Diffuse Hash [Legacy]',)),
+        (update_hash,                   ('328135c5',)),
+    ],
+'82f4146a': [
+        (log,                           ('3.0: Promeia Weapon LightMap Hash',)),
         (add_section_if_missing,        ('8995db58', 'Promeia.Weapon.IB', 'match_priority = 0\n')),
     ],
 '369f0efd': [
-        (log,                           ('2.8: Promeia WeaponA LightMap Hash',)),
+        (log,                           ('2.8 -> 3.0: Promeia Weapon LightMap Hash [Legacy]',)),
+        (update_hash,                   ('82f4146a',)),
+    ],
+'d672b87c': [
+        (log,                           ('3.0: Promeia Weapon MaterialMap Hash',)),
         (add_section_if_missing,        ('8995db58', 'Promeia.Weapon.IB', 'match_priority = 0\n')),
     ],
 'a179a69c': [
-        (log,                           ('2.8: Promeia WeaponA MaterialMap Hash',)),
-        (add_section_if_missing,        ('8995db58', 'Promeia.Weapon.IB', 'match_priority = 0\n')),
+        (log,                           ('2.8 -> 3.0: Promeia Weapon MaterialMap Hash [Legacy]',)),
+        (update_hash,                   ('d672b87c',)),
     ],
 
 # === Shared Normal Map ===

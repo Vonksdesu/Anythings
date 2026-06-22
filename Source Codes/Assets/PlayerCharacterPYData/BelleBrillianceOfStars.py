@@ -22,6 +22,8 @@ def get_hash_commands(log, update_hash, comment_sections, comment_commandlists,
 'a318b3c6': [(log, ('3.0: BelleBrillianceOfStars Extra IB Hash',)),        (add_ib_check_if_missing,)],
 'b946c37f': [(log, ('3.0: BelleBrillianceOfStars Tie IB Hash',)),          (add_ib_check_if_missing,)],
 'feb1c4cd': [(log, ('3.0: BelleBrillianceOfStars Body IB Hash',)),         (add_ib_check_if_missing,)],
+'403eace9': [(log, ('3.0: BelleBrillianceOfStars HairShadow IB Hash',)),    (add_ib_check_if_missing,)],
+'62711f82': [(log, ('3.0: BelleBrillianceOfStars Earrings IB Hash',)),      (add_ib_check_if_missing,)],
 
 # === VB Hashes ===
 # Hat
@@ -66,6 +68,12 @@ def get_hash_commands(log, update_hash, comment_sections, comment_commandlists,
 '3e19f179': [(log, ('3.0: BelleBrillianceOfStars Body texcoord_vb',)),     (add_section_if_missing, ('feb1c4cd', 'BelleBrillianceOfStars.Body.IB', 'match_priority = 0\n'))],
 '987395ef': [(log, ('3.0: BelleBrillianceOfStars Body blend_vb',)),        (add_section_if_missing, ('feb1c4cd', 'BelleBrillianceOfStars.Body.IB', 'match_priority = 0\n'))],
 
+# Earrings
+'e2c8decf': [(log, ('3.0: BelleBrillianceOfStars Earrings draw_vb',)),      (add_section_if_missing, ('62711f82', 'BelleBrillianceOfStars.Earrings.IB', 'match_priority = 0\n'))],
+'29324995': [(log, ('3.0: BelleBrillianceOfStars Earrings position_vb',)),  (add_section_if_missing, ('62711f82', 'BelleBrillianceOfStars.Earrings.IB', 'match_priority = 0\n'))],
+'8da231b5': [(log, ('3.0: BelleBrillianceOfStars Earrings texcoord_vb',)),  (add_section_if_missing, ('62711f82', 'BelleBrillianceOfStars.Earrings.IB', 'match_priority = 0\n'))],
+'611f1c52': [(log, ('3.0: BelleBrillianceOfStars Earrings blend_vb',)),     (add_section_if_missing, ('62711f82', 'BelleBrillianceOfStars.Earrings.IB', 'match_priority = 0\n'))],
+
 # === Face Textures ===
 '75ec3614': [
         (log,                           ('3.0: BelleBrillianceOfStars Face Diffuse Hash',)),
@@ -103,24 +111,27 @@ def get_hash_commands(log, update_hash, comment_sections, comment_commandlists,
         (add_section_if_missing,        ('aa9ffb85', 'BelleBrillianceOfStars.Hair.IB', 'match_priority = 0\n')),
     ],
 
-# === Hat, Extra, Tie Textures ===
+# === Hat, Extra, Tie, Earrings Textures ===
 '8c0ea559': [
-        (log,                           ('3.0: BelleBrillianceOfStars Hat, Extra, Tie Diffuse Hash',)),
+        (log,                           ('3.0: BelleBrillianceOfStars Hat, Extra, Tie, Earrings Diffuse Hash',)),
         (add_section_if_missing,        ('0a843a8f', 'BelleBrillianceOfStars.Hat.IB', 'match_priority = 0\n')),
         (add_section_if_missing,        ('a318b3c6', 'BelleBrillianceOfStars.Extra.IB', 'match_priority = 0\n')),
         (add_section_if_missing,        ('b946c37f', 'BelleBrillianceOfStars.Tie.IB', 'match_priority = 0\n')),
+        (add_section_if_missing,        ('62711f82', 'BelleBrillianceOfStars.Earrings.IB', 'match_priority = 0\n')),
     ],
 'dcb8ba2e': [
-        (log,                           ('3.0: BelleBrillianceOfStars Hat, Extra, Tie LightMap Hash',)),
+        (log,                           ('3.0: BelleBrillianceOfStars Hat, Extra, Tie, Earrings LightMap Hash',)),
         (add_section_if_missing,        ('0a843a8f', 'BelleBrillianceOfStars.Hat.IB', 'match_priority = 0\n')),
         (add_section_if_missing,        ('a318b3c6', 'BelleBrillianceOfStars.Extra.IB', 'match_priority = 0\n')),
         (add_section_if_missing,        ('b946c37f', 'BelleBrillianceOfStars.Tie.IB', 'match_priority = 0\n')),
+        (add_section_if_missing,        ('62711f82', 'BelleBrillianceOfStars.Earrings.IB', 'match_priority = 0\n')),
     ],
 '57130f7c': [
-        (log,                           ('3.0: BelleBrillianceOfStars Hat, Extra, Tie MaterialMap Hash',)),
+        (log,                           ('3.0: BelleBrillianceOfStars Hat, Extra, Tie, Earrings MaterialMap Hash',)),
         (add_section_if_missing,        ('0a843a8f', 'BelleBrillianceOfStars.Hat.IB', 'match_priority = 0\n')),
         (add_section_if_missing,        ('a318b3c6', 'BelleBrillianceOfStars.Extra.IB', 'match_priority = 0\n')),
         (add_section_if_missing,        ('b946c37f', 'BelleBrillianceOfStars.Tie.IB', 'match_priority = 0\n')),
+        (add_section_if_missing,        ('62711f82', 'BelleBrillianceOfStars.Earrings.IB', 'match_priority = 0\n')),
     ],
 
 # === Shared Normal Map ===
@@ -132,6 +143,7 @@ def get_hash_commands(log, update_hash, comment_sections, comment_commandlists,
         (add_section_if_missing,        ('a318b3c6', 'BelleBrillianceOfStars.Extra.IB', 'match_priority = 0\n')),
         (add_section_if_missing,        ('b946c37f', 'BelleBrillianceOfStars.Tie.IB', 'match_priority = 0\n')),
         (add_section_if_missing,        ('feb1c4cd', 'BelleBrillianceOfStars.Body.IB', 'match_priority = 0\n')),
+        (add_section_if_missing,        ('62711f82', 'BelleBrillianceOfStars.Earrings.IB', 'match_priority = 0\n')),
     ],
 'ebac056e': [
         (log,                           ('3.0: BelleBrillianceOfStars Shared NormalMap Hash [Legacy]',)),
@@ -141,6 +153,7 @@ def get_hash_commands(log, update_hash, comment_sections, comment_commandlists,
         (add_section_if_missing,        ('a318b3c6', 'BelleBrillianceOfStars.Extra.IB', 'match_priority = 0\n')),
         (add_section_if_missing,        ('b946c37f', 'BelleBrillianceOfStars.Tie.IB', 'match_priority = 0\n')),
         (add_section_if_missing,        ('feb1c4cd', 'BelleBrillianceOfStars.Body.IB', 'match_priority = 0\n')),
+        (add_section_if_missing,        ('62711f82', 'BelleBrillianceOfStars.Earrings.IB', 'match_priority = 0\n')),
     ],
     }
 

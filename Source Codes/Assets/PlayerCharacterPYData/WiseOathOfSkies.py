@@ -20,6 +20,7 @@ def get_hash_commands(log, update_hash, comment_sections, comment_commandlists,
 'f21a2bac': [(log, ('3.0: WiseOathOfSkies Tie IB Hash',)),                  (add_ib_check_if_missing,)],
 'd5ca0411': [(log, ('3.0: WiseOathOfSkies Hair IB Hash',)),                 (add_ib_check_if_missing,)],
 '1fdaf388': [(log, ('3.0: WiseOathOfSkies Face IB Hash',)),                 (add_ib_check_if_missing,)],
+'8d08b190': [(log, ('3.0: WiseOathOfSkies HairShadow IB Hash',)),           (add_ib_check_if_missing,)],
 
 # === VB Hashes ===
 # Body
@@ -110,6 +111,7 @@ def get_hash_commands(log, update_hash, comment_sections, comment_commandlists,
         (add_section_if_missing,        ('8a1ec07e', 'WiseOathOfSkies.Neck.IB', 'match_priority = 0\n')),
         (add_section_if_missing,        ('f21a2bac', 'WiseOathOfSkies.Tie.IB', 'match_priority = 0\n')),
         (add_section_if_missing,        ('d5ca0411', 'WiseOathOfSkies.Hair.IB', 'match_priority = 0\n')),
+        (add_section_if_missing,        ('8d08b190', 'WiseOathOfSkies.HairShadow.IB', 'match_priority = 0\n')),
     ],
 'ebac056e': [
         (log,                           ('3.0: WiseOathOfSkies Shared NormalMap Hash [Legacy]',)),
@@ -117,6 +119,7 @@ def get_hash_commands(log, update_hash, comment_sections, comment_commandlists,
         (add_section_if_missing,        ('8a1ec07e', 'WiseOathOfSkies.Neck.IB', 'match_priority = 0\n')),
         (add_section_if_missing,        ('f21a2bac', 'WiseOathOfSkies.Tie.IB', 'match_priority = 0\n')),
         (add_section_if_missing,        ('d5ca0411', 'WiseOathOfSkies.Hair.IB', 'match_priority = 0\n')),
+        (add_section_if_missing,        ('8d08b190', 'WiseOathOfSkies.HairShadow.IB', 'match_priority = 0\n')),
     ],
     }
 

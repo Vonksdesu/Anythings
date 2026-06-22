@@ -1,6 +1,6 @@
 """
 EllenCampus Character Hash Commands
-ZZZ Mod Fixer v2.8
+ZZZ Mod Fixer v3.0
 """
 
 def get_hash_commands(log, update_hash, comment_sections, comment_commandlists,
@@ -67,9 +67,13 @@ def get_hash_commands(log, update_hash, comment_sections, comment_commandlists,
 '4afdcca5': [(log, ('2.8: EllenCampus Spring blend_vb Hash',)),         (add_section_if_missing, ('2747bdd1', 'EllenCampus.WeaponSpring.IB', 'match_priority = 0\n'))],
 
 # === Face Textures ===
-'4808d050': [
-        (log,                           ('2.8: EllenCampus FaceA Diffuse Hash (Shared)',)),
+'465a66eb': [
+        (log,                           ('3.0: EllenCampus Face Diffuse Hash',)),
         (add_section_if_missing,        ('f6ef8f3a', 'EllenCampus.Face.IB', 'match_priority = 0\n')),
+    ],
+'4808d050': [
+        (log,                           ('2.8 -> 3.0: EllenCampus FaceA Diffuse Hash [Legacy]',)),
+        (update_hash,                   ('465a66eb',)),
     ],
 
 # === Legacy Hash Updates ===
@@ -248,5 +252,5 @@ def get_hash_commands(log, update_hash, comment_sections, comment_commandlists,
 # Character metadata
 CHARACTER_INFO = {
     'name': 'EllenCampus',
-    'game_versions': ['2.8'],
+    'game_versions': ['1.0', '1.1', '1.2', '1.3', '1.4', '1.5', '1.6', '1.7', '2.8', '3.0'],
 }

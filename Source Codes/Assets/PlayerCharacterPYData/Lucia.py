@@ -200,5 +200,5 @@ def get_hash_commands(log, update_hash, comment_sections, comment_commandlists,
 # Character metadata
 CHARACTER_INFO = {
     'name': 'Lucia',
-    'game_versions': ['2.8'],
+    'game_versions': ['2.8', '3.0'],
 }

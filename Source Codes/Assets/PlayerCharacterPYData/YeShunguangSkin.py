@@ -1,6 +1,6 @@
 """
 YeShunguangSkin Character Hash Commands
-ZZZ Mod Fixer v2.8
+ZZZ Mod Fixer v3.0
 """
 
 def get_hash_commands(log, update_hash, comment_sections, comment_commandlists,
@@ -31,7 +31,10 @@ def get_hash_commands(log, update_hash, comment_sections, comment_commandlists,
 'bdf6d0eb': [(log, ('2.8: YeShunguangSkin HairShadow IB Hash',)),   (add_ib_check_if_missing,)],
 'ba7164f5': [(log, ('2.8: YeShunguangSkin TransparentCloth IB Hash',)),(add_ib_check_if_missing,)],
 
-# === VB Hashes (v2.8 Target) ===
+# === IB Hashes (v3.0 Target) ===
+'93c3c2b7': [(log, ('3.0: YeShunguangSkin Sword IB Hash',)),         (add_ib_check_if_missing,)],
+
+# === VB Hashes ===
 # Hair
 'bd9b6102': [(log, ('2.8: YeShunguangSkin Hair draw_vb',)),             (add_section_if_missing, ('999bff94', 'YeShunguangSkin.Bangs.IB', 'match_priority = 0\n'))],
 'f84ce9bf': [(log, ('2.8: YeShunguangSkin Hair position_vb',)),         (add_section_if_missing, ('999bff94', 'YeShunguangSkin.Bangs.IB', 'match_priority = 0\n'))],
@@ -86,13 +89,13 @@ def get_hash_commands(log, update_hash, comment_sections, comment_commandlists,
 '7105bdbb': [(log, ('2.8: YeShunguangSkin HeadwearFlower texcoord_vb',)),(add_section_if_missing, ('6dc6c880', 'YeShunguangSkin.HairClips.IB', 'match_priority = 0\n'))],
 '16a21c01': [(log, ('2.8: YeShunguangSkin HeadwearFlower blend_vb',)),  (add_section_if_missing, ('6dc6c880', 'YeShunguangSkin.HairClips.IB', 'match_priority = 0\n'))],
 
-# Headwear LongRibbon
+# Headwear Long Ribbon
 '7ccb6725': [(log, ('2.8: YeShunguangSkin HeadwearLongRibbon draw_vb',)),(add_section_if_missing, ('9258d5f8', 'YeShunguangSkin.HairTassels.IB', 'match_priority = 0\n'))],
 '682c1e3c': [(log, ('2.8: YeShunguangSkin HeadwearLongRibbon position_vb',)),(add_section_if_missing, ('9258d5f8', 'YeShunguangSkin.HairTassels.IB', 'match_priority = 0\n'))],
 '1e3923d1': [(log, ('2.8: YeShunguangSkin HeadwearLongRibbon texcoord_vb',)),(add_section_if_missing, ('9258d5f8', 'YeShunguangSkin.HairTassels.IB', 'match_priority = 0\n'))],
 '093ff56e': [(log, ('2.8: YeShunguangSkin HeadwearLongRibbon blend_vb',)),(add_section_if_missing, ('9258d5f8', 'YeShunguangSkin.HairTassels.IB', 'match_priority = 0\n'))],
 
-# Headwear ShortRibbon
+# Headwear Short Ribbon
 '3874c939': [(log, ('2.8: YeShunguangSkin HeadwearShortRibbon draw_vb',)),(add_section_if_missing, ('f383537b', 'YeShunguangSkin.HairBow.IB', 'match_priority = 0\n'))],
 '1b410367': [(log, ('2.8: YeShunguangSkin HeadwearShortRibbon position_vb',)),(add_section_if_missing, ('f383537b', 'YeShunguangSkin.HairBow.IB', 'match_priority = 0\n'))],
 'e71ea768': [(log, ('2.8: YeShunguangSkin HeadwearShortRibbon texcoord_vb',)),(add_section_if_missing, ('f383537b', 'YeShunguangSkin.HairBow.IB', 'match_priority = 0\n'))],
@@ -122,7 +125,33 @@ def get_hash_commands(log, update_hash, comment_sections, comment_commandlists,
 'a1353cc8': [(log, ('2.8: YeShunguangSkin Face texcoord_vb',)),         (add_section_if_missing, ('c28e6303', 'YeShunguangSkin.Face.IB', 'match_priority = 0\n'))],
 'fa261a46': [(log, ('2.8: YeShunguangSkin Face blend_vb',)),            (add_section_if_missing, ('c28e6303', 'YeShunguangSkin.Face.IB', 'match_priority = 0\n'))],
 
+# === 3.0 Database Updates (Strict Sync) ===
+# Sword VBs
+'f927c4bb': [
+        (log,                           ('2.8 -> 3.0: YeShunguangSkin Sword draw_vb / Legacy Diffuse Hash',)),
+        (add_section_if_missing,        ('93c3c2b7', 'YeShunguangSkin.Sword.IB', 'match_priority = 0\n')),
+        (update_hash,                   ('7eb1ca38',)),
+    ],
+'4dc4764e': [(log, ('3.0: YeShunguangSkin Sword position_vb',)),         (add_section_if_missing, ('93c3c2b7', 'YeShunguangSkin.Sword.IB', 'match_priority = 0\n'))],
+'c8702180': [(log, ('3.0: YeShunguangSkin Sword texcoord_vb',)),         (add_section_if_missing, ('93c3c2b7', 'YeShunguangSkin.Sword.IB', 'match_priority = 0\n'))],
+'5783614d': [(log, ('3.0: YeShunguangSkin Sword blend_vb',)),            (add_section_if_missing, ('93c3c2b7', 'YeShunguangSkin.Sword.IB', 'match_priority = 0\n'))],
+
 # === Shared NormalMap ===
+'798adba3': [
+        (log,                           ('3.0: YeShunguangSkin Shared NormalMap Hash (Target)',)),
+        (add_section_if_missing,        ('01ef4403', 'YeShunguangSkin.Ears.IB', 'match_priority = 0\n')),
+        (add_section_if_missing,        ('4df52aae', 'YeShunguangSkin.Legs.IB', 'match_priority = 0\n')),
+        (add_section_if_missing,        ('6dc6c880', 'YeShunguangSkin.HairClips.IB', 'match_priority = 0\n')),
+        (add_section_if_missing,        ('869976a3', 'YeShunguangSkin.Tail.IB', 'match_priority = 0\n')),
+        (add_section_if_missing,        ('8e7f72d5', 'YeShunguangSkin.Torso.IB', 'match_priority = 0\n')),
+        (add_section_if_missing,        ('9258d5f8', 'YeShunguangSkin.HairTassels.IB', 'match_priority = 0\n')),
+        (add_section_if_missing,        ('bafd232d', 'YeShunguangSkin.Dress.IB', 'match_priority = 0\n')),
+        (add_section_if_missing,        ('f383537b', 'YeShunguangSkin.HairBow.IB', 'match_priority = 0\n')),
+        (add_section_if_missing,        ('38b3bd13', 'YeShunguangSkin.BraidRibbons.IB', 'match_priority = 0\n')),
+        (add_section_if_missing,        ('85d52cb7', 'YeShunguangSkin.RibbonFlower.IB', 'match_priority = 0\n')),
+        (add_section_if_missing,        ('999bff94', 'YeShunguangSkin.Bangs.IB', 'match_priority = 0\n')),
+        (add_section_if_missing,        ('93c3c2b7', 'YeShunguangSkin.Sword.IB', 'match_priority = 0\n')),
+    ],
 'ebac056e': [
         (log,                           ('2.8: YeShunguangSkin Shared NormalMap Hash [Legacy]',)),
         (add_section_if_missing,        (('01ef4403', '4df52aae', '6dc6c880', '869976a3', '8e7f72d5', '9258d5f8', 'bafd232d', 'f383537b', '38b3bd13', '85d52cb7', '999bff94'), 'YeShunguangSkin.Shared.NormalMap', 'match_priority = 0\n')),
@@ -203,11 +232,45 @@ def get_hash_commands(log, update_hash, comment_sections, comment_commandlists,
         (log,                           ('2.8: YeShunguangSkin DressA MaterialMap Hash',)),
         (add_section_if_missing,        ('bafd232d', 'YeShunguangSkin.Dress.IB', 'match_priority = 0\n')),
     ],
+
+# === Sword Textures (v3.0 Target) ===
+'7eb1ca38': [
+        (log,                           ('3.0: YeShunguangSkin Sword Diffuse Hash',)),
+        (add_section_if_missing,        ('93c3c2b7', 'YeShunguangSkin.Sword.IB', 'match_priority = 0\n')),
+    ],
+'f9ec3ac8': [
+        (log,                           ('2.8 -> 3.0: YeShunguangSkin Sword Diffuse Hash [Legacy]',)),
+        (update_hash,                   ('7eb1ca38',)),
+    ],
+'90250152': [
+        (log,                           ('3.0: YeShunguangSkin Sword LightMap Hash',)),
+        (add_section_if_missing,        ('93c3c2b7', 'YeShunguangSkin.Sword.IB', 'match_priority = 0\n')),
+    ],
+'9d2adcc5': [
+        (log,                           ('2.8 -> 3.0: YeShunguangSkin Sword LightMap Hash [Legacy]',)),
+        (update_hash,                   ('90250152',)),
+    ],
+'0f21a6c9': [
+        (log,                           ('2.8 -> 3.0: YeShunguangSkin Sword LightMap Hash [Legacy] Alt',)),
+        (update_hash,                   ('90250152',)),
+    ],
+'a355e13d': [
+        (log,                           ('3.0: YeShunguangSkin Sword MaterialMap Hash',)),
+        (add_section_if_missing,        ('93c3c2b7', 'YeShunguangSkin.Sword.IB', 'match_priority = 0\n')),
+    ],
+'4659445f': [
+        (log,                           ('2.8 -> 3.0: YeShunguangSkin Sword MaterialMap Hash [Legacy]',)),
+        (update_hash,                   ('a355e13d',)),
+    ],
+'e6eab72f': [
+        (log,                           ('2.8 -> 3.0: YeShunguangSkin Sword MaterialMap Hash [Legacy] Alt',)),
+        (update_hash,                   ('a355e13d',)),
+    ],
     }
 
 
 # Character metadata
 CHARACTER_INFO = {
     'name': 'YeShunguangSkin',
-    'game_versions': ['2.8'],
+    'game_versions': ['2.8', '3.0'],
 }

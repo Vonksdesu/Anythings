@@ -1,6 +1,6 @@
 """
 StarlightBilly Character Hash Commands
-ZZZ Mod Fixer v2.8
+ZZZ Mod Fixer v3.0
 """
 
 def get_hash_commands(log, update_hash, comment_sections, comment_commandlists,
@@ -149,13 +149,21 @@ def get_hash_commands(log, update_hash, comment_sections, comment_commandlists,
     ],
 
 # === Hair Textures ===
+'ff939fb7': [
+        (log,                           ('3.0: StarlightBilly Hair Diffuse Hash',)),
+        (add_section_if_missing,        ('b126d40d', 'StarlightBilly.Hair.IB', 'match_priority = 0\n')),
+    ],
 '6a6a1c79': [
-        (log,                           ('2.8: StarlightBilly Hair Diffuse Hash',)),
+        (log,                           ('2.8 -> 3.0: StarlightBilly Hair Diffuse Hash [Legacy]',)),
+        (update_hash,                   ('ff939fb7',)),
+    ],
+'b6e1da4b': [
+        (log,                           ('3.0: StarlightBilly Hair LightMap Hash',)),
         (add_section_if_missing,        ('b126d40d', 'StarlightBilly.Hair.IB', 'match_priority = 0\n')),
     ],
 '2edbc842': [
-        (log,                           ('2.8: StarlightBilly Hair LightMap Hash',)),
-        (add_section_if_missing,        ('b126d40d', 'StarlightBilly.Hair.IB', 'match_priority = 0\n')),
+        (log,                           ('2.8 -> 3.0: StarlightBilly Hair LightMap Hash [Legacy]',)),
+        (update_hash,                   ('b6e1da4b',)),
     ],
 
 # === Body Textures ===
@@ -354,6 +362,10 @@ def get_hash_commands(log, update_hash, comment_sections, comment_commandlists,
         (add_section_if_missing,        ('15ae37ae', 'StarlightBilly.WeaponAcc3.IB', 'match_priority = 0\n')),
         (add_section_if_missing,        ('d3e8cd51', 'StarlightBilly.WeaponAcc4.IB', 'match_priority = 0\n')),
     ],
+'ebac056e': [
+        (log,                           ('3.0: StarlightBilly Shared NormalMap Hash [Legacy]',)),
+        (update_hash,                   ('798adba3',)),
+    ],
 'ffdc1ea7': [
         (log,                           ('2.8: StarlightBilly Hair Shared NormalMap Hash',)),
         (add_section_if_missing,        ('b126d40d', 'StarlightBilly.Hair.IB', 'match_priority = 0\n')),
@@ -364,5 +376,5 @@ def get_hash_commands(log, update_hash, comment_sections, comment_commandlists,
 # Character metadata
 CHARACTER_INFO = {
     'name': 'StarlightBilly',
-    'game_versions': ['2.8'],
+    'game_versions': ['2.8', '3.0'],
 }

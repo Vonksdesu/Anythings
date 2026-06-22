@@ -1,6 +1,6 @@
 """
 AstraYao Character Hash Commands
-ZZZ Mod Fixer v2.8
+ZZZ Mod Fixer v3.0
 """
 
 def get_hash_commands(log, update_hash, comment_sections, comment_commandlists,
@@ -90,7 +90,7 @@ def get_hash_commands(log, update_hash, comment_sections, comment_commandlists,
 'c47a524a': [(log, ('1.5 -> 1.6: AstraYao HairA, LegsA LightMap 1024p Hash',)),   (update_hash, ('fd3ca2a6',))],
 '0be99d44': [(log, ('1.5 -> 1.6: AstraYao HairA, LegsA MaterialMap 1024p Hash',)), (update_hash, ('759c15e0',))],
 
-# === Pembaruan Sinkronisasi Senjata v2.8 ===
+# === Weapon Sync Updates (v2.8) ===
 'd652aa31': [(log, ('2.0 -> 2.8: AstraYao Weapon Diffuse [Legacy]',)), (update_hash, ('b5a20274',))],
 '91c63955': [(log, ('2.0 -> 2.8: AstraYao Weapon LightMap [Legacy]',)), (update_hash, ('57c44e60',))],
 '98e011bc': [(log, ('2.0 -> 2.8: AstraYao Weapon MaterialMap [Legacy]',)), (update_hash, ('fdb82c44',))],
@@ -102,12 +102,12 @@ def get_hash_commands(log, update_hash, comment_sections, comment_commandlists,
 '3283b8be': [
         (log,                           ('2.8: AstraYao FaceA Diffuse 1024p Hash',)),
         (add_section_if_missing,        ('51831437', 'AstraYao.Face.IB', 'match_priority = 0\n')),
-        (multiply_section_if_missing,   (('c41341b2', '3a8d0dfc'), 'AstraYao.FaceA.Diffuse.2048')),
+        (multiply_section_if_missing,   ('c41341b2', 'AstraYao.FaceA.Diffuse.2048')),
     ],
 'c41341b2': [
         (log,                           ('2.8: AstraYao FaceA Diffuse 2048p Hash',)),
         (add_section_if_missing,        ('51831437', 'AstraYao.Face.IB', 'match_priority = 0\n')),
-        (multiply_section_if_missing,   (('3283b8be', '77670042'), 'AstraYao.FaceA.Diffuse.1024')),
+        (multiply_section_if_missing,   ('3283b8be', 'AstraYao.FaceA.Diffuse.1024')),
     ],
 
 # === Hair & Legs Shared Textures ===
@@ -201,7 +201,7 @@ def get_hash_commands(log, update_hash, comment_sections, comment_commandlists,
 
 # === Shared Normal Map ===
 '798adba3': [
-        (log,                           ('2.8: AstraYao Shared NormalMap Hash (v2.8 Target)',)),
+        (log,                           ('3.0: AstraYao Shared NormalMap Hash (Target)',)),
         (add_section_if_missing,        ('53cdac6c', 'AstraYao.Hair.IB', 'match_priority = 0\n')),
         (add_section_if_missing,        ('7a110804', 'AstraYao.Body.IB', 'match_priority = 0\n')),
         (add_section_if_missing,        ('92f33156', 'AstraYao.Legs.IB', 'match_priority = 0\n')),
@@ -210,11 +210,15 @@ def get_hash_commands(log, update_hash, comment_sections, comment_commandlists,
         (add_section_if_missing,        ('f4f5348d', 'AstraYao.WeaponDisc.IB', 'match_priority = 0\n')),
         (add_section_if_missing,        ('9bb42122', 'AstraYao.WeaponSinging.IB', 'match_priority = 0\n')),
     ],
+'ebac056e': [
+        (log,                           ('3.0: AstraYao Shared NormalMap Hash [Legacy]',)),
+        (update_hash,                   ('798adba3',)),
+    ],
     }
 
 
 # Character metadata
 CHARACTER_INFO = {
     'name': 'AstraYao',
-    'game_versions': ['1.0', '1.1', '1.2', '1.3', '1.4', '1.5', '1.6', '1.7', '2.8'],
+    'game_versions': ['1.0', '1.1', '1.2', '1.3', '1.4', '1.5', '1.6', '1.7', '2.8', '3.0'],
 }

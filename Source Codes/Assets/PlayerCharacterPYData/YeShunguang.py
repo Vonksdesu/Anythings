@@ -1,6 +1,6 @@
 """
 YeShunguang Character Hash Commands
-ZZZ Mod Fixer v2.8
+ZZZ Mod Fixer v3.0
 """
 
 def get_hash_commands(log, update_hash, comment_sections, comment_commandlists,
@@ -33,7 +33,13 @@ def get_hash_commands(log, update_hash, comment_sections, comment_commandlists,
 'd15c8cd9': [(log, ('2.8: YeShunguang SwordBox IB Hash',)),     (add_ib_check_if_missing,)],
 '5d842a9d': [(log, ('2.8: YeShunguang SwordBoxBall IB Hash',)), (add_ib_check_if_missing,)],
 
-# === VB Hashes (v2.8 Target) ===
+# === IB Hashes (v3.0 Target) ===
+'a9c76fcf': [(log, ('3.0: YeShunguangWrite HairShadow IB Hash',)),         (add_ib_check_if_missing,)],
+'be28e18b': [(log, ('3.0: YeShunguangWrite FrontHair IB Hash',)),          (add_ib_check_if_missing,)],
+'2d72a119': [(log, ('3.0: YeShunguangWrite ArmsRibbons IB Hash',)),        (add_ib_check_if_missing,)],
+'dd46b065': [(log, ('3.0: YeShunguangWrite Sword IB Hash',)),              (add_ib_check_if_missing,)],
+
+# === VB Hashes ===
 # Hair
 'bd9b6102': [(log, ('2.8: YeShunguang Hair draw_vb',)),                 (add_section_if_missing, ('999bff94', 'YeShunguang.Hair.IB', 'match_priority = 0\n'))],
 'f84ce9bf': [(log, ('2.8: YeShunguang Hair position_vb',)),             (add_section_if_missing, ('999bff94', 'YeShunguang.Hair.IB', 'match_priority = 0\n'))],
@@ -76,19 +82,19 @@ def get_hash_commands(log, update_hash, comment_sections, comment_commandlists,
 'cb4b7cc7': [(log, ('2.8: YeShunguang Tail texcoord_vb',)),             (add_section_if_missing, ('869976a3', 'YeShunguang.Tail.IB', 'match_priority = 0\n'))],
 '690ba2b1': [(log, ('2.8: YeShunguang Tail blend_vb',)),                (add_section_if_missing, ('869976a3', 'YeShunguang.Tail.IB', 'match_priority = 0\n'))],
 
-# Headwear Flower
+# Headwear-Flower
 '3a1f0236': [(log, ('2.8: YeShunguang HeadwearFlower draw_vb',)),       (add_section_if_missing, ('8c8de427', 'YeShunguang.Clips.IB', 'match_priority = 0\n'))],
 'd89bbbfa': [(log, ('2.8: YeShunguang HeadwearFlower position_vb',)),   (add_section_if_missing, ('8c8de427', 'YeShunguang.Clips.IB', 'match_priority = 0\n'))],
 'a4a4ad17': [(log, ('2.8: YeShunguang HeadwearFlower texcoord_vb',)),   (add_section_if_missing, ('8c8de427', 'YeShunguang.Clips.IB', 'match_priority = 0\n'))],
 'd60923e0': [(log, ('2.8: YeShunguang HeadwearFlower blend_vb',)),      (add_section_if_missing, ('8c8de427', 'YeShunguang.Clips.IB', 'match_priority = 0\n'))],
 
-# Headwear LongRibbon
+# Headwear-LongRibbon
 '7ccb6725': [(log, ('2.8: YeShunguang HeadwearLongRibbon draw_vb',)),   (add_section_if_missing, ('9258d5f8', 'YeShunguang.Bow.IB', 'match_priority = 0\n'))],
 '682c1e3c': [(log, ('2.8: YeShunguang HeadwearLongRibbon position_vb',)),(add_section_if_missing, ('9258d5f8', 'YeShunguang.Bow.IB', 'match_priority = 0\n'))],
 '1e3923d1': [(log, ('2.8: YeShunguang HeadwearLongRibbon texcoord_vb',)),(add_section_if_missing, ('9258d5f8', 'YeShunguang.Bow.IB', 'match_priority = 0\n'))],
 '093ff56e': [(log, ('2.8: YeShunguang HeadwearLongRibbon blend_vb',)),   (add_section_if_missing, ('9258d5f8', 'YeShunguang.Bow.IB', 'match_priority = 0\n'))],
 
-# Headwear ShortRibbon
+# Headwear-ShortRibbon
 'a6f3e58f': [(log, ('2.8: YeShunguang HeadwearShortRibbon draw_vb',)),   (add_section_if_missing, ('ae840e72', 'YeShunguang.Antenna.IB', 'match_priority = 0\n'))],
 '47e62e43': [(log, ('2.8: YeShunguang HeadwearShortRibbon position_vb',)),(add_section_if_missing, ('ae840e72', 'YeShunguang.Antenna.IB', 'match_priority = 0\n'))],
 '504a82ea': [(log, ('2.8: YeShunguang HeadwearShortRibbon texcoord_vb',)),(add_section_if_missing, ('ae840e72', 'YeShunguang.Antenna.IB', 'match_priority = 0\n'))],
@@ -114,7 +120,7 @@ def get_hash_commands(log, update_hash, comment_sections, comment_commandlists,
 
 # Eyebrow
 '9f0ab8cd': [(log, ('2.8: YeShunguang Eyebrow draw_vb',)),              (add_section_if_missing, ('611df76d', 'YeShunguang.Brows.IB', 'match_priority = 0\n'))],
-'287c161c': [(log, ('2.8: YeShunguang Eyebrow position_vb',)),          (add_section_if_missing, ('611df76d', 'YeShunguang.Brows.IB', 'match_priority = 0\n'))],
+'287c161c': [(log, ('2.8 -> 3.0: YeShunguang Eyebrow position_vb [Legacy]',)), (update_hash, ('a5182b8a',))],
 'f5daa764': [(log, ('2.8: YeShunguang Eyebrow blend_vb',)),              (add_section_if_missing, ('611df76d', 'YeShunguang.Brows.IB', 'match_priority = 0\n'))],
 
 # Face
@@ -123,7 +129,7 @@ def get_hash_commands(log, update_hash, comment_sections, comment_commandlists,
 'a1353cc8': [(log, ('2.8: YeShunguang Face texcoord_vb',)),             (add_section_if_missing, ('c28e6303', 'YeShunguang.Face.IB', 'match_priority = 0\n'))],
 'fa261a46': [(log, ('2.8: YeShunguang Face blend_vb',)),                (add_section_if_missing, ('c28e6303', 'YeShunguang.Face.IB', 'match_priority = 0\n'))],
 
-# === SwordBox Components (v2.8 Target) ===
+# === SwordBox Components ===
 'd15c8cd9': [(log, ('2.8: YeShunguang SwordBox IB Hash',)),              (add_ib_check_if_missing,)],
 '5d842a9d': [(log, ('2.8: YeShunguang SwordBoxBall IB Hash',)),          (add_ib_check_if_missing,)],
 
@@ -137,16 +143,56 @@ def get_hash_commands(log, update_hash, comment_sections, comment_commandlists,
 'eaa601b5': [(log, ('2.8: YeShunguang SwordBoxBall texcoord_vb',)),     (add_section_if_missing, ('5d842a9d', 'YeShunguang.SwordBoxBall.IB', 'match_priority = 0\n'))],
 'c1713762': [(log, ('2.8: YeShunguang SwordBoxBall blend_vb',)),        (add_section_if_missing, ('5d842a9d', 'YeShunguang.SwordBoxBall.IB', 'match_priority = 0\n'))],
 
+# === 3.0 Database Updates (Strict Sync) ===
+# Default Sword VBs
+'93c3c2b7': [(log, ('3.0: YeShunguang Sword IB Hash',)),                 (add_ib_check_if_missing,)],
+'f927c4bb': [(log, ('3.0: YeShunguang Sword draw_vb',)),                 (add_section_if_missing, ('93c3c2b7', 'YeShunguang.Sword.IB', 'match_priority = 0\n'))],
+'4dc4764e': [(log, ('3.0: YeShunguang Sword position_vb',)),             (add_section_if_missing, ('93c3c2b7', 'YeShunguang.Sword.IB', 'match_priority = 0\n'))],
+'c8702180': [(log, ('3.0: YeShunguang Sword texcoord_vb',)),             (add_section_if_missing, ('93c3c2b7', 'YeShunguang.Sword.IB', 'match_priority = 0\n'))],
+'5783614d': [(log, ('3.0: YeShunguang Sword blend_vb',)),                (add_section_if_missing, ('93c3c2b7', 'YeShunguang.Sword.IB', 'match_priority = 0\n'))],
+
+# Default Eyebrow VB Update
+'a5182b8a': [(log, ('3.0: YeShunguang Eyebrow position_vb',)),          (add_section_if_missing, ('611df76d', 'YeShunguang.Brows.IB', 'match_priority = 0\n'))],
+
+# White Hair: HairShadow VBs
+'53b4c9f3': [(log, ('3.0: YeShunguangWrite HairShadow draw_vb',)),       (add_section_if_missing, ('a9c76fcf', 'YeShunguangWrite.HairShadow.IB', 'match_priority = 0\n'))],
+'ac4f1cc8': [(log, ('3.0: YeShunguangWrite HairShadow position_vb',)),   (add_section_if_missing, ('a9c76fcf', 'YeShunguangWrite.HairShadow.IB', 'match_priority = 0\n'))],
+'0818885d': [(log, ('3.0: YeShunguangWrite HairShadow texcoord_vb',)),   (add_section_if_missing, ('a9c76fcf', 'YeShunguangWrite.HairShadow.IB', 'match_priority = 0\n'))],
+'4654a675': [(log, ('3.0: YeShunguangWrite HairShadow blend_vb',)),      (add_section_if_missing, ('a9c76fcf', 'YeShunguangWrite.HairShadow.IB', 'match_priority = 0\n'))],
+
+# White Hair: FrontHair VBs
+'5234bbcb': [(log, ('3.0: YeShunguangWrite FrontHair draw_vb',)),        (add_section_if_missing, ('be28e18b', 'YeShunguangWrite.FrontHair.IB', 'match_priority = 0\n'))],
+'2f030baf': [(log, ('3.0: YeShunguangWrite FrontHair position_vb',)),    (add_section_if_missing, ('be28e18b', 'YeShunguangWrite.FrontHair.IB', 'match_priority = 0\n'))],
+'13343914': [(log, ('3.0: YeShunguangWrite FrontHair texcoord_vb',)),    (add_section_if_missing, ('be28e18b', 'YeShunguangWrite.FrontHair.IB', 'match_priority = 0\n'))],
+'0041e5e3': [(log, ('3.0: YeShunguangWrite FrontHair blend_vb',)),       (add_section_if_missing, ('be28e18b', 'YeShunguangWrite.FrontHair.IB', 'match_priority = 0\n'))],
+
+# White Hair: ArmsRibbons VBs
+'ebdbb8db': [(log, ('3.0: YeShunguangWrite ArmsRibbons draw_vb',)),      (add_section_if_missing, ('2d72a119', 'YeShunguangWrite.ArmsRibbons.IB', 'match_priority = 0\n'))],
+'4c1e777e': [(log, ('3.0: YeShunguangWrite ArmsRibbons position_vb',)),  (add_section_if_missing, ('2d72a119', 'YeShunguangWrite.ArmsRibbons.IB', 'match_priority = 0\n'))],
+'49a95c22': [(log, ('3.0: YeShunguangWrite ArmsRibbons texcoord_vb',)),  (add_section_if_missing, ('2d72a119', 'YeShunguangWrite.ArmsRibbons.IB', 'match_priority = 0\n'))],
+'649a0ed6': [(log, ('3.0: YeShunguangWrite ArmsRibbons blend_vb',)),     (add_section_if_missing, ('2d72a119', 'YeShunguangWrite.ArmsRibbons.IB', 'match_priority = 0\n'))],
+
+# White Hair: Sword VBs
+'3a44ca69': [(log, ('3.0: YeShunguangWrite Sword draw_vb',)),            (add_section_if_missing, ('dd46b065', 'YeShunguangWrite.Sword.IB', 'match_priority = 0\n'))],
+'724d29ad': [(log, ('3.0: YeShunguangWrite Sword position_vb',)),        (add_section_if_missing, ('dd46b065', 'YeShunguangWrite.Sword.IB', 'match_priority = 0\n'))],
+'2c36b1a8': [(log, ('3.0: YeShunguangWrite Sword texcoord_vb',)),        (add_section_if_missing, ('dd46b065', 'YeShunguangWrite.Sword.IB', 'match_priority = 0\n'))],
+'2e3a5c01': [(log, ('3.0: YeShunguangWrite Sword blend_vb',)),           (add_section_if_missing, ('dd46b065', 'YeShunguangWrite.Sword.IB', 'match_priority = 0\n'))],
+
 # === Legacy Hash Updates ===
 'd1ffd339': [(log, ('2.5: YeShunguang TexCoord VB Hash [Legacy]',)),    (update_hash, ('dbb027eb',))],
 'c7f8046f': [(log, ('2.0 -> 2.8: YeShunguang SwordBox Diffuse [Legacy]',)), (update_hash, ('f65635ed',))],
 '4ba72780': [(log, ('2.0 -> 2.8: YeShunguang SwordBox LightMap [Legacy]',)), (update_hash, ('426d4871',))],
 '745fb007': [(log, ('2.0 -> 2.8: YeShunguang SwordBox MaterialMap [Legacy]',)), (update_hash, ('ae41d045',))],
 
-# === Shared NormalMap ===
+# === Shared Normal Map ===
 'ebac056e': [
-        (log,                           ('2.8: YeShunguang Shared NormalMap Hash [Legacy]',)),
+        (log,                           ('2.8 -> 3.0: YeShunguang Shared NormalMap Hash [Legacy]',)),
         (add_section_if_missing,        (('01ef4403', '3b1b73fe', '4a178546', '869976a3', '8c8de427', '999bff94', 'ae840e72', 'c209c22b', 'f9ce7b07', '0534b536', '38b3bd13', '9258d5f8', 'd15c8cd9', '5d842a9d'), 'YeShunguang.Shared.NormalMap', 'match_priority = 0\n')),
+        (add_section_if_missing,        ('93c3c2b7', 'YeShunguang.Sword.IB', 'match_priority = 0\n')),
+        (add_section_if_missing,        ('a9c76fcf', 'YeShunguangWrite.HairShadow.IB', 'match_priority = 0\n')),
+        (add_section_if_missing,        ('be28e18b', 'YeShunguangWrite.FrontHair.IB', 'match_priority = 0\n')),
+        (add_section_if_missing,        ('2d72a119', 'YeShunguangWrite.ArmsRibbons.IB', 'match_priority = 0\n')),
+        (add_section_if_missing,        ('dd46b065', 'YeShunguangWrite.Sword.IB', 'match_priority = 0\n')),
     ],
 
 # === Face Textures ===
@@ -215,7 +261,7 @@ def get_hash_commands(log, update_hash, comment_sections, comment_commandlists,
         (add_section_if_missing,        (('0534b536', '38b3bd13', '9258d5f8'), 'YeShunguang.TasselSet.IB', 'match_priority = 0\n')),
     ],
 
-# === SwordBox Textures (v2.8 Target) ===
+# === SwordBox Textures ===
 'f65635ed': [
         (log,                           ('2.8: YeShunguang SwordBox Diffuse Hash',)),
         (add_section_if_missing,        ('d15c8cd9', 'YeShunguang.SwordBox.IB', 'match_priority = 0\n')),
@@ -228,11 +274,95 @@ def get_hash_commands(log, update_hash, comment_sections, comment_commandlists,
         (log,                           ('2.8: YeShunguang SwordBox MaterialMap Hash',)),
         (add_section_if_missing,        ('d15c8cd9', 'YeShunguang.SwordBox.IB', 'match_priority = 0\n')),
     ],
+
+# === Sword Textures (v3.0 Target) ===
+'7eb1ca38': [
+        (log,                           ('3.0: YeShunguang Sword Diffuse Hash',)),
+        (add_section_if_missing,        ('93c3c2b7', 'YeShunguang.Sword.IB', 'match_priority = 0\n')),
+    ],
+'90250152': [
+        (log,                           ('3.0: YeShunguang Sword LightMap Hash',)),
+        (add_section_if_missing,        ('93c3c2b7', 'YeShunguang.Sword.IB', 'match_priority = 0\n')),
+    ],
+'a355e13d': [
+        (log,                           ('3.0: YeShunguang Sword MaterialMap Hash',)),
+        (add_section_if_missing,        ('93c3c2b7', 'YeShunguang.Sword.IB', 'match_priority = 0\n')),
+    ],
+
+# === YeShunguangWrite Textures (v3.0 Target) ===
+'e8a8ac0b': [
+        (log,                           ('3.0: YeShunguangWrite Hair, FrontHair, ShortRibbon Diffuse Hash A',)),
+        (add_section_if_missing,        (('01ef4403', 'be28e18b', 'ae840e72'), 'YeShunguangWrite.HairSet.IB', 'match_priority = 0\n')),
+    ],
+'652e15a3': [
+        (log,                           ('3.0: YeShunguangWrite Hair, FrontHair Diffuse Hash B',)),
+        (add_section_if_missing,        (('01ef4403', 'be28e18b'), 'YeShunguangWrite.HairSet.IB', 'match_priority = 0\n')),
+    ],
+'9f7defbc': [
+        (log,                           ('3.0: YeShunguangWrite Hair, FrontHair, ShortRibbon LightMap Hash',)),
+        (add_section_if_missing,        (('01ef4403', 'be28e18b', 'ae840e72'), 'YeShunguangWrite.HairSet.IB', 'match_priority = 0\n')),
+    ],
+'c74f9710': [
+        (log,                           ('3.0: YeShunguangWrite Hair, FrontHair, ShortRibbon MaterialMap Hash',)),
+        (add_section_if_missing,        (('01ef4403', 'be28e18b', 'ae840e72'), 'YeShunguangWrite.HairSet.IB', 'match_priority = 0\n')),
+    ],
+'ac8c7ca2': [
+        (log,                           ('3.0: YeShunguangWrite Eyebrow Diffuse Hash',)),
+        (add_section_if_missing,        ('611df76d', 'YeShunguangWrite.Brows.IB', 'match_priority = 0\n')),
+    ],
+'43ca3d50': [
+        (log,                           ('3.0: YeShunguangWrite Body Diffuse Hash',)),
+        (add_section_if_missing,        ('c209c22b', 'YeShunguangWrite.Torso.IB', 'match_priority = 0\n')),
+    ],
+'e41b12be': [
+        (log,                           ('3.0: YeShunguangWrite Body MaterialMap Hash',)),
+        (add_section_if_missing,        ('c209c22b', 'YeShunguangWrite.Torso.IB', 'match_priority = 0\n')),
+    ],
+'0b7c1487': [
+        (log,                           ('3.0: YeShunguangWrite Legs, Tail Diffuse Hash',)),
+        (add_section_if_missing,        (('4a178546', '869976a3'), 'YeShunguangWrite.LegsTail.IB', 'match_priority = 0\n')),
+    ],
+'afbdd8a1': [
+        (log,                           ('3.0: YeShunguangWrite Legs, Tail LightMap Hash',)),
+        (add_section_if_missing,        (('4a178546', '869976a3'), 'YeShunguangWrite.LegsTail.IB', 'match_priority = 0\n')),
+    ],
+'263992f5': [
+        (log,                           ('3.0: YeShunguangWrite Legs, Tail MaterialMap Hash',)),
+        (add_section_if_missing,        (('4a178546', '869976a3'), 'YeShunguangWrite.LegsTail.IB', 'match_priority = 0\n')),
+    ],
+'0d70f7cd': [
+        (log,                           ('3.0: YeShunguangWrite LongRibbon, BackTassel LightMap Hash',)),
+        (add_section_if_missing,        (('9258d5f8', '0534b536'), 'YeShunguangWrite.TasselSet.IB', 'match_priority = 0\n')),
+    ],
+'7bf83964': [
+        (log,                           ('3.0: YeShunguangWrite LongRibbon, BackTassel MaterialMap Hash',)),
+        (add_section_if_missing,        (('9258d5f8', '0534b536'), 'YeShunguangWrite.TasselSet.IB', 'match_priority = 0\n')),
+    ],
+'dd1adbe8': [
+        (log,                           ('3.0: YeShunguangWrite TransparentCloth MaterialMap Hash',)),
+        (add_section_if_missing,        ('3b1b73fe', 'YeShunguangWrite.Strip.IB', 'match_priority = 0\n')),
+    ],
+'512d9f71': [
+        (log,                           ('3.0: YeShunguangWrite Sword Diffuse Hash',)),
+        (add_section_if_missing,        ('dd46b065', 'YeShunguangWrite.Sword.IB', 'match_priority = 0\n')),
+    ],
+'8842671b': [
+        (log,                           ('3.0: YeShunguangWrite Sword NormalMap Hash',)),
+        (add_section_if_missing,        ('dd46b065', 'YeShunguangWrite.Sword.IB', 'match_priority = 0\n')),
+    ],
+'d87a1e13': [
+        (log,                           ('3.0: YeShunguangWrite Sword LightMap Hash',)),
+        (add_section_if_missing,        ('dd46b065', 'YeShunguangWrite.Sword.IB', 'match_priority = 0\n')),
+    ],
+'ce96ea2f': [
+        (log,                           ('3.0: YeShunguangWrite Sword MaterialMap Hash',)),
+        (add_section_if_missing,        ('dd46b065', 'YeShunguangWrite.Sword.IB', 'match_priority = 0\n')),
+    ],
     }
 
 
 # Character metadata
 CHARACTER_INFO = {
     'name': 'YeShunguang',
-    'game_versions': ['2.8'],
+    'game_versions': ['2.8', '3.0'],
 }

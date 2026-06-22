@@ -199,5 +199,5 @@ CHARACTER_INFO = {
     'name': 'Banyue',
     'element': 'Fire',
     'faction': 'Yunkui Summit',
-    'game_versions': ['2.8'],
+    'game_versions': ['2.8', '3.0'],
 }

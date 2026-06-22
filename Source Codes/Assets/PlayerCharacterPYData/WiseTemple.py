@@ -65,7 +65,7 @@ def get_hash_commands(log, update_hash, comment_sections, comment_commandlists,
 '6c4552bb': [(log, ('2.8: WiseTemple Face VertexLimit',)),              (add_section_if_missing, ('1fdaf388', 'WiseTemple.Face.IB', 'match_priority = 0\n'))],
 '5657c1fc': [(log, ('2.8: WiseTemple Face Position',)),                 (add_section_if_missing, ('1fdaf388', 'WiseTemple.Face.IB', 'match_priority = 0\n'))],
 'c83b6cbf': [(log, ('2.8: WiseTemple Face Texcoord',)),                 (add_section_if_missing, ('1fdaf388', 'WiseTemple.Face.IB', 'match_priority = 0\n'))],
-'757bc7cc': [(log, ('2.8: WiseTemple Face Blend',)),                    (add_section_if_missing, ('1fdaf388', 'WiseTemple.Face.IB', 'match_priority = 0\n'))],
+'757bc7cc': [(log, ('2.8 -> 3.0: WiseTemple Face blend_vb Hash [Legacy]',)), (update_hash, ('015fbf96',))],
 
 # Torso Ribbon VBs
 'e0931b87': [(log, ('2.8: WiseTemple Torso Ribbon draw_vb',)),          (add_section_if_missing, ('eeabff55', 'WiseTemple.Ribbon.IB', 'match_priority = 0\n'))],
@@ -139,6 +139,9 @@ def get_hash_commands(log, update_hash, comment_sections, comment_commandlists,
 
 # Body VBs
 'f28a6363': [(log, ('3.0: WiseTemple Body blend_vb Hash',)),            (add_section_if_missing, ('1eca2097', 'WiseTemple.Body.IB', 'match_priority = 0\n'))],
+
+# Face VBs
+'015fbf96': [(log, ('3.0: WiseTemple Face blend_vb Hash',)),            (add_section_if_missing, ('1fdaf388', 'WiseTemple.Face.IB', 'match_priority = 0\n'))],
 
 # === Face Textures ===
 '5d75fddc': [
@@ -298,6 +301,10 @@ def get_hash_commands(log, update_hash, comment_sections, comment_commandlists,
         (add_section_if_missing,        ('01c42a1d', 'WiseTemple.Neck.IB', 'match_priority = 0\n')),
         (add_section_if_missing,        ('e7f527ea', 'WiseTemple.DiskPlayer.IB', 'match_priority = 0\n')),
         (add_section_if_missing,        ('e5f269f4', 'WiseTemple.OrangeGreenRibbon.IB', 'match_priority = 0\n')),
+    ],
+'ebac056e': [
+        (log,                           ('3.0: WiseTemple Shared NormalMap Hash [Legacy]',)),
+        (update_hash,                   ('798adba3',)),
     ],
     }
 

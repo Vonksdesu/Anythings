@@ -26,7 +26,7 @@ def get_hash_commands(log, update_hash, comment_sections, comment_commandlists,
 'ef9c0510': [(log, ('2.8: Wise Hair draw_vb',)),                        (add_section_if_missing, ('d5ca0411', 'Wise.Hair.IB', 'match_priority = 0\n'))],
 'e8df7ff3': [(log, ('2.8: Wise Hair position_vb',)),                    (add_section_if_missing, ('d5ca0411', 'Wise.Hair.IB', 'match_priority = 0\n'))],
 '774071dd': [(log, ('2.8: Wise Hair texcoord_vb',)),                    (add_section_if_missing, ('d5ca0411', 'Wise.Hair.IB', 'match_priority = 0\n'))],
-'edfd1666': [(log, ('2.8: Wise Hair blend_vb',)),                       (add_section_if_missing, ('d5ca0411', 'Wise.Hair.IB', 'match_priority = 0\n'))],
+'edfd1666': [(log, ('2.8 -> 3.0: Wise Hair blend_vb Hash [Legacy]',)),   (update_hash, ('68e4f572',))],
 
 # Hair Shadow
 '681651f9': [(log, ('2.8: Wise Hair Shadow draw_vb',)),                 (add_section_if_missing, ('8d08b190', 'Wise.HairShadow.IB', 'match_priority = 0\n'))],
@@ -50,7 +50,7 @@ def get_hash_commands(log, update_hash, comment_sections, comment_commandlists,
 '6c4552bb': [(log, ('2.8: Wise Face VertexLimit Hash',)),                (add_section_if_missing, ('1fdaf388', 'Wise.Head.IB', 'match_priority = 0\n'))],
 '5657c1fc': [(log, ('2.8: Wise Face position_vb Hash',)),                (add_section_if_missing, ('1fdaf388', 'Wise.Head.IB', 'match_priority = 0\n'))],
 'c83b6cbf': [(log, ('2.8: Wise Face texcoord_vb Hash',)),                (add_section_if_missing, ('1fdaf388', 'Wise.Head.IB', 'match_priority = 0\n'))],
-'757bc7cc': [(log, ('2.8: Wise Face blend_vb Hash',)),                   (add_section_if_missing, ('1fdaf388', 'Wise.Head.IB', 'match_priority = 0\n'))],
+'757bc7cc': [(log, ('2.8 -> 3.0: Wise Face blend_vb Hash [Legacy]',)),   (update_hash, ('015fbf96',))],
 
 # === Legacy Hash Updates ===
 'f6cac296': [(log, ('2.8: Wise Hair IB Hash [Legacy]',)),               (update_hash, ('d5ca0411',))],
@@ -84,6 +84,12 @@ def get_hash_commands(log, update_hash, comment_sections, comment_commandlists,
 # === 3.0 Database Updates (Strict Sync) ===
 # Body VBs
 '03dadd2a': [(log, ('3.0: Wise Body blend_vb Hash',)),                  (add_section_if_missing, ('8d6acf4e', 'Wise.Body.IB', 'match_priority = 0\n'))],
+
+# Hair VBs
+'68e4f572': [(log, ('3.0: Wise Hair blend_vb Hash',)),                  (add_section_if_missing, ('d5ca0411', 'Wise.Hair.IB', 'match_priority = 0\n'))],
+
+# Face VBs
+'015fbf96': [(log, ('3.0: Wise Face blend_vb Hash',)),                  (add_section_if_missing, ('1fdaf388', 'Wise.Head.IB', 'match_priority = 0\n'))],
 
 # === Face Textures ===
 '5d75fddc': [
