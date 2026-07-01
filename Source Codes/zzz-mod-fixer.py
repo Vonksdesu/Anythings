@@ -142,6 +142,89 @@ class Ini():
 
             self._done_hashes.add(hash)
 
+        # Auto-detect Jane Doe mods and run blend fix if applicable
+        # PENGAMAN 1: Only trigger if hash is ACTIVE (not in comment) - check with regex
+        jane_indicators = ('e42171df', 'd06a9206', '33a09cfe', '82e7c056', 'fa617c9a')
+        has_active_jane = False
+        for indicator in jane_indicators:
+            # Check if hash appears as ACTIVE assignment (not preceded by ;)
+            if re.search(r'(?<![;\w])' + indicator + r'(?!\w)', self.content, re.IGNORECASE):
+                # Double-check: it's in a proper hash = xxx line, not commented
+                if re.search(r'^\s*hash\s*=\s*' + indicator + r'\s*$', self.content, re.IGNORECASE | re.MULTILINE):
+                    has_active_jane = True
+                    break
+        if has_active_jane:
+            print('\tApplying Jane Doe specific fixes (legacy mod compatibility)...')
+            
+            # 1. Run blend auto-scan
+            scanner = jane_blend_auto_scan()
+            result = scanner.execute(DefaultArgs(hash='', ini=self, data={}, tabs=2))
+            self._touched = self._touched or result.touched
+            
+            # 2. Swap vb0/vb2 in section headers named "JaneHairPosition" or "JaneHairBlend"
+            #    to match the standard: vb0 = Position, vb2 = Blend
+            #    This only affects sections with "Jane" in the title
+            swap_count = 0
+            swap_pattern = re.compile(
+                r'^\[(TextureOverrideJane\w*Position)\]\s*\n'  # section with "Position"
+                r'((.|\n)*?)'                                    # body
+                r'^\s*vb0\s*=\s*(Resource\w+)\s*$'               # vb0 = something
+                r'((.|\n)*?)'
+                r'^\s*vb2\s*=\s*(Resource\w+)\s*$'               # vb2 = something
+                r'((.|\n)*?)(?=^\[|\Z)',
+                re.MULTILINE | re.IGNORECASE
+            )
+            new_content = swap_pattern.sub(
+                lambda m: '[' + m.group(1).replace('Position', 'Blend') + ']\n' +
+                          m.group(2) +
+                          'vb2 = ' + m.group(3) + '\n' +   # swap: old vb0 becomes vb2
+                          m.group(4) +
+                          'vb0 = ' + m.group(6) + '\n' +   # swap: old vb2 becomes vb0
+                          m.group(7),
+                self.content
+            )
+            if new_content != self.content:
+                swap_count += 1
+                self.content = new_content
+                self._touched = True
+                print('\t  ✓ Swapped vb0/vb2 in Jane section')
+            
+            # 3. Duplicate HairBlend.buf → ArmsBlend.buf if needed
+            #    Also add corresponding Resource section in .ini
+            ini_dir = Path(self.filepath).parent
+            hair_blend_path = ini_dir / 'JaneHairBlend.buf'
+            arms_blend_path = ini_dir / 'JaneArmsBlend.buf'
+            if hair_blend_path.exists() and not arms_blend_path.exists():
+                try:
+                    import shutil
+                    shutil.copy2(str(hair_blend_path), str(arms_blend_path))
+                    print('\t  ✓ Duplicated JaneHairBlend.buf → JaneArmsBlend.buf')
+                    # Also add Resource section for ArmsBlend to .ini if not already present
+                    if 'ResourceJaneArmsBlend' not in self.content:
+                        arms_section = '\n[ResourceJaneArmsBlend]\ntype = Buffer\nstride = 32\nfilename = JaneArmsBlend.buf\n'
+                        self.content += arms_section
+                        self._touched = True
+                        print('\t  ✓ Added ResourceJaneArmsBlend section to .ini')
+                except Exception as e:
+                    print(f'\t  ⚠ Failed to duplicate .buf: {e}')
+
+        # Auto-detect Dialyn mods and run blend fix if applicable
+        # PENGAMAN 1: Only trigger if hash is ACTIVE (not in comment)
+        dialyn_indicators = ('3d7e53cf', 'ff36809b')
+        has_active_dialyn = False
+        for indicator in dialyn_indicators:
+            if re.search(r'(?<![;\w])' + indicator + r'(?!\w)', self.content, re.IGNORECASE):
+                if re.search(r'^\s*hash\s*=\s*' + indicator + r'\s*$', self.content, re.IGNORECASE | re.MULTILINE):
+                    has_active_dialyn = True
+                    break
+        if has_active_dialyn:
+            print('\tApplying Dialyn specific fixes (legacy mod compatibility)...')
+            
+            # Run blend auto-scan
+            scanner = dialyn_blend_auto_scan()
+            result = scanner.execute(DefaultArgs(hash='', ini=self, data={}, tabs=2))
+            self._touched = self._touched or result.touched
+
         return self
 
     def execute(self, commands, default_args):
@@ -262,7 +345,74 @@ class Ini():
 
             if len(self.modified_buffers) > 0:
                 print('Writing updated buffers')
+                # PENGAMAN 2: Backup .buf files BEFORE overwriting
+                # Find backup directory same pattern as (.ini) Caches but for (.buf) Backup
+                buf_backup_dir = None
+                current_path = Path(self.filepath).parent.resolve()
+                for parent in [current_path] + list(current_path.parents):
+                    test_path = parent / 'Data' / 'ZZMI'
+                    if test_path.is_dir():
+                        buf_backup_dir = test_path / '(.buf) Backup'
+                        break
+                    if parent.name.upper() == 'ZZMI':
+                        buf_backup_dir = parent / '(.buf) Backup'
+                        break
+                    test_path_direct = parent / 'ZZMI'
+                    if test_path_direct.is_dir():
+                        buf_backup_dir = test_path_direct / '(.buf) Backup'
+                        break
+                
+                if not buf_backup_dir:
+                    import string
+                    for letter in string.ascii_uppercase:
+                        drive = f"{letter}:\\"
+                        if os.path.exists(drive):
+                            test_path1 = Path(drive) / 'XXMI' / 'Data' / 'ZZMI'
+                            if test_path1.is_dir():
+                                buf_backup_dir = test_path1 / '(.buf) Backup'
+                                break
+                            test_path2 = Path(drive) / 'Data' / 'ZZMI'
+                            if test_path2.is_dir():
+                                buf_backup_dir = test_path2 / '(.buf) Backup'
+                                break
+                            test_path3 = Path(drive) / 'XXMI' / 'ZZMI'
+                            if test_path3.is_dir():
+                                buf_backup_dir = test_path3 / '(.buf) Backup'
+                                break
+                            test_path4 = Path(drive) / 'XXMI Launcher' / 'ZZMI'
+                            if test_path4.is_dir():
+                                buf_backup_dir = test_path4 / '(.buf) Backup'
+                                break
+                            test_path5 = Path(drive) / 'ZZMI'
+                            if test_path5.is_dir():
+                                buf_backup_dir = test_path5 / '(.buf) Backup'
+                                break
+                
                 for filepath, data in self.modified_buffers.items():
+                    # Backup original file before overwriting
+                    original_path = Path(filepath)
+                    if original_path.exists():
+                        # Determine backup filepath
+                        if buf_backup_dir:
+                            # Preserve relative folder structure
+                            try:
+                                relative = original_path.relative_to(Path(self.filepath).parent)
+                                backup_file = Path(str(buf_backup_dir)) / relative
+                            except ValueError:
+                                backup_file = Path(str(buf_backup_dir)) / original_path.name
+                        else:
+                            # Fallback: same folder as mod
+                            backup_file = original_path.parent / f'DISABLED_BACKUP_{int(time.time())}_{original_path.name}'
+                        
+                        try:
+                            os.makedirs(str(backup_file.parent), exist_ok=True)
+                            import shutil
+                            shutil.copy2(str(original_path), str(backup_file))
+                            print(f'\tBacked up: {original_path.name} -> {backup_file}')
+                        except Exception as be:
+                            print(f"\t⚠  Failed to backup {original_path.name}: {be}")
+                    
+                    # Write the new buffer
                     with open(filepath, 'wb') as f:
                         f.write(data)
                     print('\tSaved: {}'.format(filepath))
@@ -1100,6 +1250,279 @@ class update_buffer_blend_indices():
             touched=True
         )
 
+@dataclass
+# MARK: Jane Doe Blend Remapper
+class jane_blend_auto_scan():
+    """
+    Scans ALL vb2 resources in the .ini file and remaps blend indices
+    for Jane Doe character. This handles legacy mods that don't have
+    separate blend_vb hashes (e42171df / d06a9206) in their .ini files.
+
+    Works like Satan1c's Jane.remapper: finds any vb2=ResourceXXX binding,
+    checks if the .buf file has stride 32, and applies the hair/hand remapping.
+    """
+    # Hair bone mappings (old_index -> new_index)
+    HAIR_MAPPING = {
+        26: 4, 27: 5, 28: 6, 29: 7, 30: 8, 31: 9, 32: 10, 33: 11, 34: 12, 35: 13,
+        36: 14, 37: 15, 38: 16, 39: 17, 40: 19, 41: 20, 42: 18, 43: 22, 44: 23,
+        45: 24, 46: 25, 47: 26, 48: 27, 49: 28, 50: 21, 51: 29, 52: 30, 53: 31,
+        90: 33, 91: 34, 92: 32, 93: 36, 94: 37, 95: 35, 96: 38, 97: 39, 98: 40,
+        99: 41, 100: 42, 101: 44, 102: 45, 103: 46, 104: 48, 105: 47, 106: 43,
+        107: 49, 108: 52, 109: 53, 110: 54, 111: 55, 112: 50, 113: 51, 114: 56,
+        115: 57, 116: 58, 117: 59, 118: 60, 119: 61, 120: 62, 121: 63, 122: 64,
+        123: 65, 124: 66, 125: 67, 126: 68
+    }
+    # Hand bone mappings (old_index -> new_index)
+    HAND_MAPPING = {
+        4: 0, 5: 1, 6: 2, 7: 3, 8: 4, 9: 5, 10: 6, 11: 7, 12: 8, 13: 9, 14: 10,
+        15: 11, 16: 12, 17: 13, 18: 14, 19: 15, 20: 16, 21: 17, 22: 18, 23: 19,
+        24: 20, 25: 21, 54: 22, 55: 23, 56: 24, 57: 25, 58: 26, 59: 27, 60: 28,
+        61: 29, 62: 30, 63: 31, 64: 32, 65: 33, 66: 34, 67: 35, 68: 36, 69: 37,
+        70: 38, 71: 39, 72: 40, 73: 41, 74: 42, 75: 43, 76: 44, 77: 45, 78: 46,
+        79: 47, 80: 48, 81: 49, 82: 50, 83: 51, 84: 52, 85: 53, 86: 54, 87: 55,
+        88: 56, 89: 57, 127: 58, 128: 59, 129: 60
+    }
+
+    def execute(self, default_args: DefaultArgs):
+        ini = default_args.ini
+        content = ini.content
+        ini_dir = Path(ini.filepath).parent
+
+        # Find all vb2 = ResourceXXX bindings in the ini
+        # First, find all section headers with their content
+        section_pattern = re.compile(
+            r'^\[([^\]]+)\]\s*((?:(?!^\[)[^\n]*\n?)*)',
+            flags=re.MULTILINE | re.IGNORECASE
+        )
+
+        blend_resources = []  # list of (resource_name, section_name, hash_or_context)
+
+        for section_match in section_pattern.finditer(content):
+            section_name = section_match.group(1).strip()
+            section_body = section_match.group(2)
+
+            # Skip non-TextureOverride sections for hash lookup, but keep all for vb2 scan
+            vb2_match = re.search(r'^\s*vb2\s*=\s*Resource([a-zA-Z0-9_]+)\s*$', section_body, re.IGNORECASE | re.MULTILINE)
+            if vb2_match:
+                resource_name = vb2_match.group(1)
+                # Find the hash in this section
+                hash_match = re.search(r'^\s*hash\s*=\s*([a-f0-9]{8})\s*$', section_body, re.IGNORECASE | re.MULTILINE)
+                context_hash = hash_match.group(1).lower() if hash_match else 'unknown'
+                blend_resources.append((resource_name, section_name, context_hash))
+
+        if not blend_resources:
+            print(f'\t\tNo vb2 resources found in ini')
+            return ExecutionResult(touched=False)
+
+        # Find the Resource section for each blend resource
+        touched = False
+        line_pattern = re.compile(r'^\s*(filename|stride)\s*=\s*(.*)\s*$', flags=re.IGNORECASE)
+
+        for res_name, sec_name, ctx_hash in blend_resources:
+            # Find Resource section
+            res_pattern = re.compile(
+                r'^\[Resource' + re.escape(res_name) + r'\]\s*((?:(?!^\[)[^\n]*\n?)*)',
+                flags=re.MULTILINE | re.IGNORECASE
+            )
+            res_match = res_pattern.search(content)
+            if not res_match:
+                continue
+
+            res_body = res_match.group(1)
+
+            # Check stride
+            stride_match = re.search(r'^\s*stride\s*=\s*(\d+)\s*$', res_body, re.IGNORECASE | re.MULTILINE)
+            if not stride_match:
+                continue
+            stride = int(stride_match.group(1))
+            if stride != 32:
+                print(f'\t\tSkipping Resource{res_name}: stride={stride} != 32 (not a blend buffer)')
+                continue
+
+            # Get filename
+            filename_match = re.search(r'^\s*filename\s*=\s*(.+)\s*$', res_body, re.IGNORECASE | re.MULTILINE)
+            if not filename_match:
+                continue
+            buf_filename = filename_match.group(1).strip()
+            buf_path = ini_dir / buf_filename
+
+            if not buf_path.exists():
+                print(f'\t\tSkipping {buf_filename}: file not found')
+                continue
+
+            # Determine which mapping to use based on context
+            # ONLY remap if we know the exact bone mapping
+            # HAIR: hash e42171df or position hash 33a09cfe / fa617c9a
+            # HAND: hash d06a9206 or position hash 82e7c056 / 6d482e21
+            if ctx_hash in ('e42171df', '33a09cfe', 'fa617c9a'):
+                mapping = self.HAIR_MAPPING
+                mapping_name = 'HAIR'
+            elif ctx_hash in ('d06a9206', '82e7c056', '6d482e21'):
+                mapping = self.HAND_MAPPING
+                mapping_name = 'HAND'
+            else:
+                # Unknown context - try to deduce from filename
+                name_lower = buf_filename.lower()
+                if 'hair' in name_lower or 'head' in name_lower:
+                    mapping = self.HAIR_MAPPING
+                    mapping_name = 'HAIR (auto-detect)'
+                elif 'hand' in name_lower or 'finger' in name_lower or 'accessor' in name_lower:
+                    mapping = self.HAND_MAPPING
+                    mapping_name = 'HAND (auto-detect)'
+                else:
+                    print(f'\t\tSkipping {buf_filename}: unknown mapping context (hash={ctx_hash})')
+                    continue
+
+            # Read buffer
+            buf_dict_key = str(buf_path.absolute())
+            if buf_dict_key in ini.modified_buffers:
+                buffer = ini.modified_buffers[buf_dict_key]
+            else:
+                buffer = buf_path.read_bytes()
+
+            # Verify plausible blend buffer (vertex count)
+            vertex_count = len(buffer) // stride
+            if vertex_count == 0:
+                continue
+
+            # Remap
+            new_buffer = bytearray(len(buffer))
+            for v in range(vertex_count):
+                offset = v * stride
+                # Copy weights (first 16 bytes) unmodified
+                new_buffer[offset:offset+16] = buffer[offset:offset+16]
+                # Remap indices (next 16 bytes: 4 uint32)
+                indices = struct.unpack_from('<4I', buffer, offset + 16)
+                mapped = [mapping.get(idx, idx) for idx in indices]
+                new_buffer[offset + 16:offset + 32] = struct.pack('<4I', *mapped)
+
+            ini.modified_buffers[buf_dict_key] = new_buffer
+            print(f'\t\t✓ Jane blend remapped ({mapping_name}): {buf_filename}')
+            touched = True
+
+        if not touched:
+            print(f'\t\tNo blend buffers needed remapping')
+
+        return ExecutionResult(
+            touched=touched
+        )
+
+
+# MARK: Dialyn Blend Remapper
+class dialyn_blend_auto_scan():
+    """
+    Scans ALL vb2 resources in the .ini file and remaps blend indices
+    for Dialyn character. This handles legacy mods that need the
+    updated bone mapping for Dialyn's 3D model structure.
+
+    Based on Dialyn.remapper.cs by Satan1c.
+    """
+    BLEND_MAPPING = {
+        18: 20, 19: 18, 20: 19,
+        54: 62, 55: 54, 56: 55, 57: 56, 58: 57, 59: 58, 60: 59, 61: 60, 62: 61,
+        69: 71, 70: 72, 71: 70, 72: 69,
+        91: 98, 92: 91, 93: 92, 94: 93, 95: 94, 96: 95, 97: 96, 98: 97,
+        113: 114, 114: 113,
+        128: 129, 129: 128, 130: 132, 131: 130, 132: 131,
+        188: 189, 189: 188,
+    }
+    POSITION_TO_BLEND = {
+        'ff36809b': '3d7e53cf',
+    }
+
+    def execute(self, default_args: DefaultArgs):
+        ini = default_args.ini
+        content = ini.content
+        ini_dir = Path(ini.filepath).parent
+
+        section_pattern = re.compile(
+            r'^\[([^\]]+)\]\s*((?:(?!^\[)[^\n]*\n?)*)',
+            flags=re.MULTILINE | re.IGNORECASE
+        )
+
+        blend_resources = []
+
+        for section_match in section_pattern.finditer(content):
+            section_name = section_match.group(1).strip()
+            section_body = section_match.group(2)
+
+            vb2_match = re.search(r'^\s*vb2\s*=\s*Resource([a-zA-Z0-9_]+)\s*$', section_body, re.IGNORECASE | re.MULTILINE)
+            if vb2_match:
+                resource_name = vb2_match.group(1)
+                hash_match = re.search(r'^\s*hash\s*=\s*([a-f0-9]{8})\s*$', section_body, re.IGNORECASE | re.MULTILINE)
+                context_hash = hash_match.group(1).lower() if hash_match else 'unknown'
+                blend_resources.append((resource_name, section_name, context_hash))
+
+        if not blend_resources:
+            print(f'\t\tNo vb2 resources found in ini')
+            return ExecutionResult(touched=False)
+
+        touched = False
+        line_pattern = re.compile(r'^\s*(filename|stride)\s*=\s*(.*)\s*$', flags=re.IGNORECASE)
+
+        for res_name, sec_name, ctx_hash in blend_resources:
+            res_pattern = re.compile(
+                r'^\[Resource' + re.escape(res_name) + r'\]\s*((?:(?!^\[)[^\n]*\n?)*)',
+                flags=re.MULTILINE | re.IGNORECASE
+            )
+            res_match = res_pattern.search(content)
+            if not res_match:
+                continue
+
+            res_body = res_match.group(1)
+
+            stride_match = re.search(r'^\s*stride\s*=\s*(\d+)\s*$', res_body, re.IGNORECASE | re.MULTILINE)
+            if not stride_match:
+                continue
+            stride = int(stride_match.group(1))
+            if stride != 32:
+                print(f'\t\tSkipping Resource{res_name}: stride={stride} != 32 (not a blend buffer)')
+                continue
+
+            filename_match = re.search(r'^\s*filename\s*=\s*(.+)\s*$', res_body, re.IGNORECASE | re.MULTILINE)
+            if not filename_match:
+                continue
+            buf_filename = filename_match.group(1).strip()
+            buf_path = ini_dir / buf_filename
+
+            if not buf_path.exists():
+                print(f'\t\tSkipping {buf_filename}: file not found')
+                continue
+
+            # Determine which mapping to use
+            mapping = self.BLEND_MAPPING
+            mapping_name = 'DIALYN'
+
+            buf_dict_key = str(buf_path.absolute())
+            if buf_dict_key in ini.modified_buffers:
+                buffer = ini.modified_buffers[buf_dict_key]
+            else:
+                buffer = buf_path.read_bytes()
+
+            vertex_count = len(buffer) // stride
+            if vertex_count == 0:
+                continue
+
+            new_buffer = bytearray(len(buffer))
+            for v in range(vertex_count):
+                offset = v * stride
+                new_buffer[offset:offset+16] = buffer[offset:offset+16]
+                indices = struct.unpack_from('<4I', buffer, offset + 16)
+                mapped = [mapping.get(idx, idx) for idx in indices]
+                new_buffer[offset + 16:offset + 32] = struct.pack('<4I', *mapped)
+
+            ini.modified_buffers[buf_dict_key] = new_buffer
+            print(f'\t✓ Dialyn blend remapped ({mapping_name}): {buf_filename}')
+            touched = True
+
+        if not touched:
+            print(f'\t\tNo blend buffers needed remapping')
+
+        return ExecutionResult(
+            touched=touched
+        )
+
+
 # MARK: Character Data Loader
 def load_character_modules():
     """
@@ -1137,6 +1560,8 @@ def load_character_modules():
         'zzz_13_remap_texcoord': zzz_13_remap_texcoord,
         'zzz_12_shrink_texcoord_color': zzz_12_shrink_texcoord_color,
         'update_buffer_blend_indices': update_buffer_blend_indices,
+        'jane_blend_auto_scan': jane_blend_auto_scan,
+        'dialyn_blend_auto_scan': dialyn_blend_auto_scan,
     }
     
     merged_commands = {}

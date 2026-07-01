@@ -40,7 +40,7 @@ character_modules = [
     'PlayerCharacterPYData.Harumasa',
     'PlayerCharacterPYData.Hugo',
     'PlayerCharacterPYData.JaneDoe',
-    'PlayerCharacterPYData.JaneDoeNocturneOfLight'
+    'PlayerCharacterPYData.JaneDoeNocturneOfLight',
     'PlayerCharacterPYData.JuFufu',
     'PlayerCharacterPYData.Koleda',
     'PlayerCharacterPYData.Lighter',
@@ -72,8 +72,8 @@ character_modules = [
     'PlayerCharacterPYData.Soldier11',
     'PlayerCharacterPYData.Soukaku',
     'PlayerCharacterPYData.StarlightBilly',
-    'PlayerCharacterPYData.Sunna'
-    'PlayerCharacterPYData.SunnaAfternoonTeaBreak'
+    'PlayerCharacterPYData.Sunna',
+    'PlayerCharacterPYData.SunnaAfternoonTeaBreak',
     'PlayerCharacterPYData.Trigger',
     'PlayerCharacterPYData.Velina',
     'PlayerCharacterPYData.VelinaShadeOfLeisure',
@@ -85,9 +85,9 @@ character_modules = [
     'PlayerCharacterPYData.WiseTemple',
     'PlayerCharacterPYData.Yanagi',
     'PlayerCharacterPYData.YeShunguang',
-    'PlayerCharacterPYData.YeShunguangSkin',
     'PlayerCharacterPYData.YeShunguangSword',
     'PlayerCharacterPYData.YeShunguangSwordUlt',
+    'PlayerCharacterPYData.YeShunguangTouchOfDawnlight',
     'PlayerCharacterPYData.YeShunguangUlt',
     'PlayerCharacterPYData.Yidhari',
     'PlayerCharacterPYData.Yixuan',

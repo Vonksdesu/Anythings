@@ -1,3 +1,10 @@
 # Python cache files
 __pycache__/
 *.pyc
+.venv/
+Include/
+Lib/
+Scripts/
+*.cfg
+
+
